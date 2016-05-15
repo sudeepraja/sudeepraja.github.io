@@ -4,7 +4,7 @@ title: Ratio of Heads and Tails
 published: true
 ---
 
-This is my first blog post. I would be writing about Algorithms, Machine Learning, Optimization and Mathematics. I wanted to begin with something simple, so this post would be about a problem from Probability. 
+This is my first blog post. I would be writing about Algorithms, Machine Learning, Optimization and Mathematics. I wanted to begin with something simple, so this post would be about a problem from Probability.
 
 Recently, I had the opportunity to interview for the Research Fellow position at Microsoft Research India. In one of the interviews I was asked a peculiar question on probability. I took the liberty to change the question a little:
 
