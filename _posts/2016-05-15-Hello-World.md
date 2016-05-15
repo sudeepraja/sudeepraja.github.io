@@ -55,4 +55,6 @@ $$
 \end{align*}
 $$
 
-So the number of TAILS for a coin would be $$ 2 - 1 = 1 $$
+So the number of TAILS for a coin would be $$ 2 - 1 = 1 $$.
+
+So the ration of HEADS and TAILS would be $$ 1:1 $$.
