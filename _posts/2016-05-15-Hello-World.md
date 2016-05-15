@@ -55,3 +55,4 @@ $$
 \end{align*}
 $$
 
+So the number of TAILS for a coin would be $$ 2 - 1 = 1 $$
