@@ -47,13 +47,10 @@ $$
 \end{align*}
 $$
 
+So, the expected number of trials would be:
 
-
-
-
-
-
-
-
-
-
+$$
+\begin{align*}
+& E[trials] = \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i} \\
+\end{align*}
+$$
