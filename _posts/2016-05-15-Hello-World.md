@@ -22,7 +22,13 @@ $$
 \end{align*}
 $$
 
-Take the $$\frac{1}{2}$$ out of the summation.
+Take the $$\frac{1}{2}$$ out of the summation. This leaves us with:
+
+$$
+\begin{align*}
+& E[trials] = \cdot \frac{1}{2} \cdot \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i-1} \\
+\end{align*}
+$$
 
 
 
