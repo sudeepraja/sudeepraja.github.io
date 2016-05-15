@@ -57,7 +57,7 @@ $$
 
 The number of TAILS for a coin would be $$ 2 - 1 = 1 $$. The ratio of HEADS and TAILS would be $$ 1:1 $$.
 
-This can also be seen intuitivley. In the beginning, you would toss $$n$$ coins, half of them would turn out to be HEADS and the other half TAILS. Now you are left with $$ n\2 $$ coins, out of which half would be HEADS and half would be TAILS.
+This can also be seen intuitivley. In the beginning, you would toss $$n$$ coins, half of them would turn out to be HEADS and the other half TAILS. Now you are left with $$ n/2 $$ coins, out of which half would be HEADS and half would be TAILS.
 
 The number of HEADS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = n$$. Which is what we had said earlier.
 
