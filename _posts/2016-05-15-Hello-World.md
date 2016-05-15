@@ -17,7 +17,7 @@ The expected number of trials for a coin is given by the sequence:
 
 $$
 \begin{align*}
-& E[ trails ] = 1.\frac{1}{2} + 2.\frac{1}{2}.\frac{1}{2} + 3.(\frac{1}{2})^{2}.\frac{1}{2} + 4.(\frac{1}{2})^{3}.\frac{1}{2} + .....
+& E[ trails ] = 1 \cdot \frac{1}{2} + 2 \cdot \frac{1}{2} \cdot \frac{1}{2} + 3 \cdot ( \frac{1}{2} )^{2} \cdot \frac{1}{2} + 4 \cdot ( \frac{1}{2})^{3} ) \cdot \frac{1}{2} + .....
 \end{align*}
 $$
 
