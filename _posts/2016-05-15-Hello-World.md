@@ -22,6 +22,9 @@ $$
 \end{align*}
 $$
 
+Take the $$\frac{1}{2}$$ out of the summation.
+
+
 
 
 
