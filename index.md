@@ -12,4 +12,4 @@ I sometimes blog about curious things I encounter while reading books or while o
 
 ### Contact me
 
-[sudeepraja94@gmail.com](mailto:email@domain.com)
+[sudeepraja94@gmail.com](mailto:sudeepraja94@gmail.com)
