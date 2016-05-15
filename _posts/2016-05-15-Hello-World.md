@@ -39,6 +39,15 @@ $$
 \end{align*}
 $$
 
+Now multiply both sides with $$x$$, that would give us:
+
+$$
+\begin{align*}
+& x + 2 \cdot x^2 + 3 \cdot x^3 + 4 \cdot x^4 + .... = \frac{x}{(1-x)^2}, if |x| < 1
+\end{align*}
+$$
+
+
 
 
 
