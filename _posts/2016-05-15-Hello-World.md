@@ -54,3 +54,4 @@ $$
 & E[trials] = \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i}  = \frac { \frac{1}{2} }{ ( 1-\frac{1}{2} )^2 } = 2
 \end{align*}
 $$
+
