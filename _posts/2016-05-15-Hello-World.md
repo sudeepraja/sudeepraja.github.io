@@ -17,7 +17,7 @@ The expected number of trials for a coin is given by the sequence:
 
 $$
 \begin{align*}
-& E[
+& E[ trails ] = 
 \end{align*}
 $$
 
