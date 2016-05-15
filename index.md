@@ -3,7 +3,8 @@ layout: default
 published: true
 ---
 
-Some information about you!
+# Hi There!
+
 
 ### More Information
 
