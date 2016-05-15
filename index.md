@@ -8,7 +8,7 @@ My name is Sudeep Raja. I just graduted from the **[Indian Institute of Technolo
 
 I aspire to become a researcher working in Computer Science. I am interested to work in Deep Learning, Machine Learning, Optimization and Approximation and Randomized Algorithms. My work so far was mostly on application of Deep Neural Networks for problems on Computer Vision, specifically for Activity recognition in videos. I have briefly worked on the P-Median problem in application to Ambulance facility location. 
 
-I sometimes blog about curious things I encounter while reading books or while on the internet. These are things mostly related to the topics mentioned above and some mathematics as well.
+I blog about curious things I encounter while reading books or while on the internet. These are things mostly related to the topics mentioned above and some mathematics as well.
 
 ### Contact me
 
