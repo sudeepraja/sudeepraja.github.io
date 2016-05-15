@@ -22,6 +22,12 @@ $$
 & E[trials] = \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i} \\
 \end{align*}
 $$
+We know the summation for an infinite geometric series:
+$$
+\begin{align*}
+& 1 + x + x^2 + x^3 + .... = frac{1}{1-x}, if |x| < 1
+\end{align*}
+$$
 
 
 
