@@ -65,3 +65,5 @@ The number of HEADS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = 
 The number of TAILS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = n$$. 
 
 The ratio will be $$ 1:1 $$.
+
+Now to take this question further, you use $$n$$ fair dice and stop rolling when you get a 6. What would be ratio of the sum of 6s obtained to the sum of non 6s?
