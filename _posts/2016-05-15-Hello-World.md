@@ -61,7 +61,9 @@ This can also be seen intuitivley. In the beginning, you would toss $$n$$ coins,
 
 The number of HEADS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = n$$. Which is what we had said earlier.
 
-The number of TAILS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = n$$. So the ratio will be $$ 1:1 $$.
+The number of TAILS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = n$$. 
+
+The ratio will be $$ 1:1 $$.
 
 
 
