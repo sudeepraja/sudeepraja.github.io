@@ -31,6 +31,15 @@ $$
 \end{align*}
 $$
 
+Differentiate both sides with $$x$$, that would give us:
+
+$$
+\begin{align*}
+& 1 + 2 \cdot x + 3 \cdot x^2 + 4 \cdot x^3 + .... = \frac{1}{(1-x)^2}, if |x| < 1
+\end{align*}
+$$
+
+
 
 
 
