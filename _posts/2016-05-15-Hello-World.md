@@ -19,16 +19,11 @@ $$
 \begin{align*}
 & E[ trails ] = 1 \cdot \frac{1}{2} + 2 \cdot \frac{1}{2} \cdot \frac{1}{2} + 3 \cdot \left( \frac{1}{2} \right)^{2} \cdot \frac{1}{2} + 4 \cdot \left( \frac{1}{2} \right) ^{3}  \cdot \frac{1}{2}  +  ..... \\
 & E[trials] = \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i-1} \cdot \frac{1}{2} \\
+& E[trials] = \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i} \\
 \end{align*}
 $$
 
-Take the $$\frac{1}{2}$$ out of the summation. This leaves us with:
 
-$$
-\begin{align*}
-& E[trials] = \frac{1}{2} \cdot \sum_{i=1}^{\infty} i \cdot \left( \frac{1}{2}  \right)^{i-1} \\
-\end{align*}
-$$
 
 
 
