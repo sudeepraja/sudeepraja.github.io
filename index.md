@@ -10,4 +10,4 @@ I aspire to become a researcher working in Computer Science. I am interested to 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[sudeepraja94@gmail.com](mailto:email@domain.com)
