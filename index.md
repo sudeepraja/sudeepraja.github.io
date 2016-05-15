@@ -6,7 +6,7 @@ published: true
 # Hi There!
 My name is Sudeep Raja. I just graduted from the **[Indian Institute of Technology, Kharagpur](http://www.iitkgp.ac.in/)** with a **Bachelor's degree in [Computer Science an Engineering](http://cse.iitkgp.ac.in/)**. I have worked as a research intern at **[IBM Research India](http://www.research.ibm.com/labs/india/)** and at **[Centre for Visual Information Technology](https://cvit.iiit.ac.in/), [IIIT Hydearabad](https://www.iiit.ac.in/)**.
 
-I am interested in Algorithms, Machine Learning and Optimization.
+I aspire to become a researcher working in Computer Science. I am interested to work in the fields of Deep Learning, Machine Learning, Optimization and Approximation and Randomized Algorithms.
 
 ### More Information
 
