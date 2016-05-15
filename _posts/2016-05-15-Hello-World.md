@@ -11,7 +11,7 @@ You have $$n$$ fair coins to begin with. The coins are flipped in rounds. In eac
 
 As each coin is flipped until a HEADS is obtained, the total number of HEADS will be $$n$$.
 
-So the number of TAILS for a certain coin must be: number of trials of the coin $$- 1$$
+The number of TAILS for a certain coin must be: number of trials of the coin $$- 1$$
 
 The expected number of trials for a coin is given by the sequence:
 
@@ -55,6 +55,8 @@ $$
 \end{align*}
 $$
 
-So the number of TAILS for a coin would be $$ 2 - 1 = 1 $$.
+The number of TAILS for a coin would be $$ 2 - 1 = 1 $$. The ratio of HEADS and TAILS would be $$ 1:1 $$.
 
-So the ration of HEADS and TAILS would be $$ 1:1 $$.
+This can also be seen intuitivley. In the beginning, you would toss $$n$$ coins, half of them would turn out to be HEADS and the other half TAILS. Now you are left with $$ n\2 $$ coins, out of which half would be HEADS and half would be TAILS.
+
+The number of HEADS 
