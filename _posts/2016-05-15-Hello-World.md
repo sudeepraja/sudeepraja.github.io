@@ -10,7 +10,7 @@ Recently, I had the opportunity to interview for the Research Fellow position at
 You have $$n$$ fair coins to begin with. The coins are flipped in rounds. In each round, you flip all the available coins and note down the results. Only if a coin turns out to be TAILS it goes to the next round, otherwise it is does not. After the last round ends, what is the ratio of total HEADS obtained to TAILS?
 
 As each coin is flipped until a HEADS is obtained, the total number of HEADS will be $$n$$.
-So the number of TAILS for a certain coin must be the $$number of rounds coin survived - 1 $$
+So the number of TAILS for a certain coin must be the number of rounds coin survived $$- 1$$
 
 
 
