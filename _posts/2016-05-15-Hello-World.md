@@ -12,7 +12,7 @@ You have $$n$$ fair coins to begin with. The coins are flipped in rounds. In eac
 
 As each coin is flipped until a HEADS is obtained, the total number of HEADS will be $$n$$.
 
-The number of TAILS for a certain coin must be: number of trials of the coin $$- 1$$
+The number of TAILS obtained for a certain coin must be: number of trials of the coin $$- 1$$
 
 The expected number of trials for a coin is given by the sequence:
 
