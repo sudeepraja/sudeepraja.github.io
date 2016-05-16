@@ -66,4 +66,4 @@ The number of TAILS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = 
 
 The ratio will be $$ 1:1 $$.
 
-Now to take this question further, you use $$n$$ fair dice and stop rolling when you get an even number. What would be the expected ratio of the sum of even numbers to the sum of odd numbers obtained ?
+Now to take this question further, you use $$n$$ fair dice and stop rolling when you get an even number. What would be the expected ratio of the sum of even numbers obtained to the sum of odd numbers obtained ?
