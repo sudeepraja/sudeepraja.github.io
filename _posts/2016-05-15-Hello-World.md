@@ -8,7 +8,7 @@ This is my first blog post. In this blog, I would be writing about Algorithms, M
 
 Recently, I had the opportunity to interview for the Research Fellow position at Microsoft Research India. In one of the interviews I was asked a peculiar question on probability. I took the liberty to change the question a little:
 
-You have $$n$$ fair coins to begin with. The coins are flipped in rounds. In each round, you flip all the available coins and note down the results. Only if a coin turns out to be TAILS it goes to the next round, otherwise it is does not. After the last round ends, what is the expected ratio of total HEADS obtained in all rounds to TAILS obtained in all rounds?
+_You have $$n$$ fair coins to begin with. The coins are flipped in rounds. In each round, you flip all the available coins and note down the results. Only if a coin turns out to be TAILS it goes to the next round, otherwise it is does not. After the last round ends, what is the expected ratio of total HEADS obtained in all rounds to TAILS obtained in all rounds?_
 
 As each coin is flipped until a HEADS is obtained, the total number of HEADS will be $$n$$.
 
@@ -66,4 +66,4 @@ The number of TAILS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = 
 
 The ratio will be $$ 1:1 $$.
 
-Now to take this question further, you use $$n$$ fair dice and stop rolling when you get an even number. What would be the expected ratio of the sum of even numbers obtained to the sum of odd numbers obtained ?
+Now to take this question further, you use $$n$$ fair dice and stop rolling when you get an even number. What would be the expected ratio of the sum of even numbers to the sum of odd numbers obtained ?
