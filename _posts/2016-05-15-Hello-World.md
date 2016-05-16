@@ -56,7 +56,7 @@ $$
 \end{align*}
 $$
 
-The number of TAILS for a coin would be $$ 2 - 1 = 1 $$. The ratio of HEADS and TAILS would be $$ 1:1 $$.
+The expected number of TAILS for a coin would be $$ 2 - 1 = 1 $$. The ratio of HEADS and TAILS would be $$ 1:1 $$.
 
 This can also be seen intuitively. In the beginning, you would toss $$n$$ coins, half of them would turn out to be HEADS and the other half TAILS. Now you are left with $$ n/2 $$ coins, out of which half would be HEADS and half would be TAILS.
 
