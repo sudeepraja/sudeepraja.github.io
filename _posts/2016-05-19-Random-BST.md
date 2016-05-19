@@ -55,9 +55,5 @@ The time complexity for constructing the tree would be $$O(n \log n)$$. The wors
 
 The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) for constructing a well balanced BST?
 
-A very simple Monte Carlo algorithm would be:
-
-	Create empty tree
-    Randomly shuffle the array elements
-    Insert elements in the order in which they appear in the array.
+A very simple Monte Carlo algorithm would be
     	
