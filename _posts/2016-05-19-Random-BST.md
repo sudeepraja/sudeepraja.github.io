@@ -20,3 +20,5 @@ We could remove the sorting step and directly employ a median finding algorithm 
 
 $$ T(n) = 2 \cdot T(\frac{n}{2}) + O(n)$$
 
+
+
