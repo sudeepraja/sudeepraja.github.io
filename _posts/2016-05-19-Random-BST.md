@@ -32,6 +32,6 @@ Lets call an element GOOD if after partitioning the array of lenght $$n$$ using 
 	
     Choose an element at random from array
     While chosen element is not GOOD:
-    	Cho0se another element at random
+    	Choose another element at random
     Return chosen element
     	
