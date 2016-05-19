@@ -12,7 +12,7 @@ There are deterministic ways to construct height balanced BSTs. Popular methods 
 
 One could also sort the array in $$O(n \log n)$$ time and recursivley use the medians to construct the required tree using this [algorithm](http://articles.leetcode.com/convert-sorted-array-into-balanced/). The recurrence relation for constructing the tree would be:
 
-$$ T(n) = 2 \cdot T(\frac{n}{2})
+$$ T(n) = 2 \cdot T(\frac{n}{2}) + 
 
 We could remove the sorting step and directly employ a median finding algorithm 
 
