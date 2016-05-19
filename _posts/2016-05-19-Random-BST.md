@@ -37,5 +37,5 @@ Lets call an element GOOD if after partitioning the array of lenght $$n$$ using 
     
 Since there are $$n/3$$ GOOD elements in an $$n$$ element array, the probability of finding one is $$1/3$$. The expected runtime of the above subroutine will be:
 
-$$E[time] = n \cdot \frac{1}{3} + 2n \cdot \frac{2}{3} \cdot \frac{1}{3} + 3n \cdot \frac{2}{3} \cdot \frac{1}{3}
+$$E[time] = n \cdot \frac{1}{3} + 2n \cdot \frac{2}{3} \cdot \frac{1}{3} + 3n \cdot \left( \frac{1}{2} \right) ^{3} \cdot \frac{1}{3}
     	
