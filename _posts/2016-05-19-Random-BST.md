@@ -14,6 +14,7 @@ One could also sort the array in $$O(n \log n)$$ time and recursivley use the me
 
 $$ T(n) = 2 \cdot T(\frac{n}{2}) + O(1)$$
 
+
 We could remove the sorting step and directly employ a median finding algorithm 
 
 
