@@ -35,5 +35,5 @@ Lets call an element GOOD if after partitioning the array of lenght $$n$$ using 
     	Choose another element at random
     Return chosen element
     
-Since there are $$n/3$$ GOOD elements in an $$n$$ element array, the probability of finding one is $$1/3$$.
+Since there are $$n/3$$ GOOD elements in an $$n$$ element array, the probability of finding one is $$1/3$$. The expected runtime of the above subroutine will be:
     	
