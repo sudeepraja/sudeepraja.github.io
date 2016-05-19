@@ -58,5 +58,5 @@ The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](h
 A very simple Monte Carlo algorithm would be:
 	
     Randomly shiffle the array elements
-    Create empty tree and insert elements
+    Create empty tree and insert elements in the order they appear in the array.
     	
