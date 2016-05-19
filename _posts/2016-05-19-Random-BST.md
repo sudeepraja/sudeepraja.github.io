@@ -55,7 +55,7 @@ The time complexity for constructing the tree would be $$O(n \log n)$$. The wors
 
 The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) for constructing a well balanced BST?
 
-The height of the tree depeneds on the sequence of insertions. 
+The height of the tree depeneds on the sequence of insertions. There are $$n!$$ ways to insert $$n$$ elements of an array into a tree. But only 2 of these would give a completley skew tree. 
 
 A very simple Monte Carlo algorithm would be:
 
