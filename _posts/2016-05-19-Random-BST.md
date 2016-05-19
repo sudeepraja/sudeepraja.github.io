@@ -63,6 +63,7 @@ A very simple Monte Carlo algorithm would be:
     Randomly shuffle the array elements
     Insert elements in the order in which they appear in the array.
 
+
     
 
     	
