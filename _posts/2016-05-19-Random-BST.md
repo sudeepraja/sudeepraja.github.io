@@ -43,5 +43,5 @@ $$E[time] = \frac{n}{2} \cdot \sum_{i=1}^{\infty} i \cdot \left( \frac{2}{3} \ri
 
 You can recognize the summation from my [previous post](http://sudeepraja.github.io/Hello-World/). It evaluates to:
 
-$$E[time] = \frac{n}{2} \cdot \frac{\frac{2}{3}}{(1-\frac{2}{3})^2} = $$
+$$E[time] = \frac{n}{2} \cdot \frac{\frac{2}{3}}{(1-\frac{2}{3})^2} = 3n$$
     	
