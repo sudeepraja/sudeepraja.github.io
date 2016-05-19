@@ -27,4 +27,4 @@ By using medians to construct the BST, we would always be constructing the same 
 What if we could get away with using something other that the median as a pivot. Recall the [Partitioning](https://en.wikipedia.org/wiki/Quicksort#Algorithm) step in quicksort.
 >Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
 
-Lets call an element GOOD if after partitioning the array of lenght $$n$$ using it, the element lies in between the indices $$n/3$$ and $$2n/3$$.
+Lets call an element GOOD if after partitioning the array of lenght $$n$$ using it, the element lies in between the indices $$n/3$$ and $$2n/3$$. 
