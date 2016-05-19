@@ -51,5 +51,7 @@ $$T(n) = T(\frac{(1+c)n}{3}) + T(\frac{(2-c)n}{3}) + O(n), 0\le c \le 1$$
 
 $$T(n) \le 2 \cdot T(\frac{2n}{3}) + O(n)$$
 
-The time complexity for constructing the tree would be $$O(n \log n)$$. The worst case height of the tree would be $$ \log_{3/2} n = O(\log n)$$. 
+The time complexity for constructing the tree would be $$O(n \log n)$$. The worst case height of the tree would be $$ \log_{3/2} n = O(\log n)$$.
+
+The algorithm presented above is Las Vegas. Is there a Monte Carlo Algorithm for this?
     	
