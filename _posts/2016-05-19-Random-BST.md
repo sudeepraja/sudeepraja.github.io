@@ -45,5 +45,7 @@ You can recognize the summation from my [previous post](http://sudeepraja.github
 
 $$E[time] = \frac{n}{2} \cdot \frac{\frac{2}{3}}{(1-\frac{2}{3})^2} = 3n$$
 
-A GOOD element can be found in $$O(n)$$ time. But will the expected height of the tree be $$O(\log n)$$.
+A GOOD element can be found in $$O(n)$$ time. The recurrence for constructing the tree would be:
+
+$$T(n) = T(\frac{(1+c)n}{3}) + T(\frac{(2-c)n}{3})
     	
