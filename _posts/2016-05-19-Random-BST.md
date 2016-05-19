@@ -34,4 +34,6 @@ Lets call an element GOOD if after partitioning the array of lenght $$n$$ using 
     While chosen element is not GOOD:
     	Choose another element at random
     Return chosen element
+    
+The 
     	
