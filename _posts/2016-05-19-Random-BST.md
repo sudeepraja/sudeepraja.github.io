@@ -30,4 +30,5 @@ What if we could get away with using something other that the median as a pivot.
 Lets call an element GOOD if after partitioning the array of lenght $$n$$ using it, the element lies in between the indices $$n/3$$ and $$2n/3$$. The algorithm is as follows:
 
     Choose a pivot at random.
-    Check if the pivot is GOOD.
+    If the pivot is GOOD:
+        
