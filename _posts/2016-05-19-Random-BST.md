@@ -20,5 +20,5 @@ We could remove the sorting step and directly employ a median finding algorithm 
 
 $$ T(n) = 2 \cdot T(\frac{n}{2}) + O(n)$$
 
-This gives us the same time complexity of 
+This gives us the same time complexity of $$O(n \log n)$$.
 
