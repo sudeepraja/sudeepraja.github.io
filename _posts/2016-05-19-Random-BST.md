@@ -48,5 +48,6 @@ $$E[time] = \frac{n}{2} \cdot \frac{\frac{2}{3}}{(1-\frac{2}{3})^2} = 3n$$
 A GOOD element can be found in $$O(n)$$ time. The recurrence for constructing the tree would be:
 
 $$T(n) = T(\frac{(1+c)n}{3}) + T(\frac{(2-c)n}{3}) + O(n), 0\le c \le 1$$
+
 $$T(n) \le 2 \cdot T(\frac{2n}{3}) + O(n)$$
     	
