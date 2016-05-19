@@ -22,3 +22,5 @@ $$ T(n) = 2 \cdot T(\frac{n}{2}) + O(n)$$
 
 This gives us the same time complexity of $$O(n \log n)$$.
 
+Note: By using medians to construct the BST, we would be constructing the same tree always. It will not be randomized. Although using Quickselect would make it a [Las Vegas algorithm](https://en.wikipedia.org/wiki/Las_Vegas_algorithm) giving it a randomized flavor.
+
