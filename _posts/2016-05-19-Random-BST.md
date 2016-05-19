@@ -3,7 +3,7 @@ layout: post
 title: Randomized Binary Search Trees
 published: true
 ---
-This post will be about using Randomization for constructing [Binary Search Trees (BST)](https://en.wikipedia.org/wiki/Binary_search_tree) whose expected height would be $$O(\log n)$$. This post is inspired from a question I was asked in my B.Tech Grand Viva.
+This post will be about using Randomization for constructing [Binary Search Trees (BST)](https://en.wikipedia.org/wiki/Binary_search_tree) whose worst case height must be $$O(\log n)$$. This post is inspired from a question I was asked in my B.Tech Grand Viva.
 
 The problem we are solving here is this:
 Given $$n$$ distict integers in an array, construct a BST in expected $$O(n \log n)$$ time, whose expected height would be $$O(\log n)$$.
