@@ -40,4 +40,6 @@ Since there are $$n/3$$ GOOD elements in an $$n$$ element array, the probability
 $$E[time] = n \cdot \frac{1}{3} + 2n \cdot \frac{2}{3} \cdot \frac{1}{3} + 3n \cdot \left( \frac{2}{3} \right) ^{2} \cdot \frac{1}{3} + 4n \cdot \left( \frac{2}{3} \right) ^{3} \cdot \frac{1}{3} + ....$$
 
 $$E[time] = \frac{n}{2} \cdot \sum_{i=1}^{\infty} i \cdot \left( \frac{2}{3} \right)^{i} $$
+
+You can recognize the summation from my [previous post](http://sudeepraja.github.io/Hello-World/)
     	
