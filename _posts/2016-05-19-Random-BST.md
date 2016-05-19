@@ -65,6 +65,6 @@ A very simple Monte Carlo algorithm would be:
     
 This algorithm will ceate a tree in $$O(n \log n)$$ time, whose expected height is $$O(\log n)$$.The Las Vegas algorithm will never output a skew tree, but the Monte Carlo algorithm might with very low probability.
 
-Sophisticated randomized BSTs which perform well in case of random insertions and deletions are also present, but these are beyond the scope of this blog.
+Sophisticated randomized BSTs which perform well in face of random insertions and deletions are also present, but these are beyond the scope of this blog.
 
     	
