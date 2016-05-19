@@ -45,5 +45,5 @@ You can recognize the summation from my [previous post](http://sudeepraja.github
 
 $$E[time] = \frac{n}{2} \cdot \frac{\frac{2}{3}}{(1-\frac{2}{3})^2} = 3n$$
 
-A GOOD element can be found in $$O(n)$$ time.
+A GOOD element can be found in $$O(n)$$ time. 
     	
