@@ -10,5 +10,8 @@ Given $$n$$ distict integers in an array, construct a BST in expected $$O(n \log
 
 There are deterministic ways to construct height balanced BSTs. Popular methods taught in undergraduate curriculum are [AVL trees](https://en.wikipedia.org/wiki/AVL_tree) and [Red-Black Trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree). But these data structures involve complex operations which are quiet difficult to remember.
 
-One could also sort the array in $$O(n \log n)$$ time and recursivley use the medians to construct the required tree using this [algorithm](http://articles.leetcode.com/convert-sorted-array-into-balanced/).
+One could also sort the array in $$O(n \log n)$$ time and recursivley use the medians to construct the required tree using this [algorithm](http://articles.leetcode.com/convert-sorted-array-into-balanced/). The time complexity for constructing the tree like this would be:
+
+We could remove the sorting step and directly employ a median finding algorithm 
+
 
