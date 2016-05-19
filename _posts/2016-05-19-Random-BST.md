@@ -33,5 +33,5 @@ Lets call an element GOOD if after partitioning the array of lenght $$n$$ using 
     Choose an element at random from array
     While chosen element is not GOOD:
     	Chosen another element at random
-    else:
+    Return chosen element
     	
