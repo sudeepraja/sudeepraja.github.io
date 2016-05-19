@@ -54,4 +54,6 @@ $$T(n) \le 2 \cdot T(\frac{2n}{3}) + O(n)$$
 The time complexity for constructing the tree would be $$O(n \log n)$$. The worst case height of the tree would be $$ \log_{3/2} n = O(\log n)$$.
 
 The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) for constructing a well balanced BST?
+
+A very simple Monte Carlo algorithm would be: 
     	
