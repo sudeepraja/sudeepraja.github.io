@@ -13,5 +13,6 @@ There are deterministic ways to construct height balanced BSTs. Popular methods 
 One could also construct the required tree by sorting the array in $$O(n \log n)$$ and using the following simple recursive algorithm:
 
     Use Medain of the array as the root of the tree.
-    Recursivley 
+    Recurse on the left and right parts of the array.
+    
 
