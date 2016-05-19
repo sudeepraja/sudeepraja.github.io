@@ -11,5 +11,6 @@ Given $$n$$ distict integers in an array, construct a BST in expected $$O(n \log
 There are deterministic ways to construct height balanced BSTs. Popular methods taught in undergraduate curriculum are [AVL trees](https://en.wikipedia.org/wiki/AVL_tree) and [Red-Black Trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree). But these data structures involve complex operations which are quiet difficult to remember.
 
 One could also construct the required tree by sorting the array in $$O(n \log n)$$ and using the following simple recursive algorithm:
+    Use Medain of the array as the root of the tree.
     
 
