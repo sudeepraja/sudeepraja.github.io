@@ -14,5 +14,5 @@ One could also construct the required tree by sorting the array in $$O(n \log n)
 
     Use Medain of the array as the root of the tree.
     Recurse on the left and right parts of the array.
-    
+        
 
