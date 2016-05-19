@@ -24,4 +24,4 @@ This gives us the same time complexity of $$O(n \log n)$$.
 
 By using medians to construct the BST, we would always be constructing the same tree. It will not be randomized. Although using Quickselect would make it a [Las Vegas algorithm](https://en.wikipedia.org/wiki/Las_Vegas_algorithm) giving it a randomized flavor.
 
-What if we could get away with using something other that the median as a pivot. Lets call an element GOOD if it lies in the middle $$1/3rd$$ of the array
+What if we could get away with using something other that the median as a pivot. Lets call an element GOOD
