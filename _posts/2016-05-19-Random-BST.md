@@ -31,4 +31,4 @@ Lets call an element GOOD if after partitioning the array of lenght $$n$$ using 
 
     Choose a pivot at random.
     If the pivot is GOOD:
-        
+        Use this as root of the tree and recurse
