@@ -16,6 +16,6 @@ $$ T(n) = 2 \cdot T(\frac{n}{2}) + O(1)$$
 
 This gives it a time complexity of $$O(n)$$, but since sorting is a pre-requisite for this, the complexity will be $$O(n \log n)$$.
 
-We could remove the sorting step and directly employ a median finding algorithm such as [Quickselect](https://en.wikipedia.org/wiki/Quickselect), or something more complex such as [Median of medians](https://en.wikipedia.org/wiki/Median_of_medians).
+We could remove the sorting step and directly employ a median finding algorithm such as [Quickselect[^footnote]](https://en.wikipedia.org/wiki/Quickselect), or something more complex such as [Median of medians](https://en.wikipedia.org/wiki/Median_of_medians).
 
 
