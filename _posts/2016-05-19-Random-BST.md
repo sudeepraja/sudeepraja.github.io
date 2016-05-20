@@ -6,7 +6,7 @@ published: true
 This post will be about using Randomization for constructing [Binary Search Trees (BST)](https://en.wikipedia.org/wiki/Binary_search_tree) whose worst case height must be $$O(\log n)$$. This post is inspired from a question I was asked in my B.Tech Grand Viva.
 
 The problem we are solving here is this:
-Given $$n$$ distict integers in an array, construct a BST in expected $$O(n \log n)$$ time, whose worst case height must be $$O(\log n)$$.
+Given $$n$$ distinct integers in an array, construct a BST in expected $$O(n \log n)$$ time, whose worst case height must be $$O(\log n)$$.
 
 There are deterministic ways to construct height balanced BSTs. Popular methods taught in undergraduate curriculum are [AVL trees](https://en.wikipedia.org/wiki/AVL_tree) and [Red-Black Trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree). But these data structures involve complex operations which are quiet difficult to remember.
 
@@ -28,7 +28,7 @@ What if we could get away with using something other that the median as a pivot.
 
 >Partitioning: reorder the array so that all elements with values less than the pivot come before the pivot, while all elements with values greater than the pivot come after it (equal values can go either way). After this partitioning, the pivot is in its final position. This is called the partition operation.
 
-Lets call an element GOOD if after partitioning the array of lenght $$n$$ using it, the element lies in between the indices $$n/3$$ and $$2n/3$$ (lies in the middle one third). A subroutine to find a GOOD element could be:
+Lets call an element GOOD if after partitioning the array of length $$n$$ using it, the element lies in between the indices $$n/3$$ and $$2n/3$$ (lies in the middle one third). A subroutine to find a GOOD element could be:
 	
     Choose an element at random from the array
     While chosen element is not GOOD:
