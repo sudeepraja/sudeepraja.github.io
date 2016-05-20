@@ -8,7 +8,7 @@ This post will be about using Randomization for constructing [Binary Search Tree
 The problem we are solving here is this:
 Given $$n$$ distinct integers in an array, construct a BST in expected $$O(n \log n)$$ time, whose worst case height must be $$O(\log n)$$.
 
-There are deterministic ways to construct height balanced BSTs. Popular methods taught in undergraduate curriculum are [AVL trees](https://en.wikipedia.org/wiki/AVL_tree) and [Red-Black Trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree). But these data structures involve complex operations which are quiet difficult to remember.
+There are deterministic ways to construct height balanced BSTs. Popular methods taught in undergraduate curriculum are [AVL trees](https://en.wikipedia.org/wiki/AVL_tree) and [Red-Black Trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree). But these data structures involve complex operations which are quite difficult to remember.
 
 One could also sort the array in $$O(n \log n)$$ time and recursivley use the medians as pivots to construct the required tree using this [algorithm](http://articles.leetcode.com/convert-sorted-array-into-balanced/). The recurrence relation for constructing the tree would be:
 
@@ -66,5 +66,3 @@ A very simple Monte Carlo algorithm would be:
 This algorithm will ceate a tree in $$O(n \log n)$$ time, whose expected height is $$O(\log n)$$.The Las Vegas algorithm will never output a skew tree, but the Monte Carlo algorithm might with very low probability.
 
 Sophisticated randomized BSTs which perform well in face of random insertions and deletions are also present, but these are beyond the scope of this blog.
-
-    	
