@@ -55,7 +55,7 @@ The time complexity for constructing the tree would be $$O(n \log n)$$. The wors
 
 The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) for constructing a BST of expected height $$O(\log n)$$?
 
-The height of the tree depeneds on the sequence of insertions. There are $$n!$$ ways to insert $$n$$ elements of an array into a binary search tree. But only 2 of these would give a completley skew tree. A lot of permutations would result in trees which are well balanced. Number of permutations of $$1,2,...n$$ that result in a binary search tree with the minimum possible height is given by the sequence in [this OEIS page](https://oeis.org/A076615).
+The height of the tree depeneds on the sequence of insertions. There are $$n!$$ ways to insert $$n$$ elements of an array into a binary search tree. This is different from the number of distinct BSTs possible which is the n'th [Catalan Numvber](https://en.wikipedia.org/wiki/Catalan_number). Only 2 of these would give a completley skew tree. A lot of permutations would result in trees which are well balanced. Number of permutations of $$1,2,...n$$ that result in a binary search tree with the minimum possible height is given by the sequence in [this OEIS page](https://oeis.org/A076615).
 
 A very simple Monte Carlo algorithm would be:
 
