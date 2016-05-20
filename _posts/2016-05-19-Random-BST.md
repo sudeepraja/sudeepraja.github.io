@@ -53,7 +53,7 @@ $$T(n) \le 2 \cdot T(\frac{2n}{3}) + O(n)$$
 
 The time complexity for constructing the tree would be $$O(n \log n)$$. The worst case height of the tree would be $$ \log_{3/2} n = O(\log n)$$.
 
-The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) for constructing a well balanced BST?
+The algorithm presented above is Las Vegas. Is there a [Monte Carlo Algorithm](https://en.wikipedia.org/wiki/Monte_Carlo_algorithm) for constructing a BST of expected height $$O(\log n)$$?
 
 The height of the tree depeneds on the sequence of insertions. There are $$n!$$ ways to insert $$n$$ elements of an array into a tree. But only 2 of these would give a completley skew tree. A lot of permutations would result in trees which are well balanced. Number of permutations of $$1,2,...n$$ that result in a binary search tree with the minimum possible height is given by the sequence in [this OEIS page](https://oeis.org/A076615).
 
