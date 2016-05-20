@@ -65,4 +65,4 @@ A very simple Monte Carlo algorithm would be:
     
 This algorithm will create a tree in $$O(n \log n)$$ time, whose expected height is $$O(\log n)$$.The Las Vegas algorithm will never output a skew tree, but the Monte Carlo algorithm might with very low probability.
 
-Sophisticated randomized BSTs which perform well in face of random insertions and deletions are also present, but these are beyond the scope of this blog.
+Sophisticated randomized BSTs which perform well in face of random insertions and deletions are also present, but these are beyond the scope of this blog. Check out [Treaps](https://en.wikipedia.org/wiki/Treap) which uses random priorities and this [randomized binary search tree](http://algo.inria.fr/seminars/sem96-97/martinez.html), which uses random rebalancing.
