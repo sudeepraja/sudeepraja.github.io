@@ -23,7 +23,8 @@ $$A=\begin{pmatrix}
      
 We are supposed to find the vector $$x$$ such that $$|b-Ax|$$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
 
-###Using Calculus
+### Using Calculus
+
 The approach is straightforward. Differentiate $$|b-Ax|$$ with $$x$$ and equate it to zero. A good reference for identities regarding differentiation with matrices and vectors is the [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf).
 
 $$
@@ -36,7 +37,7 @@ $$-2A^T(b-Ax)=0\\
 A^TAx=A^Tb\\
 x=(A^TA)^{-1}A^Tb$$
 
-###Using Linear Algebra
+### Using Linear Algebra
 First a detour in geometry. You are given a point $$z$$ and a plane $$P$$ in 3 dimensional space. The point closest to $$z$$ on $$P$$ will be the projection of $$z$$ on $$P$$.  The line joining $$z$$ to this projection would be orthogonal to $$P$$.
 
 Consider the expression $$Ax$$. This can be seen as a subspace spanned by the columns([column space](https://en.wikipedia.org/wiki/Row_and_column_spaces)) of $$A$$. So $$Ax$$ represents a point in the column space of $$A$$.
