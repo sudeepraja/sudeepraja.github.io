@@ -35,6 +35,7 @@ $$
 &=-2A^T(b-Ax)
 \end{align}
 $$
+
 $$-2A^T(b-Ax)=0\\
 A^TAx=A^Tb\\
 x=(A^TA)^{-1}A^Tb$$
