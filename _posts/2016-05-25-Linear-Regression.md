@@ -26,6 +26,8 @@ A=\begin{pmatrix}
 \end{align*}
 $$
 
+We are supposed to find the vector $$x$$ such that $$|b-Ax|$$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
+
 ### Using Calculus
 
 The approach is straightforward. Differentiate $$|b-Ax|$$ with $$x$$ and equate it to zero. A good reference for identities regarding differentiation with matrices and vectors is the [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf).
@@ -41,8 +43,6 @@ $$-2A^T(b-Ax)=0\\
 A^TAx=A^Tb\\
 x=(A^TA)^{-1}A^Tb\\
 $$
-
-We are supposed to find the vector $$x$$ such that $$|b-Ax|$$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
 
 
 ### Using Linear Algebra
