@@ -20,6 +20,7 @@ $$A=\begin{pmatrix}
         b_{n}\\
      \end{pmatrix}
      $$
+     
 We are supposed to find the vector $$x$$ such that $$|b-Ax|$$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
 
 ###Using Calculus
