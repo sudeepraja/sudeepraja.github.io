@@ -6,7 +6,7 @@ published: true
 
 This post will be about simple linear regression. I will first use calculus to derive an expression. Then I derive same expression in a more intuitive way using linear algebra.
 
-You have $$n$$ data point and observation pairs $$(a_1,b_1),(a_2,b_2),..,(a_n,b_n)$$ where $$a_i \in \mathbb{R}^m$$ and  $$b_i \in \mathbb{R}$$.  Let $$A_i \in \mathbb{R}^{m+1}$$ be the vector obtained by prepending $$1$$  to vector $$a_i$$. The matrix $$A$$ has $$A_i$$ as its $$i$$th row and $$b \in \mathbb{R}^n $$ is the column vector consisting of $$b_i$$.  
+You have $$n$$ data point and observation pairs $$(a_1,b_1),(a_2,b_2),..,(a_n,b_n)$$ where $$a_i \in \mathbb{R}^m$$ and  $$b_i \in \mathbb{R}$$.  Let $$A_i \in \mathbb{R}^{m+1}$$ be the vector obtained by prepending 1  to vector $$a_i$$. The matrix $$A$$ has $$A_i$$ as its $$i$$th row and $$b \in \mathbb{R}^n $$ is the column vector consisting of $$b_i$$.  
 
 $$
 \begin{align*}
