@@ -15,14 +15,14 @@ A=\begin{pmatrix}
         1 & a_{21} & a_{22} & \cdots & a_{2m} \\
         \vdots &\vdots & \vdots & \ddots & \vdots \\
         1 & a_{n1} & a_{n2} & \cdots & a_{nm} \\
-     \end{pmatrix}
-     \quad
-     b=\begin{pmatrix}  
+  \end{pmatrix}
+\quad
+b=\begin{pmatrix}  
 		b_{1}\\
         b_{2}\\
         \vdots \\
         b_{n}\\
-     \end{pmatrix}
+  \end{pmatrix}
 \end{align*}
 $$
 
