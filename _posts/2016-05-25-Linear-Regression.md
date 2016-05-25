@@ -13,7 +13,6 @@ $$A=\begin{pmatrix}
         \vdots & \vdots & \vdots & \ddots & \vdots \\
         1 & a_{n1} & a_{n2} & \cdots & a_{nm} \\
      \end{pmatrix}
-     \quad
      b=\begin{pmatrix}  
 		b_{1}\\
         b_{2}\\
