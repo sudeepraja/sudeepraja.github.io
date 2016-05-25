@@ -34,7 +34,7 @@ The approach is straightforward. Differentiate $$ \mid b-Ax \mid $$ with $$x$$ a
 
 $$
 \begin{align*}
-\frac{d($$ \mid b-Ax \mid $$)}{dx} &= \frac{d(b-Ax)^T(b-Ax)}{dx}\\
+\frac{d( \mid b-Ax \mid )}{dx} &= \frac{d(b-Ax)^T(b-Ax)}{dx}\\
 &=-2A^T(b-Ax)
 \end{align*}
 $$
