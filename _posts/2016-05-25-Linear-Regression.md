@@ -6,6 +6,7 @@ published: true
 This post will be about simple linear regression. I will first use calculus to derive an expression. Then I derive same expression in a more intuitive way using linear algebra.
 
 You have $$n$$ data point and observation pairs $$(a_1,b_1),(a_2,b_2),..,(a_n,b_n)$$ where $$a_i \in \mathbb{R}^m$$ and  $$b_i \in \mathbb{R}$$.  Let $$A_i \in \mathbb{R}^{m+1}$$ be the vector obtained by prepending $$1$$  to vector $$a_i$$. The matrix $$A$$ has $$A_i$$ as its $$i$$th row and $$b \in \mathbb{R}^n $$ is the column vector consisting of $$b_i$$.  
+
 $$A=\begin{pmatrix}  
 		1 & a_{11} & a_{12} & \cdots & a_{1m}  \\
         1 & a_{21} & a_{22} & \cdots & a_{2m} \\
@@ -20,6 +21,7 @@ $$A=\begin{pmatrix}
         b_{n}\\
      \end{pmatrix}
      $$
+     
 We are supposed to find the vector $x$ such that $|b-Ax|$ is minimum. What this means is vector $Ax$ is as close as possible to vector $b$.
 
 ###Using Calculus
