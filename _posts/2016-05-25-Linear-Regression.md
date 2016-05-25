@@ -13,7 +13,14 @@ $$A=\begin{pmatrix}
         \vdots & \vdots & \vdots & \ddots & \vdots \\
         1 & a_{n1} & a_{n2} & \cdots & a_{nm} \\
      \end{pmatrix}
-$$
+     \quad
+     b=\begin{pmatrix}  
+		b_{1}\\
+        b_{2}\\
+        \vdots \\
+        b_{n}\\
+     \end{pmatrix}
+     $$
      
 We are supposed to find the vector $x$ such that $|b-Ax|$ is minimum. What this means is vector $Ax$ is as close as possible to vector $b$.
 
