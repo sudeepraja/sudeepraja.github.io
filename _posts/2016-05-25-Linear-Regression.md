@@ -49,7 +49,7 @@ $$
 
 First a detour in geometry. You are given a point $$z$$ and a plane $$P$$ in 3 dimensional space. The point closest to $$z$$ on $$P$$ will be the projection of $$z$$ on $$P$$.  The line joining $$z$$ to this projection would be orthogonal to $$P$$.
 <p align="center">
-![]({{site.baseurl}}/images/plane_point.png)
+<img src="/images/plane_point.png">
 </p>
 Consider the expression $$Ax$$. This can be seen as a subspace spanned by the columns([column space](https://en.wikipedia.org/wiki/Row_and_column_spaces)) of $$A$$. So $$Ax$$ represents a point in the column space of $$A$$.
 
