@@ -31,15 +31,19 @@ $$
 The approach is straightforward. Differentiate $$|b-Ax|$$ with $$x$$ and equate it to zero. A good reference for identities regarding differentiation with matrices and vectors is the [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf).
 
 $$
-\begin{align}
+\begin{align*}
 \frac{d(|b-Ax|)}{dx} &= \frac{d(b-Ax)^T(b-Ax)}{dx}\\
 &=-2A^T(b-Ax)
-\end{align}
+\end{align*}
 $$
 
 $$-2A^T(b-Ax)=0\\
 A^TAx=A^Tb\\
-x=(A^TA)^{-1}A^Tb$$
+x=(A^TA)^{-1}A^Tb\\
+$$
+
+We are supposed to find the vector $$x$$ such that $$|b-Ax|$$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
+
 
 ### Using Linear Algebra
 
@@ -84,7 +88,8 @@ $$Ax=\begin{pmatrix}
  
 In the linear regression problem, we want to find $$x$$ such that $$|b-Ax|$$ is minimized. If $$b$$ lies in the column space of $$A$$, then through Gaussian elimination, we can find $$x$$ such that $$Ax=b$$ and $$|b-Ax|=0$$. But in general, $$b$$ may be anywhere in the $$n$$ dimensional space. So the best thing we can do is find the point $$Ax$$ in the column space of $$A$$ which is closest to $$b$$. This point will be the [projection](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projections-onto-subspaces/MIT18_06SCF11_Ses2.2sum.pdf) of $$b$$ onto column space of $$A$$. So the line $$(Ax-b)$$ will be orthogonal to the column space of $$A$$ (will belong to the [Left null space](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/orthogonal-vectors-and-subspaces/MIT18_06SCF11_Ses2.1sum.pdf) of $$A$$):
 
-$$A^T(Ax - b) = 0\\
+$$
+A^T(Ax - b) = 0\\
 A^TAx = A^Tb\\
-x = (A^TA)^{-1}A^Tb
+x = (A^TA)^{-1}A^Tb\\
 $$
