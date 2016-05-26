@@ -39,6 +39,8 @@ $$
 \end{align*}
 $$
 
+$$x^TA^b$$ and $$b^TAx$$ are scalars, so $$x^TA^b = b^TAx$$
+
 $$
 \begin{align*}
 \frac{d( \mid b-Ax \mid )}{dx} &= \frac{d(b-Ax)^T(b-Ax)}{dx}\\
