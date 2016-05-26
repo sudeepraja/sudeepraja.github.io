@@ -50,6 +50,10 @@ $$
 Differentiating this with x. 
 
 $$
+\frac{d( b^Tb - 2x^TA^Tb + x^TA^TAx)}{dx}
+$$
+
+$$
 \begin{align*}
 \frac{d( \mid b-Ax \mid )}{dx} &=-2A^T(b-Ax)
 \end{align*}
