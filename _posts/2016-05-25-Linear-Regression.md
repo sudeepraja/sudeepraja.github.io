@@ -35,15 +35,15 @@ The approach is straightforward. Differentiate $$ \mid b-Ax \mid $$ with $$x$$ a
 $$
 \begin{align*}
  \mid b-Ax \mid &= (b-Ax)^T(b-Ax)\\
- &= b^Tb - x^TA^b - b^TAx + x^TA^TAx
+ &= b^Tb - x^TA^Tb - b^TAx + x^TA^TAx
 \end{align*}
 $$
 
-$$x^TA^b$$ and $$b^TAx$$ are scalars, so $$x^TA^b = b^TAx$$
+$$x^TA^Tb$$ and $$b^TAx$$ are scalars, so $$x^TA^Tb = b^TAx$$
 
 $$
 \begin{align*}
- \mid b-Ax \mid &= b^Tb - 2x^TA^b + x^TA^TAx
+ \mid b-Ax \mid &= b^Tb - 2x^TA^Tb + x^TA^TAx
 \end{align*}
 $$
 
