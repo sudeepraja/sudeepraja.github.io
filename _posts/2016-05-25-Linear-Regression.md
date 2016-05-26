@@ -47,7 +47,7 @@ $$
 \end{align*}
 $$
 
-Differentiating this with x. 
+Differentiating this with $$x$$. 
 
 $$
 \frac{d( b^Tb - 2x^TA^Tb + x^TA^TAx)}{dx} = -2 \frac{d(x^TA^Tb)}{dx} + \frac{d(x^TA^TAx)}{dx}
