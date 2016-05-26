@@ -30,11 +30,11 @@ We are supposed to find the vector $$x$$ such that $$ \| b-Ax \|^2 $$ is minimum
 
 ### Using Calculus
 
-The approach is straightforward. Differentiate $$ \mid b-Ax \mid $$ with $$x$$ and equate it to zero. A good reference for identities regarding differentiation with matrices and vectors is the [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf).
+The approach is straightforward. Differentiate $$ \| b-Ax \|^2 $$ with $$x$$ and equate it to zero. A good reference for identities regarding differentiation with matrices and vectors is the [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf).
 
 $$
 \begin{align*}
- \mid b-Ax \mid &= (b-Ax)^T(b-Ax)\\
+ \| b-Ax \|^2 &= (b-Ax)^T(b-Ax)\\
  &= b^Tb - x^TA^Tb - b^TAx + x^TA^TAx
 \end{align*}
 $$
@@ -43,7 +43,7 @@ $$x^TA^Tb$$ and $$b^TAx$$ are scalars, so $$x^TA^Tb = b^TAx$$
 
 $$
 \begin{align*}
- \mid b-Ax \mid &= b^Tb - 2x^TA^Tb + x^TA^TAx
+ \| b-Ax \|^2 &= b^Tb - 2x^TA^Tb + x^TA^TAx
 \end{align*}
 $$
 
@@ -108,7 +108,7 @@ $$Ax=\begin{pmatrix}
      \end{pmatrix} 
  $$
  
-In the linear regression problem, we want to find $$x$$ such that $$ \mid b-Ax \mid $$ is minimized. If $$b$$ lies in the column space of $$A$$, then through Gaussian elimination, we can find $$x$$ such that $$Ax=b$$ and $$ \mid b-Ax \mid =0$$. But in general, $$b$$ may be anywhere in the $$n$$ dimensional space. So the best thing we can do is find the point $$Ax$$ in the column space of $$A$$ which is closest to $$b$$. This point will be the [projection](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projections-onto-subspaces/MIT18_06SCF11_Ses2.2sum.pdf) of $$b$$ onto column space of $$A$$. So the line $$(Ax-b)$$ will be orthogonal to the column space of $$A$$ (will belong to the [Left null space](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/orthogonal-vectors-and-subspaces/MIT18_06SCF11_Ses2.1sum.pdf) of $$A$$):
+In the linear regression problem, we want to find $$x$$ such that $$ \| b-Ax \|^2 $$ is minimized. If $$b$$ lies in the column space of $$A$$, then through Gaussian elimination, we can find $$x$$ such that $$Ax=b$$ and $$ \| b-Ax \|^2 =0$$. But in general, $$b$$ may be anywhere in the $$n$$ dimensional space. So the best thing we can do is find the point $$Ax$$ in the column space of $$A$$ which is closest to $$b$$. This point will be the [projection](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/projections-onto-subspaces/MIT18_06SCF11_Ses2.2sum.pdf) of $$b$$ onto column space of $$A$$. So the line $$(Ax-b)$$ will be orthogonal to the column space of $$A$$ (will belong to the [Left null space](http://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/least-squares-determinants-and-eigenvalues/orthogonal-vectors-and-subspaces/MIT18_06SCF11_Ses2.1sum.pdf) of $$A$$):
 
 $$
 A^T(Ax - b) = 0\\
