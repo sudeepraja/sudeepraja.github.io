@@ -34,6 +34,13 @@ The approach is straightforward. Differentiate $$ \mid b-Ax \mid $$ with $$x$$ a
 
 $$
 \begin{align*}
+ \mid b-Ax \mid &= (b-Ax)^T(b-Ax)\\
+ &= b^Tb - x^TA^b - b^TAx + x^TA^TAx
+\end{align*}
+$$
+
+$$
+\begin{align*}
 \frac{d( \mid b-Ax \mid )}{dx} &= \frac{d(b-Ax)^T(b-Ax)}{dx}\\
 &=-2A^T(b-Ax)
 \end{align*}
