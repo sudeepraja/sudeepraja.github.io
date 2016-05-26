@@ -57,13 +57,9 @@ Since $$\frac{d(x^Tc)}{dx} = c$$ and $$\frac{d(x^TCx)}{dx} = (C+C^T)x$$
 
 $$ -2 \frac{d(x^TA^Tb)}{dx} + \frac{d(x^TA^TAx)}{dx} = -2A^Tb + 2A^TAx
 
-$$
-\begin{align*}
-\frac{d( \mid b-Ax \mid )}{dx} &=-2A^T(b-Ax)
-\end{align*}
-$$
+Equating this to 0.
 
-$$-2A^T(b-Ax)=0\\
+$$
 A^TAx=A^Tb\\
 x=(A^TA)^{-1}A^Tb\\
 $$
