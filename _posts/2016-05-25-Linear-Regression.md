@@ -115,3 +115,5 @@ A^T(Ax - b) = 0\\
 A^TAx = A^Tb\\
 x = (A^TA)^{-1}A^Tb\\
 $$
+
+Although we have an exact expression for finding the optimum $x$ for linear regression, for large datasets, evaluating this expression is inefficient. In practise, gradient descent methods are used. I will write about gradient descent in one of the posts to come.
