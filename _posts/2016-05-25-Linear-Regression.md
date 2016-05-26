@@ -53,6 +53,8 @@ $$
 \frac{d( b^Tb - 2x^TA^Tb + x^TA^TAx)}{dx} = -2 \frac{d(x^TA^Tb)}{dx} + \frac{d(x^TA^TAx)}{dx}
 $$
 
+$$\frac{d(x^Ta)}{dx} = a$$ and $$\frac{d(x^TAx)}{dx} = (A+A^T)x$$
+
 $$
 \begin{align*}
 \frac{d( \mid b-Ax \mid )}{dx} &=-2A^T(b-Ax)
