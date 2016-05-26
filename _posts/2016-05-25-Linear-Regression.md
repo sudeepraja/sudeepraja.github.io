@@ -26,7 +26,7 @@ b=\begin{pmatrix}
 \end{align*}
 $$
 
-We are supposed to find the vector $$x$$ such that $$ \| b-Ax \| $$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
+We are supposed to find the vector $$x$$ such that $$ \| b-Ax \|^2 $$ is minimum. What this means is vector $$Ax$$ is as close as possible to vector $$b$$.
 
 ### Using Calculus
 
