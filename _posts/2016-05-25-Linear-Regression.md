@@ -43,6 +43,13 @@ $$x^TA^b$$ and $$b^TAx$$ are scalars, so $$x^TA^b = b^TAx$$
 
 $$
 \begin{align*}
+ \mid b-Ax \mid &= b^Tb - 2x^TA^b + x^TA^TAx
+ 
+\end{align*}
+$$
+
+$$
+\begin{align*}
 \frac{d( \mid b-Ax \mid )}{dx} &= \frac{d(b-Ax)^T(b-Ax)}{dx}\\
 &=-2A^T(b-Ax)
 \end{align*}
