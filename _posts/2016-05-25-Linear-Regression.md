@@ -51,7 +51,7 @@ Differentiating this with x.
 
 $$
 \begin{align*}
-\frac{d( \mid b-Ax \mid )}{dx} &= &=-2A^T(b-Ax)
+\frac{d( \mid b-Ax \mid )}{dx} &=-2A^T(b-Ax)
 \end{align*}
 $$
 
