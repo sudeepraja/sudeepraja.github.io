@@ -44,7 +44,6 @@ $$x^TA^b$$ and $$b^TAx$$ are scalars, so $$x^TA^b = b^TAx$$
 $$
 \begin{align*}
  \mid b-Ax \mid &= b^Tb - 2x^TA^b + x^TA^TAx
- 
 \end{align*}
 $$
 
