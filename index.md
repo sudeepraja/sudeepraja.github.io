@@ -9,7 +9,3 @@ My name is Sudeep Raja. I am a **[Budding Scientist](http://www.xrci.xerox.com/x
 I aspire to become a researcher working in Computer Science. I am interested in the theoretical aspects of  Reinforcement Learning, Machine Learning, Deep Learning, Optimization and Approximation and Randomized Algorithms. At Xerox, I work on Exploration Strategies and Non Parametric Function Approximation for Reinforcement Learning. I have worked on application of Deep Neural Networks for problems on Computer Vision, specifically for Activity recognition in videos. I have briefly worked on the P-Median problem in application to Ambulance facility location. 
 
 I blog about curious things I encounter while reading books or while on the internet. These are things mostly related to the topics mentioned above and some mathematics as well.
-
-### Contact me
-
-[sudeepraja94@gmail.com](mailto:sudeepraja94@gmail.com)
