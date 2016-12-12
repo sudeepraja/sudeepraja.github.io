@@ -7,9 +7,9 @@ project: true
 
 This was a project I did in my junior year, with my friends [Palash Mittal](https://www.linkedin.com/in/palashmittal) and [Aakash Anuj](https://www.linkedin.com/in/aakash-anuj-4870b345). This was for the Xerox Research Innovation Challenege competetion conducted as a part of XRCI Open 2015.
 
-After barinstorming possible innovations in the domain of healthcare and transportation, we decided to work on the problem of Ambulance Facility Location.
+After barinstorming possible innovations in the domain of healthcare and transportation, we decided to work on the problem of Ambulance Facility Location. The goal was to reduce the response time of ambulances by positioning them at stretegic locations in a city.
 
-
+## Data Collection
 
 Here is the presentation we gave at XRCI 2015:
 
