@@ -17,7 +17,7 @@ We targeted the city of Bangalore as 1)XRCI is located here and 2)It is infamous
 
 Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the P-median version of this problem. What it basically says is:
 
-You are given a graph of $$I$$ nodes, indexed by $$i$$. Each node has a demand value $a_i$.
+You are given a graph of $$I$$ nodes, indexed by $$i$$. Each node has a demand value $a_i$. $$d_{ij}$$ is the distance between node $i$ and $j$.
 
 Here is the presentation we gave at XRCI 2015:
 
