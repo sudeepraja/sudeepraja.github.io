@@ -2,6 +2,7 @@
 layout: post
 title: Ratio of Heads and Tails
 published: true
+project: true
 ---
 
 This is my first blog post. In this blog, I would be writing about Algorithms, Machine Learning, Optimization and Mathematics. I wanted to begin with something simple, so this post would be about a problem from Probability.
