@@ -15,9 +15,9 @@ We targeted the city of Bangalore as 1)XRCI is located here and 2)It is infamous
 
 ## Modelling - Facility Location on Roads
 
-Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the P-median version of this problem. What it basically says is:
+Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the p-median version of this problem. What it basically says is:
 
-You are given a graph of $$I$$ nodes, indexed by $$i$$. Each node has a demand value $$a_i$$. $$d_{ij}$$ is the distance between node $i$ and $j$.
+You are given a graph of $$I$$ nodes, indexed by $$i$$. Each node has a demand value $$a_i$$. $$d_{ij}$$ is the distance between node $$i$$ and $$j$$. You have 
 
 Here is the presentation we gave at XRCI 2015:
 
