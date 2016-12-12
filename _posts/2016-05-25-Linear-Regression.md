@@ -2,6 +2,7 @@
 layout: post
 title: Linear Regression with and without Calculus
 published: true
+project: false
 ---
 
 This post will be about simple linear regression. I will first use calculus to derive an expression. Then I derive same expression in a more intuitive way using linear algebra.

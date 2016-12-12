@@ -2,6 +2,7 @@
 layout: post
 title: Randomized Binary Search Trees
 published: true
+project: false
 ---
 This post will be about using Randomization for constructing [Binary Search Trees (BST)](https://en.wikipedia.org/wiki/Binary_search_tree) whose worst case height must be $$O(\log n)$$. This post is inspired from a question I was asked in my B.Tech Grand Viva.
 

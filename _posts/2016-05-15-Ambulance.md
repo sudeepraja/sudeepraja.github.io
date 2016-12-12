@@ -2,7 +2,7 @@
 layout: post
 title: Ratio of Heads and Tails
 published: true
-project: false
+project: true
 ---
 
 This is my first blog post. In this blog, I would be writing about Algorithms, Machine Learning, Optimization and Mathematics. I wanted to begin with something simple, so this post would be about a problem from Probability.
@@ -68,3 +68,4 @@ The number of TAILS would be: $$\frac{n}{2} + \frac{n}{4} + \frac{n}{8} + ... = 
 The ratio will be $$ 1:1 $$.
 
 Now to take this question further, you use $$n$$ fair dice and stop rolling when you get an even number. What would be the expected ratio of the sum of even numbers to the sum of odd numbers obtained ?
+
