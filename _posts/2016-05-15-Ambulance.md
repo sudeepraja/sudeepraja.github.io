@@ -19,7 +19,7 @@ Facility Location is a problem commonly studied in Computational Geometry and Op
 
 You are given a directed graph with vertex set $$V$$ and edge set $$E$$. Each vertex has a demand value $$a_i$$. The weight of the edge between two vertices is given by $$w_{ij}$$, which represents the cost of travelling from $$i$$ to $$j.$$ The objective of the $$p$$-median problem is to find the set of vertices of size $$p$$, called facilities such that the demand weighted total cost between each vertex and its nearst facility is minimized.
 
-We assume that each vertex in this graph is reachable from every other vertex. Let $$d_{ij}$$ be the cost of travelling from $$i$$ to $$j$$ on the minimum cost path. $$d_{ij}$$s can be calculated by running the Floyd-Warshall Algorithm on the graph. 
+We assume that each vertex in this graph is reachable from every other vertex. Let $$d_{ij}$$ be the cost of travelling from $$i$$ to $$j$$ on the minimum cost path. These $$d_{ij}$$s can be calculated by running the Floyd-Warshall Algorithm on the graph. 
 
 Define the indicator variables $$X_{i}$$ and $$Y_{ij}$$ as:
 
