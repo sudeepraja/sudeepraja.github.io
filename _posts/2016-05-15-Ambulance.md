@@ -32,7 +32,7 @@ $$
 $$
 Y_{ij}= 
 \begin{cases}
-    1 & \text{if demand at node } i \text{ is addigned to facility }j\\
+    1 & \text{if demand at node } i \text{ is assigned to facility }j\\
     0              & \text{otherwise}
 \end{cases}
 $$
