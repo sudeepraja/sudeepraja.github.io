@@ -47,7 +47,7 @@ $$
 \text{minimize}  & \sum_{i}\sum_{j}a_i d_{ij} Y_{ij}\\
 \text{subject to}& \sum_{j}Y_{ij} = 1  & \forall i \in V  & \text{Each vertex is assigned to exactly 1 facility}\\
 				 & \sum_{i}X_{i} = p & & \text{There can be exactly } p \text{ facilities}\\
-                 & Y_{ij} \le X_j & \forall i \in V,\forall j \in V & \text{Vertex } i \text{ can be assigned to } j \text{,only if }j \text{ is a facility}\\
+                 & Y_{ij} \le X_j & \forall i \in V,\forall j \in V & \text{Vertex } i \text{ can be assigned to } j \text{, only if }j \text{ is a facility}\\
                  & Y_{ij} \in \{0,1\} & \forall i \in V,\forall j \in V \\
                  & X_i \in \{0,1\} & \forall i \in V
 \end{array}
