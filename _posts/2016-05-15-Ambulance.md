@@ -15,7 +15,7 @@ We targeted the city of Bangalore as 1)XRCI is located here and 2)It is infamous
 
 ## Modelling - Facility Location on Roads
 
-Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the $$p$$-median version of this problem. 
+Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the $$p$$-Median version of this problem. 
 
 You are given a directed graph with vertex set $V$ and edge set $E$. Each vertex has a demand value $$a_i$$. The weight of the edge between two vertices is given by $$w_{ij}$$, which represents the cost of travelling from $$i$$ to $$j$$. The objective of the $$p$$-median problem is to find the set of vertices of size $$p$$, called facilities such that the demand weighted total cost between each vertex and its nearst facility is minimized.
 
@@ -54,6 +54,8 @@ $$
 $$
 
 We created a graph on the road network of Bangalore with various locations of the city as vertices. The demand of a vertex is the number of accidents which occur in that area. The cost of travelling between two vertices is the time it takes to reach one vertex from the other, following the shortest time route. All that is left to be done is feed the variables into a solver and get the Xs and Ys. We used this software: [FLP Spreadsheet Solver](http://verolog.deis.unibo.it/flp-spreadsheet-solver).
+
+The p-Median problem is NP-hard on general network. Although it can be solved exactly using a Branch and Bound or a Branch and Cut method, this software uses a Tabu search heuristc to solve the p-Median problem. 
 
 Here is the presentation we gave at XRCI 2015:
 <p align="center"><iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/yh8vzwj0mmav/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5KzdQNnNzTUhxWVhBZlc4dXRUWjQrRXhnPT0&amp;landing_sign=we7s1YuLpdjkKWx0fe-NQplgR8ibWKoZoZOdvaiKfds"></iframe></p>
