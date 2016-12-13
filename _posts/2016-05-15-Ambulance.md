@@ -21,6 +21,13 @@ You are given a directed graph with vertex set $V$ and edge set $E$. The vertice
 
 We assume that each vertex in this graph is reachable from every other vertex. Let $$d_{ij}$$ be the cost of travelling from $$i$$ to $$j$$ on the minimum cost path. $$d_{ij}$$s can be calculated by running the Floyd-Warshall Algorithm on the graph. 
 
+$$
+X_{i}= 
+\begin{cases}
+    1, & \text{if } i \text{ is a facility }\\
+    0,              & \text{otherwise}
+\end{cases}
+$$
 
 $$
 Y_{ij}= 
