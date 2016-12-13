@@ -50,7 +50,6 @@ $$
                  & Y_{ij} \le X_j & \forall i \in V,\forall j \in V \\
                  & Y_{ij} \in \{0,1\} & \forall i \in V,\forall j \in V \\
                  & X_i \in \{0,1\} & \forall i \in V
- 
 \end{array}
 $$
 
