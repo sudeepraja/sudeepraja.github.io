@@ -17,7 +17,7 @@ We targeted the city of Bangalore as 1)XRCI is located here and 2)It is infamous
 
 Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the $$p$$-Median version of this problem. 
 
-You are given a directed graph with vertex set $V$ and edge set $E$. Each vertex has a demand value $$a_i$$. The weight of the edge between two vertices is given by $$w_{ij}$$, which represents the cost of travelling from $$i$$ to $$j.$$ The objective of the $$p$$-median problem is to find the set of vertices of size $$p$$, called facilities such that the demand weighted total cost between each vertex and its nearst facility is minimized.
+You are given a directed graph with vertex set $$V$$ and edge set $$E$$. Each vertex has a demand value $$a_i$$. The weight of the edge between two vertices is given by $$w_{ij}$$, which represents the cost of travelling from $$i$$ to $$j.$$ The objective of the $$p$$-median problem is to find the set of vertices of size $$p$$, called facilities such that the demand weighted total cost between each vertex and its nearst facility is minimized.
 
 We assume that each vertex in this graph is reachable from every other vertex. Let $$d_{ij}$$ be the cost of travelling from $$i$$ to $$j$$ on the minimum cost path. $$d_{ij}$$s can be calculated by running the Floyd-Warshall Algorithm on the graph. 
 
