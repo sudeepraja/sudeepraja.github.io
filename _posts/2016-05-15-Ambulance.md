@@ -41,6 +41,7 @@ $$
 
 
 This problem can be stated as an Integer Linear Program as follows:
+
 $$
 \begin{array}{ll@{}ll}
 \text{minimize}  & \displaystyle\sum\limits_{j=1}^{m} w_{j}&x_{j} &\\
