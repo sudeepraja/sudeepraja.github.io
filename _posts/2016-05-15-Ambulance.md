@@ -45,8 +45,8 @@ This problem can be stated as an Integer Linear Program as follows:
 $$
 \begin{array}{ll@{}ll}
 \text{minimize}  & \sum_{i}\sum_{j}a_i d_{ij} Y_{ij}\\
-\text{subject to}& \sum_{j}Y_{ij} = 1  & \forall i \in V \\
-				 & \sum_{i}X_{i} = p
+\text{subject to}& \sum_{j}Y_{ij} = 1  & \forall i \in V \tag{3} \\
+				 & \sum_{i}X_{i} = p \tag{2}
  
 \end{array}
 $$
