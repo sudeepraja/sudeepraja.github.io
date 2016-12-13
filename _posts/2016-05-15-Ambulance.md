@@ -29,7 +29,9 @@ X_{i}=
     1 & \text{if } i \text{ is a facility }\\
     0              & \text{otherwise}
 \end{cases}
+$$
 
+$$
 Y_{ij}= 
 \begin{cases}
     1 & \text{if demand at node } i \text{ is assigned to facility }j\\
