@@ -40,7 +40,7 @@ Y_{ij}=
 $$
 
 
-Here is the presentation we gave at XRCI 2015:
+This problem can be stated as an Integer Linear Program as follows:
 $$
 \begin{array}{ll@{}ll}
 \text{minimize}  & \displaystyle\sum\limits_{j=1}^{m} w_{j}&x_{j} &\\
@@ -49,4 +49,5 @@ $$
 \end{array}
 $$
 
+Here is the presentation we gave at XRCI 2015:
 <p align="center"><iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/yh8vzwj0mmav/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5KzdQNnNzTUhxWVhBZlc4dXRUWjQrRXhnPT0&amp;landing_sign=we7s1YuLpdjkKWx0fe-NQplgR8ibWKoZoZOdvaiKfds"></iframe></p>
