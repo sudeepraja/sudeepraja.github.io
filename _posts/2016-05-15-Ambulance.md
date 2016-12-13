@@ -57,7 +57,7 @@ We created a graph on the road network of Bangalore with various locations of th
 
 The p-Median problem is NP-hard on general network. Although it can be solved exactly using a Branch and Bound or a Branch and Cut method, it may take a very long time to solve even small instances. This software uses a Tabu search heuristc and provides a good enough sub-optimal solution.  
 
-Here is the presentation we gave at XRCI 2015:
+We went on to win the Xerox Research Innovation Challenge that year. Here is the presentation we gave at XRCI 2015:
 <p align="center"><iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" width="550" height="400" src="https://prezi.com/embed/yh8vzwj0mmav/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI5KzdQNnNzTUhxWVhBZlc4dXRUWjQrRXhnPT0&amp;landing_sign=we7s1YuLpdjkKWx0fe-NQplgR8ibWKoZoZOdvaiKfds"></iframe></p>
 
-We went on to win the Xerox Research Innovation Challenge that year.
+
