@@ -21,6 +21,8 @@ You are given a directed graph with vertex set $V$ and edge set $E$. The vertice
 
 We assume that each vertex in this graph is reachable from every other vertex. Let $$d_{ij}$$ be the cost of travelling from $$i$$ to $$j$$ on the minimum cost path. $$d_{ij}$$s can be calculated by running the Floyd-Warshall Algorithm on the graph. 
 
+Define the indicator variables $$X_{i}$$ and $$Y_{ij}$$ as:
+
 $$
 X_{i}= 
 \begin{cases}
