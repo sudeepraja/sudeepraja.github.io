@@ -45,7 +45,7 @@ This problem can be stated as an Integer Linear Program as follows:
 $$
 \begin{array}{ll@{}ll}
 \text{minimize}  & \sum_{i}\sum_{j}a_i d_{ij} Y_{ij}\\
-\text{subject to}& \displaystyle\sum\limits_{j:e_{i} \in S_{j}}   &x_{j} \geq 1,  &i=1 ,..., n\\
+\text{subject to}& \sum_{}
                  &                                                &x_{j} \in \{0,1\}, &j=1 ,..., m
 \end{array}
 $$
