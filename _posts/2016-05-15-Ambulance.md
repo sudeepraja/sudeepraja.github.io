@@ -40,7 +40,7 @@ Y_{ij}=
 $$
 
 
-This problem can be stated as an Integer Linear Program as follows:
+This problem can be stated as a $0-1$ Linear Program as follows:
 
 $$
 \begin{array}{ll@{}ll}
@@ -48,7 +48,7 @@ $$
 \text{subject to}& \sum_{j}Y_{ij} = 1  & \forall i \in V  \\
 				 & \sum_{i}X_{i} = p \\
                  & Y_{ij} \le X_j & \forall i \in V,\forall j \in V \\
-                 &
+                 & 
  
 \end{array}
 $$
