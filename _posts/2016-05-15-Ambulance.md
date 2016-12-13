@@ -40,7 +40,7 @@ Y_{ij}=
 $$
 
 
-This problem can be stated as a Binary Integer Programme as follows:
+This problem can be stated as a Binary Integer Program as follows:
 
 $$
 \begin{array}{ll@{}ll}
