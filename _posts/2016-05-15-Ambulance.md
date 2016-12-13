@@ -40,7 +40,7 @@ Y_{ij}=
 $$
 
 
-This problem can be stated as a $0-1$ Linear Program as follows:
+This problem can be stated as a $$0-1$$ Linear Program as follows:
 
 $$
 \begin{array}{ll@{}ll}
