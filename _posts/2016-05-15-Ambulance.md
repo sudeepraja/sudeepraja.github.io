@@ -45,7 +45,7 @@ This problem can be stated as a $0-1$ Linear Program as follows:
 $$
 \begin{array}{ll@{}ll}
 \text{minimize}  & \sum_{i}\sum_{j}a_i d_{ij} Y_{ij}\\
-\text{subject to}& \sum_{j}Y_{ij} = 1  & \forall i \in V  \\
+\text{subject to}& \sum_{j}Y_{ij} = 1  & \forall i \in V  & \text{ Each vertex is assigned to a single facility }\\
 				 & \sum_{i}X_{i} = p \\
                  & Y_{ij} \le X_j & \forall i \in V,\forall j \in V \\
                  & Y_{ij} \in \{0,1\} & \forall i \in V,\forall j \in V \\
