@@ -17,7 +17,7 @@ We targeted the city of Bangalore as 1)XRCI is located here and 2)It is infamous
 
 Facility Location is a problem commonly studied in Computational Geometry and Operations Research. There exits many varients of this problem. We used the $$p$$-median version of this problem. 
 
-You are given a directed graph with vertex set $V$ and edge set $E$. The vertices are indexed using $$i$$. Each vertex has a demand value $$a_i$$. The weight of the edge between two vertices is given by $$w_{ij}$$, which represents the cost of travelling from $$i$$ to $$j$$. The objective of the $$p$$-median problem is to find the set of vertices of size $$p$$, called facilities such that the demand weighted total cost between each vertex and its nearst facility is minimized.
+You are given a directed graph with vertex set $V$ and edge set $E$. Each vertex has a demand value $$a_i$$. The weight of the edge between two vertices is given by $$w_{ij}$$, which represents the cost of travelling from $$i$$ to $$j$$. The objective of the $$p$$-median problem is to find the set of vertices of size $$p$$, called facilities such that the demand weighted total cost between each vertex and its nearst facility is minimized.
 
 We assume that each vertex in this graph is reachable from every other vertex. Let $$d_{ij}$$ be the cost of travelling from $$i$$ to $$j$$ on the minimum cost path. $$d_{ij}$$s can be calculated by running the Floyd-Warshall Algorithm on the graph. 
 
@@ -44,7 +44,7 @@ This problem can be stated as an Integer Linear Program as follows:
 
 $$
 \begin{array}{ll@{}ll}
-\text{minimize}  & \displaystyle\sum\limits_{j=1}^{m} w_{j}&x_{j} &\\
+\text{minimize}  & \sum_{i}\sum_{j}a_i d_{ij} Y_{ij}\\
 \text{subject to}& \displaystyle\sum\limits_{j:e_{i} \in S_{j}}   &x_{j} \geq 1,  &i=1 ,..., n\\
                  &                                                &x_{j} \in \{0,1\}, &j=1 ,..., m
 \end{array}
