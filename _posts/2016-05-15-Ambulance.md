@@ -24,16 +24,16 @@ We assume that each vertex in this graph is reachable from every other vertex. L
 $$
 X_{i}= 
 \begin{cases}
-    1, & \text{if } i \text{ is a facility }\\
-    0,              & \text{otherwise}
+    1 & \text{if } i \text{ is a facility }\\
+    0              & \text{otherwise}
 \end{cases}
 $$
 
 $$
 Y_{ij}= 
 \begin{cases}
-    1, & \text{if demand at node } i \text{ is addigned to facility }j\\
-    0,              & \text{otherwise}
+    1 & \text{if demand at node } i \text{ is addigned to facility }j\\
+    0              & \text{otherwise}
 \end{cases}
 $$
 
