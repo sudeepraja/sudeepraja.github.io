@@ -12,3 +12,7 @@ I am interested in Reinforcement Learning, Bandit Optimization, Decision-Making 
 I blog about curious things I encounter while reading books or while on the internet. These are things mostly related to the topics mentioned above and some mathematics as well.
 
 ---
+
+#Publications
+
+
