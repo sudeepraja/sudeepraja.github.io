@@ -16,3 +16,4 @@ I blog about curious things I encounter while reading books or while on the inte
 # Publications
 
 - Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />Extended Abstract at AAMAS 2017.
+- Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />Extended Abstract at AAMAS 2017.
