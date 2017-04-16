@@ -10,7 +10,7 @@ You can find my CV here :[CV](http://sudeepraja.github.io/CV.pdf)
 I am interested in Reinforcement Learning, Multi-Armed Bandits, Machine Learning Theory and Optimization.
 
 
-At Conduent, I work on Matrix Completion problems and Algorithms for efficient and fair Ridesharing. At Xerox, I have worked on Exploration Strategies and Non Parametric Function Approximation for Reinforcement Learning. I have worked on application of Deep Neural Networks for problems on Computer Vision, specifically for Activity recognition in videos. I have briefly worked on the P-Median problem in application to Ambulance facility location. 
+At Conduent, I work on Matrix Completion problems and Algorithms for efficient and fair Ridesharing. At Xerox, I have worked on Exploration Strategies and Non Parametric Function Approximation for Reinforcement Learning. Previosly, I worked on application of Deep Neural Networks for problems on Computer Vision, specifically for Activity recognition in videos. I have briefly worked on the P-Median problem in application to Ambulance facility location. 
 
 I blog about curious things I encounter while reading books or while on the internet. These are things mostly related to the topics mentioned above and some mathematics as well.
 
