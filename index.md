@@ -17,8 +17,8 @@ I blog about curious things I encounter while reading books or while on the inte
 
 # Publications
 
-- Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017.
-- Efficient Reinforcement Learning via Initial Pure Exploration <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
+- [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](http://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](http://sudeepraja.github.io/papers/PEPSRL_short.pdf).
+- [Efficient Reinforcement Learning via Initial Pure Exploration](http://sudeepraja.github.io/papers/rldm.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
 
 ---
 Some old projects I did in my undergrad: [Projects]({{ site.baseurl }}/projects)
