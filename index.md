@@ -17,10 +17,20 @@ I blog about curious things I encounter while reading books or while on the inte
 
 # Publications
 
-| Link | Title |
-| ------ | ----------- |
-| data   | Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. |
-| engine | Efficient Reinforcement Learning via Initial Pure Exploration <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017. |
+<table>
+  <tr>
+    <td>data</td>
+    <td>path to data files to supply the data that will be passed into templates.</td>
+  </tr>
+  <tr>
+    <td>engine</td>
+    <td>engine to be used for processing templates. Handlebars is the default.</td>
+  </tr>
+  <tr>
+    <td>ext</td>
+    <td>extension to be used for dest files.</td>
+  </tr>
+</table>
 
 ---
 Some old projects I did in my undergrad: [Projects]({{ site.baseurl }}/projects)
