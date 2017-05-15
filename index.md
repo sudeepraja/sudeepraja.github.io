@@ -20,11 +20,11 @@ I blog about curious things I encounter while reading books or while on the inte
 <table>
   <tr>
     <td>data</td>
-    <td>path to data files to supply the data that will be passed into templates.</td>
+    <td>Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017.</td>
   </tr>
   <tr>
     <td>engine</td>
-    <td>engine to be used for processing templates. Handlebars is the default.</td>
+    <td>Efficient Reinforcement Learning via Initial Pure Exploration <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.</td>
   </tr>
   <tr>
     <td>ext</td>
