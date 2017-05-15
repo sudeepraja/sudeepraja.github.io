@@ -17,16 +17,10 @@ I blog about curious things I encounter while reading books or while on the inte
 
 # Publications
 
-<table>
-  <tr>
-    <td>data</td>
-    <td>Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017.</td>
-  </tr>
-  <tr>
-    <td>engine</td>
-    <td>Efficient Reinforcement Learning via Initial Pure Exploration <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.</td>
-  </tr>
-</table>
+| Link | Title |
+| ------ | ----------- |
+| data   | Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. |
+| engine | Efficient Reinforcement Learning via Initial Pure Exploration <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017. |
 
 ---
 Some old projects I did in my undergrad: [Projects]({{ site.baseurl }}/projects)
