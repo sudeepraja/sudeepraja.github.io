@@ -26,10 +26,6 @@ I blog about curious things I encounter while reading books or while on the inte
     <td>engine</td>
     <td>Efficient Reinforcement Learning via Initial Pure Exploration <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.</td>
   </tr>
-  <tr>
-    <td>ext</td>
-    <td>extension to be used for dest files.</td>
-  </tr>
 </table>
 
 ---
