@@ -15,7 +15,9 @@ I blog about curious things I encounter while reading books or while on the inte
 
 ---
 
-# Publications ![](http://dblp.uni-trier.de/img/dblp.icon.192x192.png)
+# Publications <a href="http://dblp.uni-trier.de/pers/hd/p/Putta:Sudeep_Raja">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+</a>
 
 - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](http://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](http://sudeepraja.github.io/papers/PEPSRL_short.pdf).
 - [Efficient Reinforcement Learning via Initial Pure Exploration](http://sudeepraja.github.io/papers/rldm.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
