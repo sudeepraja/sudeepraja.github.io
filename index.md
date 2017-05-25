@@ -14,7 +14,7 @@ At Conduent, I work on the Euclidean Distance Matrix Completion problem and Algo
 I blog about curious things I encounter while reading books or while on the internet. These are things mostly related to the topics mentioned above and some mathematics as well.
 
 ---
-<div class="well"># Publications<\div>
+<div class="well"> <h2>Publications<\h2><\div>
 
 - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](https://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](https://sudeepraja.github.io/papers/PEPSRL_short.pdf).
 - [Efficient Reinforcement Learning via Initial Pure Exploration](https://sudeepraja.github.io/papers/rldm.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
