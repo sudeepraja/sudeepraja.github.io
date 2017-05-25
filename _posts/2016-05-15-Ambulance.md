@@ -53,7 +53,7 @@ $$
 \end{array}
 $$
 
-We created a graph on the road network of Bangalore with various locations of the city as vertices. The demand of a vertex is the number of accidents which occur in that area. The cost of travelling between two vertices is the time it takes to reach one vertex from the other, by following the shortest time route. All that is left to be done is to feed the variables into a solver and get the Xs and Ys. We used this software: [FLP Spreadsheet Solver](http://verolog.deis.unibo.it/flp-spreadsheet-solver).
+We created a graph on the road network of Bangalore with various locations of the city as vertices. The demand of a vertex is the number of accidents which occur in that area. The cost of travelling between two vertices is the time it takes to reach one vertex from the other, by following the shortest time route. All that is left to be done is to feed the variables into a solver and get the Xs and Ys. We used this software: [FLP Spreadsheet Solver](https://verolog.deis.unibo.it/flp-spreadsheet-solver).
 
 The p-Median problem is NP-hard on general network. Although it can be solved exactly using a Branch and Bound or a Branch and Cut method, it may take a very long time to solve even small instances. This software uses a Tabu search heuristic and provides a good enough sub-optimal solution.  
 

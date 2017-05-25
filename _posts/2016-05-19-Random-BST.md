@@ -11,7 +11,7 @@ Given $$n$$ distinct integers in an array, construct a BST in expected $$O(n \lo
 
 There are deterministic ways to construct height balanced BSTs. Popular methods taught in undergraduate curriculum are [AVL trees](https://en.wikipedia.org/wiki/AVL_tree) and [Red-Black Trees](https://en.wikipedia.org/wiki/Red%E2%80%93black_tree). But these data structures involve complex operations which are quite difficult to remember.
 
-One could also sort the array in $$O(n \log n)$$ time and recursivley use the medians as pivots to construct the required tree using this [algorithm](http://articles.leetcode.com/convert-sorted-array-into-balanced/). The recurrence relation for constructing the tree would be:
+One could also sort the array in $$O(n \log n)$$ time and recursivley use the medians as pivots to construct the required tree using this [algorithm](https://articles.leetcode.com/convert-sorted-array-into-balanced/). The recurrence relation for constructing the tree would be:
 
 $$ T(n) = 2 \cdot T(\frac{n}{2}) + O(1)$$
 
@@ -42,7 +42,7 @@ $$E[time] = n \cdot \frac{1}{3} + 2n \cdot \frac{2}{3} \cdot \frac{1}{3} + 3n \c
 
 $$E[time] = \frac{n}{2} \cdot \sum_{i=1}^{\infty} i \cdot \left( \frac{2}{3} \right)^{i} $$
 
-You can recognize the summation from my [previous post](http://sudeepraja.github.io/Hello-World/). It evaluates to:
+You can recognize the summation from my [previous post](https://sudeepraja.github.io/Hello-World/). It evaluates to:
 
 $$E[time] = \frac{n}{2} \cdot \frac{\frac{2}{3}}{(1-\frac{2}{3})^2} = 3n$$
 
@@ -66,4 +66,4 @@ A very simple Monte Carlo algorithm would be:
     
 This algorithm will create a tree in $$O(n \log n)$$ time, whose expected height is $$O(\log n)$$.The Las Vegas algorithm will never output a skew tree, but the Monte Carlo algorithm might with very low probability.
 
-Sophisticated randomized BSTs which perform well in face of random insertions and deletions are also present, but these are beyond the scope of this blog. Check out [Treaps](https://en.wikipedia.org/wiki/Treap) which uses random priorities and this [randomized binary search tree](http://algo.inria.fr/seminars/sem96-97/martinez.html), which uses random rebalancing.
+Sophisticated randomized BSTs which perform well in face of random insertions and deletions are also present, but these are beyond the scope of this blog. Check out [Treaps](https://en.wikipedia.org/wiki/Treap) which uses random priorities and this [randomized binary search tree](https://algo.inria.fr/seminars/sem96-97/martinez.html), which uses random rebalancing.
