@@ -5,7 +5,7 @@ published: true
 
 # Hi There!
 
-I will be joining as a Ms/PhD student at College of Information and Computer Sciences, University of Massachusetts Amherst in Fall 2017.
+I will be joining the Ms/PhD program at College of Information and Computer Sciences, University of Massachusetts Amherst in Fall 2017.
 
 I am a **[Budding Scientist](https://www.xrci.xerox.com/xerox-budding-scientists)** at **[Conduent Labs India]( "https://indialabs.conduent.com/")**/**[Xerox Research Center India](https://www.xrci.xerox.com/)**. I graduted from the **[Indian Institute of Technology, Kharagpur](https://www.iitkgp.ac.in/)** with a **Bachelor's degree in [Computer Science and Engineering](https://cse.iitkgp.ac.in/)** in 2016. I have worked as a research intern at **[IBM Research India](https://www.research.ibm.com/labs/india/)** and at **[Centre for Visual Information Technology](https://cvit.iiit.ac.in/), [IIIT Hydearabad](https://www.iiit.ac.in/)**. 
 You can find my CV here :[CV](https://sudeepraja.github.io/CV.pdf)
