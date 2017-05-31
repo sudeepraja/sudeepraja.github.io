@@ -2,7 +2,6 @@
 layout: page
 published: true
 ---
-
 # Hi There!
 
 I will be joining the Ms/PhD program at the College of Information and Computer Sciences, University of Massachusetts Amherst in Fall 2017.
