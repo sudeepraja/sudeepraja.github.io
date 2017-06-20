@@ -4,7 +4,7 @@ published: true
 ---
 I will be joining the Ms/PhD program at the College of Information and Computer Sciences, University of Massachusetts Amherst in Fall 2017.
 
-I am interested in Machine Learning Theory, Multi-Armed Bandits, Optimization and Reinforcement Learning.
+I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning and Optimization.
 
 At Conduent, I work on the Euclidean Distance Matrix Completion problem and Algorithms for efficient and fair Ridesharing. At Xerox, I have worked on Exploration Strategies and Non Parametric Function Approximation for Reinforcement Learning.
 
