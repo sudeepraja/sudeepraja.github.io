@@ -6,7 +6,7 @@ I will be joining the Ms/PhD program at the College of Information and Computer 
 
 I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning and Optimization.
 
-At Conduent, I work on the Euclidean Distance Matrix Completion problem and Algorithms for efficient and fair Ridesharing. At Xerox, I have worked on Exploration Strategies and Non Parametric Function Approximation for Reinforcement Learning.
+I have been trying to prove that Euclidean Distance Matrix Completion has No Spurious Local Minima, using the technique presented in [this paper by Rong Ge et.al](https://arxiv.org/abs/1704.00708). Currently this proof is incomplete. Here is a [rough draft](/papers/EDMC.pdf) of where my proof stands and a document outlining the [Similarities between Euclidean Distance Matrix Completion and PSD Matrix Completion](papers/similarities.pdf).
 
 I was a Budding Scientist at **[Conduent Labs India]( "https://indialabs.conduent.com/")**/Xerox Research Center India from 2016 to 2017. I graduted from the **[Indian Institute of Technology, Kharagpur](https://www.iitkgp.ac.in/)** with a **Bachelor's degree in [Computer Science and Engineering](https://cse.iitkgp.ac.in/)** in 2016.
 You can find my CV here :[CV](https://sudeepraja.github.io/CV.pdf)
