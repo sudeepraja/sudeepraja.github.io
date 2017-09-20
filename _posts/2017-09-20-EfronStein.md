@@ -10,6 +10,10 @@ For any function $$f:\mathbb{R}^n\to\mathbb{R}$$ and iid random variables $$x_1,
 
 $$\mathbb{Var}[f(x_1,..,x_n)] \leq \mathbb{E} \sum_{i=1}^n \mathbb{Var}[f(x_1,..,x_n) \mid x_1,..,x_{i-1},x_{i+1},..,x_n]$$
 
+Fleshing it out more explicitly:
+
+$$\mathbb{Var}[f] \leq  \sum_{i=1}^n \mathbb{E}_{x_1,..,x_{i-1},x_{i+1},..,x_n}[\mathbb{Var}_{x_i}[f \mid x_1,..,x_{i-1},x_{i+1},..,x_n]]$$
+
 First, lets try to make the notation more informative and less cumbersome. Let $$\mathbb{E}_{(i,j)}$$ denote the expectation taken with respect to $$x_i,..,x_j$$, while conditioning on the remaining variables. $$\mathbb{E}_{(i)}$$ denotes the expectation taken over only $$x_i$$. Let $$\mathbb{Var}_{(i,j)}$$ also be defined similarly.
 
 $$\mathbb{E}_{(i,j)}[f] = \mathbb{E}_{x_i,..x_j}[f \mid x_1,..x_{i-1},x_{j+1},..x_n]$$
@@ -37,6 +41,10 @@ n\mathbb{Var}_{(i,n)}[f] &= \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E
 The inequality is obtained by applying Efron-Stein to the second summation. This give us the final result.
 
 $$\boxed{\mathbb{Var}_{(i,n)}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]]}$$
+
+Re-writing using more commonly used notation.
+
+$$\boxed{\mathbb{Var}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{x_1,..x_{i-1},x_{i+1},..x_n}[\mathbb{E}_{x_i}[f \mid x_1,..x_{i-1},x_{i+1},..x_n]]}$$
 
 This inequality is quite similar to Efron-Stein. Just interchange $$\mathbb{Var}$$ with $$\mathbb{E}$$ on the left, change $$\leq$$ to $$\geq$$ and scale by $$1/(n-1)$$. 
 
