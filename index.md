@@ -2,9 +2,9 @@
 layout: page
 published: true
 ---
-I will be joining the Ms/PhD program at the College of Information and Computer Sciences, University of Massachusetts Amherst in Fall 2017.
+I am a Ms/PhD program at the College of Information and Computer Sciences, University of Massachusetts Amherst.
 
-I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning and Optimization.
+I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning, Stochastic Optimization and Randomized algorithms. My goal is to use techniques from Probability and Statistics to design and analyse algorithms with provable guarentees for these areas.
 
 I have been trying to prove that Euclidean Distance Matrix Completion has No Spurious Local Minima, using the technique presented in [this paper by Rong Ge et.al](https://arxiv.org/abs/1704.00708). Currently this proof is incomplete. Here is a [rough draft](/papers/EDMC.pdf) of where my proof stands and a document outlining the [Similarities between Euclidean Distance Matrix Completion and PSD Matrix Completion](papers/similarities.pdf).
 
