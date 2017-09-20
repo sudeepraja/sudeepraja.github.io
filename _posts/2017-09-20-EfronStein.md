@@ -28,19 +28,19 @@ $$\mathbb{Var}_{(i,n)}[f] \leq \sum_{i=1}^n \mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb
 
 We can use the Law of Total Variance to express $$\mathbb{Var}_{(i,n)}[f]$$ in $$n$$ was.
 
-$$\mathbb{Var}_{(i,n)}[f] = \mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb{Var}_{(i)}[f]] \quad \text{ for all } i \in [n]$$
+$$\mathbb{Var}_{(1,n)}[f] = \mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb{Var}_{(i)}[f]] \quad \text{ for all } i \in [n]$$
 
 Taking the sum over all $$n$$ ways of expressing $$\mathbb{Var}_{(i,n)}[f]$$, we get
 
 
 $$\begin{align}
-n\mathbb{Var}_{(i,n)}[f] &= \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \sum_{i=1}^n\mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb{Var}_{(i)}[f]]\\
+n\mathbb{Var}_{(1,n)}[f] &= \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \sum_{i=1}^n\mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb{Var}_{(i)}[f]]\\
 &\geq \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \mathbb{Var}_{(i,n)}[f]
 \end{align}$$
 
 The inequality is obtained by applying Efron-Stein to the second summation. This give us the final result.
 
-$$\boxed{\mathbb{Var}_{(i,n)}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]]}$$
+$$\boxed{\mathbb{Var}_{(1,n)}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]]}$$
 
 Re-writing using more commonly used notation.
 
@@ -50,7 +50,7 @@ This inequality is quite similar to Efron-Stein. Just interchange $$\mathbb{Var}
 
 This inequality is also tight. Consider $$f = \sum_{i=1}^n x_i$$ where $$x_i$$ are drawn iid from a distribution with mean $$\mu$$ and variance $$\sigma^2$$.  
 
-On the LHS, $$\mathbb{Var}_{(i,n)}[f]=n\sigma^2$$
+On the LHS, $$\mathbb{Var}_{(1,n)}[f]=n\sigma^2$$
 
 On the RHS,
 
