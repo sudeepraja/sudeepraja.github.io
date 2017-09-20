@@ -46,7 +46,7 @@ Compare this with Efron-Stein:
 
 $$\mathbb{Var}[f] \leq \sum_{i=1}^n \mathbb{E}_{(-i)}[\mathbb{Var}_{(i)}[f]]$$
 
-The EFI(n-1) can be obtained by just moving $$\mathbb{Var}_{(i)}$$ inside and $$\mathbb{E}_{(-i)}$$ outside and changing $$\leq$$ to $$\geq$$. Here, the variances over a single variable, which addresses the first concern raised by Prof. Chatterjee.
+The EFI(n-1) can be obtained by just moving $$\mathbb{Var}_{(i)}$$ inside and $$\mathbb{E}_{(-i)}$$ outside and changing $$\leq$$ to $$\geq$$. Here, the variances is over a single variable, which addresses the first concern raised by Prof. Chatterjee.
 
 Although EFI(n-1) is a well known lower bound, this proof is new and easier to understand. During this process, we have also uncovered an entire family of lower bounds, all of which are tight. 
 
