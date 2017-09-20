@@ -2,7 +2,7 @@
 layout: page
 published: true
 ---
-I am a Ms/PhD program at the College of Information and Computer Sciences, University of Massachusetts Amherst.
+I am a 1st year Ms/PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
 
 I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning, Stochastic Optimization and Randomized algorithms. My goal is to use techniques from Probability and Statistics to design and analyse algorithms with provable guarentees for these areas.
 
