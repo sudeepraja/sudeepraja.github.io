@@ -22,7 +22,7 @@ We can expand each of the $$\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]$$  on the r
 
 here
 
-Here $$(i,j) \in {{n}\choose{2}}$$ denotes that $$(i,j)$$ belongs to the set of distinct monotonic pairs formed from $$n$$. $$(-j)$$ has the usual meaning of removing $$x_j$$ variable from the set $$x_1,..x_n$$.
+Here $$(i,j) \in \binom{n}{2}$$ denotes that $$(i,j)$$ belongs to the set of distinct monotonic pairs formed from $$n$$. $$(-j)$$ has the usual meaning of removing $$x_j$$ variable from the set $$x_1,..x_n$$.
 
 We can expand each of the $$\mathbb{Var}_{(-i,-j)}[\mathbb{E}_{(i,j)}[f]]$$  on the right using EFI1 again. We get EFI3:
 
