@@ -14,29 +14,29 @@ Fleshing it out more explicitly:
 
 $$\mathbb{Var}[f] \leq  \sum_{i=1}^n \mathbb{E}_{x_1,..,x_{i-1},x_{i+1},..,x_n}[\mathbb{Var}_{x_i}[f \mid x_1,..,x_{i-1},x_{i+1},..,x_n]]$$
 
-First, lets try to make the notation more informative and less cumbersome. Let $$\mathbb{E}_{(\hat{i})}$$ denote the expectation taken with respect to all variables except $$x_i$$. $$\mathbb{E}_{(i)}$$ denotes the expectation taken over only $$x_i$$. Let $$\mathbb{Var}_{(\hat{i})}$$ and $$\mathbb{Var}_{(i)}$$ also be defined similarly.
+First, lets try to make the notation more informative and less cumbersome. Let $$\mathbb{E}_{(-i)}$$ denote the expectation taken with respect to all variables except $$x_i$$. $$\mathbb{E}_{(i)}$$ denotes the expectation taken over only $$x_i$$. Let $$\mathbb{Var}_{(-i)}$$ and $$\mathbb{Var}_{(i)}$$ also be defined similarly.
 
 Rephrasing Efron-Stein with slight modification using this notation, we get
 
-$$\mathbb{Var}[f] \leq \sum_{i=1}^n \mathbb{E}_{(\hat{i})}[\mathbb{Var}_{(i)}[f]]$$
+$$\mathbb{Var}[f] \leq \sum_{i=1}^n \mathbb{E}_{(-i)}[\mathbb{Var}_{(i)}[f]]$$
 
 [Law of Total Variance](https://en.wikipedia.org/wiki/Law_of_total_variance): $$\mathbb{Var}[Y] = \mathbb{E}[\mathbb{Var}[Y\mid X]] + \mathbb{Var}[\mathbb{E}[Y\mid X]]$$
 
 We can use the Law of Total Variance to express $$\mathbb{Var}[f]$$ in $$n$$ was.
 
-$$\mathbb{Var}[f] = \mathbb{Var}_{(\hat{i})}[\mathbb{E}_{(i)}[f]] + \mathbb{E}_{(\hat{i})}[\mathbb{Var}_{(i)}[f]] \quad \text{ for all } i \in [n]$$
+$$\mathbb{Var}[f] = \mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]] + \mathbb{E}_{(-i)}[\mathbb{Var}_{(i)}[f]] \quad \text{ for all } i \in [n]$$
 
 Taking the sum over all $$n$$ ways of expressing $$\mathbb{Var}[f]$$, we get
 
 
 $$\begin{align}
-n\mathbb{Var}[f] &= \sum_{i=1}^n\mathbb{Var}_{(\hat{i})}[\mathbb{E}_{(i)}[f]] + \sum_{i=1}^n\mathbb{E}_{(\hat{i})}[\mathbb{Var}_{(i)}[f]]\\
-&\geq \sum_{i=1}^n\mathbb{Var}_{(\hat{i})}[\mathbb{E}_{(i)}[f]] + \mathbb{Var}[f]
+n\mathbb{Var}[f] &= \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]] + \sum_{i=1}^n\mathbb{E}_{(-i)}[\mathbb{Var}_{(i)}[f]]\\
+&\geq \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]] + \mathbb{Var}[f]
 \end{align}$$
 
 The inequality is obtained by applying Efron-Stein to the second summation. This give us the final result.
 
-$$\boxed{\mathbb{Var}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(\hat{i})}[\mathbb{E}_{(i)}[f]]}$$
+$$\boxed{\mathbb{Var}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]}$$
 
 Re-writing using more commonly used notation.
 
@@ -51,9 +51,9 @@ On the LHS, $$\mathbb{Var}[f]=n\sigma^2$$
 On the RHS,
 
 $$\begin{align}
-\mathbb{Var}_{(\hat{i})}[\mathbb{E}_{(i)}[f]]&= \mathbb{Var}_{(\hat{i})}[x_1+..x_{i-1}+\mu+x_{i+1}+..+x_n]\\
+\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]&= \mathbb{Var}_{(-i)}[x_1+..x_{i-1}+\mu+x_{i+1}+..+x_n]\\
 &= (n-1)\sigma^2\\
- \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(\hat{i})}[\mathbb{E}_{(i)}[f]]&= \frac{1}{n-1} n(n-1)\sigma^2 = n\sigma^2
+ \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]&= \frac{1}{n-1} n(n-1)\sigma^2 = n\sigma^2
 \end{align}$$
 
 So far, I haven't seen this inequality in any text or paper. If no else has seen it and it is new, then $$\text{YAY!}$$ Otherwise $${}_\text{yay!}$$. Hopefully some statistician or researcher can tell me if its a known result. Or better yet, uses it for their work.
