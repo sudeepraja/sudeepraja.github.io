@@ -35,7 +35,7 @@ Taking the sum over all $$n$$ ways of expressing $$\mathbb{Var}_{(i,n)}[f]$$, we
 
 $$\begin{align}
 n\mathbb{Var}_{(1,n)}[f] &= \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \sum_{i=1}^n\mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb{Var}_{(i)}[f]]\\
-&\geq \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \mathbb{Var}_{(i,n)}[f]
+&\geq \sum_{i=1}^n\mathbb{Var}_{(1,i-1),(i+1,n)}[\mathbb{E}_{(i)}[f]] + \mathbb{Var}_{(1,n)}[f]
 \end{align}$$
 
 The inequality is obtained by applying Efron-Stein to the second summation. This give us the final result.
