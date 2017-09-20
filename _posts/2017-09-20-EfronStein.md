@@ -8,11 +8,12 @@ In a homework of the [Machine Learning Theory](https://people.cs.umass.edu/~aksh
 
 For any function $$f:\mathbb{R}^n\to\mathbb{R}$$ and iid random variables $$x_1,..,x_n$$
 
-$$\mathbb{Var}[f(x_1,..,x_n)] \leq \mathbb{E} \sum_{i=1}^n \mathbb{Var}[f(x_1,..,x_n)|x_1,..,x_{i-1},x_{i+1},..,x_n]$$
+$$\mathbb{Var}[f(x_1,..,x_n)] \leq \mathbb{E} \sum_{i=1}^n \mathbb{Var}[f(x_1,..,x_n) \mid x_1,..,x_{i-1},x_{i+1},..,x_n]$$
 
 First, lets try to make the notation more informative and less cumbersome. Let $$\mathbb{E}_{(i,j)}$$ denote the expectation taken with respect to $$x_i,..,x_j$$, while conditioning on the remaining variables. $$\mathbb{E}_{(i)}$$ denotes the expectation taken over only $$x_i$$. Let $$Var_{(i,j)}$$ also be defined similarly.
 
 $$\mathbb{E}_{(i,j)}[f] = \mathbb{E}_{x_i,..x_j}[f \mid x_1,..x_{i-1},x_{j+1},..x_n]$$
+
 $$\mathbb{Var}_{(i,j)}[f] = \mathbb{Var}_{x_i,..x_j}[f \mid x_1,..x_{i-1},x_{j+1},..x_n]$$
 
 Rephrasing Efron-Stein with slight modification using this notation, we get
