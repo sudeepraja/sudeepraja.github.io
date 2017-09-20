@@ -20,13 +20,7 @@ $$\mathbb{Var}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}
 
 We can expand each of the $$\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]$$  on the right using EFI1 again. We get EFI2:
 
-$$
-\begin{align}
-\mathbb{Var}[f] &\geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]\\
-&\geq \frac{1}{n-1}  \sum_{i \in [n]} \frac{1}{n-2} \sum_{j \in [n]-\{i\}} \mathbb{Var}_{(-i,-j)}[\mathbb{E}_{(i,j)}[f]]\\
-&= \frac{1 \cdot 2}{(n-1)(n-2)} \sum_{(i,j) \in \binom{n}{2}} \mathbb{Var}_{(-i,-j)}[\mathbb{E}_{(i,j)}[f]]
-\end{align}
-$$
+here
 
 Here $$(i,j) \in {{n}\choose{2}}$$ denotes that $$(i,j)$$ belongs to the set of distinct monotonic pairs formed from $$n$$. $$(-j)$$ has the usual meaning of removing $$x_j$$ variable from the set $$x_1,..x_n$$.
 
@@ -36,7 +30,7 @@ $$\mathbb{Var}[f] \geq \frac{1 \cdot 2 \cdot 3}{(n-1)(n-2)(n-3)} \sum_{(i,j,k) \
 
 If we keep on expanding this, the final inequality we obtain is EFI(n-1):
 
-$$\mathbb{Var}[f] \geq \frac{(n-1)!}{(n-1)!} \sum_{(i,j,k,..) \in {{n}\choose{n-1}}} \mathbb{Var}_{(-i,-j,-k,...)}[\mathbb{E}_{(i,j,k,..)}[f]]$$
+$$\mathbb{Var}[f] \geq \frac{(n-1)!}{(n-1)!} \sum_{(i,j,k,..) \in \binom{n}{n-1}} \mathbb{Var}_{(-i,-j,-k,...)}[\mathbb{E}_{(i,j,k,..)}[f]]$$
 
 We can re-write EFI(n-1) as:
 
