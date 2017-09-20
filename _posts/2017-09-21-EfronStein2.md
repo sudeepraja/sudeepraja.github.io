@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Family of Efron-Stein Like Lower bounds
+title: A Family of Efron-Stein Like Lower bounds for Variance
 published: true
 project: false
 ---
