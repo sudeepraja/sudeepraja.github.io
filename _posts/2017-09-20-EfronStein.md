@@ -24,7 +24,7 @@ Rephrasing Efron-Stein with slight modification using this notation, we get
 
 $$\mathbb{Var}_{(i,n)}[f] \leq \sum_{i=1}^n \mathbb{E}_{(1,i-1),(i+1,n)}[\mathbb{Var}_{(i)}[f]]$$
 
-[Law of Total Variance](https://en.wikipedia.org/wiki/Law_of_total_variance): $$\mathbb{Var}[Y] = \mathbb{E}[\mathbb{Var}[Y|X]] + \mathbb{Var}[\mathbb{E}[Y|X]]$$
+[Law of Total Variance](https://en.wikipedia.org/wiki/Law_of_total_variance): $$\mathbb{Var}[Y] = \mathbb{E}[\mathbb{Var}[Y\mid X]] + \mathbb{Var}[\mathbb{E}[Y\mid X]]$$
 
 We can use the Law of Total Variance to express $$\mathbb{Var}_{(i,n)}[f]$$ in $$n$$ was.
 
