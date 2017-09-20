@@ -14,7 +14,7 @@ Fleshing it out more explicitly:
 
 $$\mathbb{Var}[f] \leq  \sum_{i=1}^n \mathbb{E}_{x_1,..,x_{i-1},x_{i+1},..,x_n}[\mathbb{Var}_{x_i}[f \mid x_1,..,x_{i-1},x_{i+1},..,x_n]]$$
 
-First, lets try to make the notation more informative and less cumbersome. Let $$\mathbb{E}_{(\hat{i})}$$ denote the expectation taken with respect to all variables except $x_i$. $$\mathbb{E}_{(i)}$$ denotes the expectation taken over only $$x_i$$. Let $$\mathbb{Var}_{(\hat{i})}$$ and $$\mathbb{Var}_{(i)}$$ also be defined similarly.
+First, lets try to make the notation more informative and less cumbersome. Let $$\mathbb{E}_{(\hat{i})}$$ denote the expectation taken with respect to all variables except $$x_i$$. $$\mathbb{E}_{(i)}$$ denotes the expectation taken over only $$x_i$$. Let $$\mathbb{Var}_{(\hat{i})}$$ and $$\mathbb{Var}_{(i)}$$ also be defined similarly.
 
 Rephrasing Efron-Stein with slight modification using this notation, we get
 
