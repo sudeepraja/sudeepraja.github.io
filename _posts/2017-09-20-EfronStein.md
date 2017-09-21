@@ -57,3 +57,5 @@ $$\begin{align}
 \end{align}$$
 
 So far, I haven't seen this inequality in any text or paper. If no else has seen it and it is new, then $$\text{YAY!}$$ Otherwise $${}_\text{yay!}$$. Hopefully some statistician or researcher can tell me if its a known result. Or better yet, uses it for their work.
+
+Follow up post containing a more elegant result:[A Family of Efron-Stein Like Lower bounds for Variance](https://sudeepraja.github.io/EfronStein2/).
