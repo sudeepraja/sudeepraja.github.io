@@ -30,7 +30,7 @@ $$
 
 Here $$(i,j) \in \binom{n}{2}$$ denotes that $$(i,j)$$ belongs to the set of distinct monotonic pairs formed from $$n$$. $$(-j)$$ has the usual meaning of removing $$x_j$$ variable from the set $$x_1,..x_n$$.
 
-We can expand each of the $$\mathbb{Var}_{(-i,-j)}[\mathbb{E}_{(i,j)}[f]]$$  on the right using EFI1 again. We get EFI3:
+We can expand each of the $$\mathbb{Var}_{(-i,-j)}[\mathbb{E}_{(i,j)}[f]]$$  on the right using EFI$$(n-1)$$ again. We get EFI$$(n-3)$$:
 
 $$\mathbb{Var}[f] \geq \frac{1 \cdot 2 \cdot 3}{(n-1)(n-2)(n-3)} \sum_{(i,j,k) \in \binom{n}{3}} \mathbb{Var}_{(-i,-j,-k)}[\mathbb{E}_{(i,j,k)}[f]]$$
 
