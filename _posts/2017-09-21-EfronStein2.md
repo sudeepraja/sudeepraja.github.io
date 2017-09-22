@@ -14,11 +14,11 @@ Here $$\mathbb{E}_{(-i)}$$ denotes the expectation taken with respect to all var
 
 After writing the the blog, I posted it on [r/probabilitytheory](https://www.reddit.com/r/probabilitytheory/). A fellow redditor helped me out and told me to mail [Prof. Sourav Chatterjee](https://statweb.stanford.edu/~souravc/) at Stanford. Although Prof. Chatterjee did say that he had not seen this inequality before, he pointed out a major flaw. The variances on the right side of the inequality will probably be just as hard to understand as the variance on the left, since we are just integrating out one variable in each term. He also pointed out that the inequality has a recursive structure and it can be unfolded further to obtain a family of inequalities.
 
-This is the original inequality, lets call this EFI1 (Efron-Stein Inverse 1):
+This is the original inequality, lets call this EFI$$(n-1)$$ (Efron-Stein Inverse):
 
 $$\mathbb{Var}[f] \geq \frac{1}{n-1}  \sum_{i=1}^n\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]$$
 
-We can expand each of the $$\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]$$  on the right using EFI1 again. We get EFI2:
+We can expand each of the $$\mathbb{Var}_{(-i)}[\mathbb{E}_{(i)}[f]]$$  on the right using EFI$$(n-1)$$ again. We get EFI$$(n-2)$$:
 
 $$
 \begin{align}
@@ -34,11 +34,11 @@ We can expand each of the $$\mathbb{Var}_{(-i,-j)}[\mathbb{E}_{(i,j)}[f]]$$  on 
 
 $$\mathbb{Var}[f] \geq \frac{1 \cdot 2 \cdot 3}{(n-1)(n-2)(n-3)} \sum_{(i,j,k) \in \binom{n}{3}} \mathbb{Var}_{(-i,-j,-k)}[\mathbb{E}_{(i,j,k)}[f]]$$
 
-If we keep on expanding this, the final inequality we obtain is EFI(n-1):
+If we keep on expanding this, the final inequality we obtain is EFI$$(1) \equiv$$ EFI :
 
 $$\mathbb{Var}[f] \geq \frac{(n-1)!}{(n-1)!} \sum_{(i,j,k,..) \in \binom{n}{n-1}} \mathbb{Var}_{(-i,-j,-k,...)}[\mathbb{E}_{(i,j,k,..)}[f]]$$
 
-We can re-write EFI(n-1) as:
+We can re-write EFI as:
 
 $$\boxed{ \mathbb{Var}[f] \geq \sum_{i=1}^n \mathbb{Var}_{(i)}[\mathbb{E}_{(-i)}[f]] }$$
 
@@ -46,8 +46,8 @@ Compare this with Efron-Stein:
 
 $$\mathbb{Var}[f] \leq \sum_{i=1}^n \mathbb{E}_{(-i)}[\mathbb{Var}_{(i)}[f]]$$
 
-The EFI(n-1) can be obtained by just moving $$\mathbb{Var}_{(i)}$$ inside and $$\mathbb{E}_{(-i)}$$ outside and changing $$\leq$$ to $$\geq$$. Here, the variances is over a single variable, which addresses the first concern raised by Prof. Chatterjee.
+The EFI can be obtained by just moving $$\mathbb{Var}_{(i)}$$ inside and $$\mathbb{E}_{(-i)}$$ outside and changing $$\leq$$ to $$\geq$$. Here, the variances is over a single variable, which addresses the first concern raised by Prof. Chatterjee.
 
-Although EFI(n-1) is a well known lower bound, this proof is new and easier to understand. During this process, we have also uncovered an entire family of lower bounds, all of which are tight. 
+Although EFI is a well known lower bound, this proof is new and easier to understand. During this process, we have also uncovered an entire family of lower bounds, all of which are tight. 
 
 My thanks to reddit user arjunkc and Prof. Chatterjee for pointing me in the right direction.
