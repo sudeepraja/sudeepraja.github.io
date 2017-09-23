@@ -50,4 +50,4 @@ The EFI can be obtained by just moving $$\mathbb{Var}_{(i)}$$ inside and $$\math
 
 Although EFI is a well known lower bound, this proof is new and easier to understand. During this process, we have also uncovered an entire family of lower bounds, all of which are tight. 
 
-My thanks to reddit user arjunkc and Prof. Chatterjee for pointing me in the right direction.
+My thanks to Prof. Arjun Krishnan of UofRochester and Prof. Chatterjee for pointing me in the right direction.
