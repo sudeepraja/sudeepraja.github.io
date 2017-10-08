@@ -4,7 +4,7 @@ published: true
 ---
 I am a 1st year Ms/PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
 
-I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning, Non Convex Optimization and Randomized algorithms. My goal is to use techniques from Probability, Statistics and Linear Algebra to design and analyse algorithms with provable guarentees for these areas.
+I am interested in Machine Learning Theory, Multi-Armed Bandits, Reinforcement Learning, Non Convex Optimization and Randomized algorithms. I use techniques from Probability, Statistics and Linear Algebra to design and analyse algorithms with provable guarentees for these areas.
 
 I was a Budding Scientist at [Conduent Labs](http://indialabs.conduent.com/)/Xerox Research Center India from 2016 to 2017. I graduted from the [Indian Institute of Technology, Kharagpur](https://www.iitkgp.ac.in/) with a Bachelor's degree in [Computer Science and Engineering](https://cse.iitkgp.ac.in/) in 2016.
 You can find my CV here :[CV](https://sudeepraja.github.io/CV.pdf)
