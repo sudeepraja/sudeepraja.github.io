@@ -6,6 +6,8 @@ I am a 1st year Ms/PhD student at the College of Information and Computer Scienc
 
 I am interested in Machine Learning Theory, Multi-Armed Bandits, Online Learning, Reinforcement Learning Theory, Non Convex Optimization and Randomized algorithms.
 
+Email: sputta at cs.umass.edu
+
 I was a Budding Scientist at [Conduent Labs](http://indialabs.conduent.com/)/Xerox Research Center India from 2016 to 2017. I graduted from the [Indian Institute of Technology, Kharagpur](https://www.iitkgp.ac.in/) with a Bachelor's degree in [Computer Science and Engineering](https://cse.iitkgp.ac.in/) in 2016.
 You can find my CV here :[CV](https://sudeepraja.github.io/CV.pdf)
 
