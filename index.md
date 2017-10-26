@@ -15,17 +15,6 @@ My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 Email: sputta at cs.umass.edu
 
 
-> Sometimes Science is More Art Than Science - Rick Sanchez, C-137
-
-> Oh Geez Rick - Morty Smith, C-137
-
-> We loved with a love that was more than love
-
-
-
-
-
-
 ---
 ## Publications
 <h3>2017</h3>
