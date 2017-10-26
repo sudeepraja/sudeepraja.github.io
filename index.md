@@ -15,7 +15,7 @@ My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 Email: sputta at cs.umass.edu
 
 <p align="center">
-<img src="/images/sudeep_3.jpg" width=100% height=100%>
+<img src="/images/sudeep_3.jpg">
 </p>
 
 
