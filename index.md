@@ -14,6 +14,10 @@ My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 
 Email: sputta at cs.umass.edu
 
+<blockquote
+New situations can be intimidating. You lookin' around and it's all scary and different, but y'know...meeting them head-on, charging into 'em like a bull—that's how we grow as people.
+</blockquote>
+
 
 ---
 ## Publications
