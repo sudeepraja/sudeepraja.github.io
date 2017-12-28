@@ -7,7 +7,7 @@ project: false
 
 There are two acceptable ways to write the digit '7'. It can be written with or without a line in the middle. Given an unlabelled dataset of 7s written in both ways, the task is to find which ones have a dash and which ones don't.
 
-Solarized dark             |  Solarized Ocean
+Without Line            |  With Line
 :-------------------------:|:-------------------------:
 ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7normal.png)  |  ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7dash.png)
 
@@ -24,8 +24,9 @@ Here is our solution in images
 
 1.
 
- | ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7normalplot.png) | ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7dashplot.png) |
-|:-------------:|:-------------:|
+Without Line            |  With Line
+:-------------------------:|:-------------------------:
+![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7normalplot.png)  |  ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7dashplot.png)
 
 2.
 ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7normalprocessed.png)
