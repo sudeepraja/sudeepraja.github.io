@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to differentiate between two kinds of 7s?
+title: How to distinguish between two kinds of 7s?
 published: true
 project: false
 ---
