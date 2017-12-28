@@ -5,10 +5,10 @@ published: true
 project: false
 ---
 
-There are two acceptable ways to write the digit '7'. It can be written with or without a line in the middle. So given an unlabelled dataset of 7s written in both ways, the task is to find which ones have a dash and which ones don't.
+There are two acceptable ways to write the digit '7'. It can be written with or without a line in the middle. Given an unlabelled dataset of 7s written in both ways, the task is to find which ones have a dash and which ones don't.
 
 | ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7normal.png) | ![enter image description here](https://raw.githubusercontent.com/sudeepraja/sudeepraja.github.io/master/images/7dash.png) |
-|:-------------:|:-------------:|
+| --- | --- |
 
 This was a tiny part of my final project for the graduate ML (689) course at UMass. It was joint work with my fellow graduate students Subendhu Rongali and Emily First. I will briefly talks about the project itself at the end of the blog. For now the problem is to just to find which kind of 7 is in the picture. 
 
