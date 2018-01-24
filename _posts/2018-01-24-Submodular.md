@@ -11,13 +11,13 @@ This blog is primarily about an easier way of understanding the Lovasz extension
 
 Submodularity is a property of set functions which comes up very often in several areas of computer science. Many problems in combinatorial optimization and machine learning have submodular structure. Submodularity has two equivalent definitions.
 
-Let $$[n]=\{1,2,..,n\}$$. The set of all subsets of $$[n]$$ is $$2^{[n]}$$. A set function $$f:2^{[n]} \to \mathbb{R}$$ is submodular if for all sets $$S,T \subset [n]$$ such that $$T \subset S$$, and for all elements $$i \in [n]$$, we have
+Let $$[n]=\{1,2,..,n\}$$. The set of all subsets of $$[n]$$ is $$2^{[n]}$$. A set function $$f:2^{[n]} \to \mathbb{R}$$ is submodular if for all sets $$S,T \subset [n]$$ such that $$T \subset S$$, and for all elements $$i \in [n]$$, we have:
 
 $$f(T \cup \{i\}) - f(T) \geq f(S \cup \{i\}) - f(S)$$
 
 This is called as the diminishing returns property. Equivalently, a function $$f:2^{[n]} \to \mathbb{R}$$ is submodular if for all sets $$S,T \subset [n]$$, we have:
 
-$$f(S) + f(T) \geq f(S \cup T) + f(S \cap T)$$.
+$$f(S) + f(T) \geq f(S \cup T) + f(S \cap T)$$
 
 Some commonly encountered submodular functions are:
 
