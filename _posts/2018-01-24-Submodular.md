@@ -15,9 +15,7 @@ Let $$[n]=\{1,2,..,n\}$$. The set of all subsets of $$[n]$$ is $$2^{[n]}$$. A se
 
 $$f(T \cup \{i\}) - f(T) \geq f(S \cup \{i\}) - f(S)$$
 
-This is called as the diminishing returns property. 
-
-Equivalently, a function $$f:2^{[n]} \to \mathbb{R}$$ is submodular if for all sets $$S,T \subset [n]$$, we have:
+This is called as the diminishing returns property. Equivalently, a function $$f:2^{[n]} \to \mathbb{R}$$ is submodular if for all sets $$S,T \subset [n]$$, we have:
 
 $$f(S) + f(T) \geq f(S \cup T) + f(S \cap T)$$.
 
