@@ -65,6 +65,6 @@ $$X_i = X_{i-1} + e_{\pi(i)}$$
 The summation, $$\sum_{i=0}^n \lambda_i X_i$$ can be re-written as:
 
 $$\begin{align}
-\sum_{i=0}^n \lambda_i X_i &= (1-x_{\pi(1)})X_0+\sum_{i=1}^n (x_{\pi(i)}-x_{\pi(i+1)}) (X_{i-1}+e_{\pi(i)}) &= \sum_{i=1}^n e_{\pi(i)} (\sum_{j=i}^n x_{\pi(j)}-x_{\pi(j+1)}) &= \sum_{i=1}^n e_{\pi(i)} x_{\pi(i)} &= x
+\sum_{i=0}^n \lambda_i X_i &= (1-x_{\pi(1)})X_0+\sum_{i=1}^n (x_{\pi(i)}-x_{\pi(i+1)}) (X_{i-1}+e_{\pi(i)})\\ &= \sum_{i=1}^n e_{\pi(i)} (\sum_{j=i}^n x_{\pi(j)}-x_{\pi(j+1)})\\ &= \sum_{i=1}^n e_{\pi(i)} x_{\pi(i)}\\ &= x
 \end{align}$$
 
