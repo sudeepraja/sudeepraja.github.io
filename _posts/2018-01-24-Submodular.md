@@ -68,4 +68,6 @@ $$\begin{align}
 \sum_{i=0}^n \lambda_i X_i &= (1-x_{\pi(1)})X_0+\sum_{i=1}^n (x_{\pi(i)}-x_{\pi(i+1)}) (X_{i-1}+e_{\pi(i)})\\ &= \sum_{i=1}^n e_{\pi(i)} (\sum_{j=i}^n x_{\pi(j)}-x_{\pi(j+1)})\\ &= \sum_{i=1}^n e_{\pi(i)} x_{\pi(i)}\\ &= x
 \end{align}$$
 
-Hence, the Lovász extension
+Because the Lovász extension at a pont $$x$$ is defined as a convex combination of $$X_0,X_1,..,X_n$$, it is a piecewise linear function, which is continuous but not necessarily differentiable. We can define sub-gradients for the Lovász extension.
+
+$$g(x) = \sum_{i=1}^n (f(X_i) - f(X_{i-1}))e_{\pi(i)}$$
