@@ -52,9 +52,9 @@ In  the hypercube $$H_n$$, there are $$n!$$ unique shortest paths from $$0_n$$ t
 
 Given a point $$x \in K_n$$, it is possible to determine the convex hull $$C_P$$ and path $$P=[0_n=X_0,X_1,..,1_n=X_n]$$ such that $$x \in C_P$$. We can find the coefficients $$\lambda_i$$ such that $$x = \sum_{i=0}^n \lambda_i X_i$$, where $$\sum_{i=0}^n \lambda_i=1$$ and $$\lambda_i\geq 0$$. The Lovasz Extension $$\hat{f}$$ at $$x$$ is defined to be
 
-$$\hat{f}(x) = \sum_{i=0}^p \lambda_i f(X_i)$$
+$$\hat{f}(x) = \sum_{i=0}^n \lambda_i f(X_i)$$
 
-Let $$x$$ be the vector $$(x_1,x_2,..,x_n)$$. Let $\pi:[n] \to [n]$ be the sorting permutation of $$x_1,x_2,..,x_n$$. That means if $$\pi(i)=j$$, then $$x_j$$ is the $$i$$th largest element in the vector $$x$$. So $$1\geq x_{\pi(1)} \geq x_{\pi(2)} \geq ..\geq x_{\pi(n)} \geq 0$$. Let $$x_{\pi(0)}=1$$ and $$x_{\pi(n+1)} = 0$$. The $$\lambda$$'s are the gaps between $$x_{\pi(0)}, x_{\pi(1)} , x_{\pi(2)} , .., x_{\pi(n)} , x_{\pi(n+1)}$$.
+Let $$x$$ be the vector $$(x_1,x_2,..,x_n)$$. Let $$\pi:[n] \to [n]$$ be the sorting permutation of $$x_1,x_2,..,x_n$$. That means if $$\pi(i)=j$$, then $$x_j$$ is the $$i$$th largest element in the vector $$x$$. So $$1\geq x_{\pi(1)} \geq x_{\pi(2)} \geq ..\geq x_{\pi(n)} \geq 0$$. Let $$x_{\pi(0)}=1$$ and $$x_{\pi(n+1)} = 0$$. The $$\lambda$$'s are the gaps between $$x_{\pi(0)}, x_{\pi(1)} , x_{\pi(2)} , .., x_{\pi(n)} , x_{\pi(n+1)}$$.
 
 $$\lambda_i = x_{\pi(i)}-x_{\pi(i+1)}$$
 
@@ -62,9 +62,10 @@ Let $$X_0 = 0_n$$. Then, $$X_1 = X_0 + e_{\pi(1)}$$, $$X_2 = X_1 + e_{\pi(2)}$$ 
 
 $$X_i = X_{i-1} + e_{\pi(i)}$$
 
-The summation, $$\sum_{i=0}^n \lambda_i X_i$$ can be re-written as:
+The summation, $$\sum_{i=0}^n \lambda_i X_i$$ can be verified to be equal to $$x$$
 
 $$\begin{align}
 \sum_{i=0}^n \lambda_i X_i &= (1-x_{\pi(1)})X_0+\sum_{i=1}^n (x_{\pi(i)}-x_{\pi(i+1)}) (X_{i-1}+e_{\pi(i)})\\ &= \sum_{i=1}^n e_{\pi(i)} (\sum_{j=i}^n x_{\pi(j)}-x_{\pi(j+1)})\\ &= \sum_{i=1}^n e_{\pi(i)} x_{\pi(i)}\\ &= x
 \end{align}$$
 
+Hence, the Lovász extension
