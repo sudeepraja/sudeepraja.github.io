@@ -50,14 +50,21 @@ This definition does not tell us how to find the chain or the coefficients $$\la
 
 In  the hypercube $$H_n$$, there are $$n!$$ unique shortest paths from $$0_n$$ to $$1_n$$, where $$0_n$$ and $$1_n$$ are the vectors of all 0s and 1s respectively. Let $$P=[0_n=X_0,X_1,..,1_n=X_n]$$ denote a path. Let $$C_P$$ be the convex hull of the points on the path $$P$$. There exist $$n!$$ such convex hull, one for each path. Moreover, these convex hulls partition $$K_n$$ into $$n!$$ equal parts.
 
-Given a point $$x \in K_n$$, it is possible to determine the convex hull $$C_P$$ and path $$P=[0_n=X_0,X_1,..,1_n=X_n]$$ such that $$x \in C_P$$. We can find the coefficients $$\lambda_i$$ such that $$x = \sum_{i=1}^n \lambda_i X_i$$, where $$\sum_{i=0}^n \lambda_i=1$$ and $$\lambda_i\geq 0$$. The Lovasz Extension $$\hat{f}$$ at $$x$$ is defined to be
+Given a point $$x \in K_n$$, it is possible to determine the convex hull $$C_P$$ and path $$P=[0_n=X_0,X_1,..,1_n=X_n]$$ such that $$x \in C_P$$. We can find the coefficients $$\lambda_i$$ such that $$x = \sum_{i=0}^n \lambda_i X_i$$, where $$\sum_{i=0}^n \lambda_i=1$$ and $$\lambda_i\geq 0$$. The Lovasz Extension $$\hat{f}$$ at $$x$$ is defined to be
 
 $$\hat{f}(x) = \sum_{i=0}^p \lambda_i f(X_i)$$
 
-Let $$x_1,x_2,..,x_n$$ be the elements of $$x$$ sorted in decreasing order, i.e $$1\geq x_1 \geq x_2 \geq ..\geq x_n \geq 0$$. Let $$x_0=1$$ and $$x_{n+1} = 0$$. The $$\lambda$$'s are the gaps between $$x_0, x_1 , x_2 , .., x_n , x_{n+1}$$.
+Let $$x$$ be the vector $$(x_1,x_2,..,x_n)$$. Let $\pi:[n] \to [n]$ be the sorting permutation of $$x_1,x_2,..,x_n$$. That means if $$\pi(i)=j$$, then $$x_j$$ is the $$i$$th largest element in the vector $$x$$. So $$1\geq x_{\pi(1)} \geq x_{\pi(2)} \geq ..\geq x_{\pi(n)} \geq 0$$. Let $$x_{\pi(0)}=1$$ and $$x_{\pi(n+1)} = 0$$. The $$\lambda$$'s are the gaps between $$x_{\pi(0)}, x_{\pi(1)} , x_{\pi(2)} , .., x_{\pi(n)} , x_{\pi(n+1)}$$.
 
-$$\lambda_i = x_i-x_{i+1}$$
+$$\lambda_i = x_{\pi(i)}-x_{\pi(i+1)}$$
 
-Let $$e_i$$ be the $$n$$ dimensional one-hot vector such that $$e_i[ k ]=1$$ when $$x[k] = x_i$$, i.e when the index of $$x_i$$ in $$x$$ is $$k$$. Let $$e_0$$ be the zero vector. The $$X_i$$'s are:
+Let $$X_0 = 0_n$$. Then, $$X_1 = X_0 + e_{\pi(1)}$$, $$X_2 = X_1 + e_{\pi(2)}$$ and so on. Here $$e_{\pi(i)}$$ is the vector with a 1 at position $$\pi(i)$$ and all other elements are 0. In general, we have:
 
-$$X_i = \sum_{j=0}^i e_j$$
+$$X_i = X_{i-1} + e_{\pi(i)}$$
+
+The summation, $$\sum_{i=0}^n \lambda_i X_i$$ can be re-written as:
+
+$$\begin{align}
+\sum_{i=0}^n \lambda_i X_i &= (1-x_{\pi(1)})X_0+\sum_{i=1}^n (x_{\pi(i)}-x_{\pi(i+1)}) (X_{i-1}+e_{\pi(i)}) &= \sum_{i=1}^n e_{\pi(i)} (\sum_{j=i}^n x_{\pi(j)}-x_{\pi(j+1)}) &= \sum_{i=1}^n e_{\pi(i)} x_{\pi(i)} &= x
+\end{align}$$
+
