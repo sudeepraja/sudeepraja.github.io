@@ -79,14 +79,14 @@ $$\begin{align}
 &=\prod_{i=1}^n \frac{(\exp(-\eta \sum_{\tau=1}^t l_\tau^i))^{X_S^i}}{1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}
 \end{align}$$
 
-Because $X_S^i$ is binary, we have $$(\exp(-\eta \sum_{\tau=1}^t l_\tau^i))^{X_S^i} = \exp(-\eta \sum_{\tau=1}^t l_\tau^i X_S^i)$$
+Because $$X_S^i$$ is binary, we have $$(\exp(-\eta \sum_{\tau=1}^t l_\tau^i))^{X_S^i} = \exp(-\eta \sum_{\tau=1}^t l_\tau^i X_S^i)$$
 
 $$\begin{align}
 \Pr(X_t=X_S|\mathcal{F}_{t-1}) &= \prod_{i=1}^n \frac{\exp(-\eta \sum_{\tau=1}^t l_\tau^i X_S^i)}{1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}\\
 &=\frac{\exp(-\eta \sum_{\tau=1}^t \langle l_\tau, X_S\rangle)}{\prod_{i=1}^n(1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i))}
 \end{align}$$
 
-Observe the denominator. It is a product of $$n$$ terms, each consisting of 2 terms. When we expand this, we get an expression with $$2^n$$ terms, each corresponding to one of the vertices of the hypercube. In the $$i$$th term of the product, we need to choose either 1 or $$\exp(-\eta \sum_{\tau=1}^t l_\tau^i)$$. If we choose, then $$X^i = 0$$ and if we choose $$\exp(-\eta \sum_{\tau=1}^t l_\tau^i)$$, then $$X^i = 1$$. Hence, we have that:
+Observe the denominator. It is a product of $$n$$ terms, each consisting of 2 terms. When we expand this, we get an expression with $$2^n$$ terms, each corresponding to one of the vertices of the hypercube. In the $$i$$th term of the product, we need to choose either 1 or $$\exp(-\eta \sum_{\tau=1}^t l_\tau^i)$$. If we choose 1, then $$X^i = 0$$ or if we choose $$\exp(-\eta \sum_{\tau=1}^t l_\tau^i)$$, then $$X^i = 1$$. Hence, we have that:
 
 $$\prod_{i=1}^n(1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)) = \sum_{X \in \{0,1\}^n} \exp(-\eta \sum_{\tau=1}^t \langle l_\tau,X\rangle)$$
 
