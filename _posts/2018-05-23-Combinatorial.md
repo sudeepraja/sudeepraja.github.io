@@ -70,6 +70,30 @@ x^{k}_{t+1} &= \frac{1}{1+\exp(\eta \sum_{\tau=1}^{t-1} l_\tau^k)}
 
 Since this is the update we chose in our algorithm, it ensures that that the probabilities are same.
 
+Alternativley, we can show by substitution that the probabilities are equal:
+
+$$\begin{align}
+\Pr(X_t=X_S|\mathcal{F}_{t-1}) &= \prod_{i=1}^n (x_t^i)^{X_S^i} (1-x_t^i)^{1-X_S^i}\\
+&=\prod_{i=1}^n \bigg(\frac{1}{1+\exp(\eta \sum_{\tau=1}^t l_\tau^i)}\bigg)^{X_S^i} \bigg(\frac{\exp(\eta \sum_{\tau=1}^t l_\tau^i)}{1+\exp(\eta \sum_{\tau=1}^t l_\tau^i)}\bigg)^{1-X_S^i}\\
+&=\prod_{i=1}^n \bigg(\frac{\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}{1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}\bigg)^{X_S^i} \bigg(\frac{1}{1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}\bigg)^{1-X_S^i}\\
+&=\prod_{i=1}^n \frac{(\exp(-\eta \sum_{\tau=1}^t l_\tau^i))^{X_S^i}}{1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}
+\end{align}$$
+
+Because $X_S^i$ is binary, we have $$(\exp(-\eta \sum_{\tau=1}^t l_\tau^i))^{X_S^i} = \exp(-\eta \sum_{\tau=1}^t l_\tau^i X_S^i)$$
+
+$$\begin{align}
+\Pr(X_t=X_S|\mathcal{F}_{t-1}) &= \prod_{i=1}^n \frac{\exp(-\eta \sum_{\tau=1}^t l_\tau^i X_S^i)}{1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)}\\
+&=\frac{\exp(-\eta \sum_{\tau=1}^t \langle l_\tau, X_S\rangle)}{\prod_{i=1}^n(1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i))}
+\end{align}$$
+
+Observe the denominator. It is a product of $$n$$ terms, each consisting of 2 terms. When we expand this, we get an expression with $$2^n$$ terms, each corresponding to one of the vertices of the hypercube. In the $$i$$th term of the product, we need to choose either 1 or $$\exp(-\eta \sum_{\tau=1}^t l_\tau^i)$$. If we choose, then $$X^i = 0$$ and if we choose $$\exp(-\eta \sum_{\tau=1}^t l_\tau^i)$$, then $$X^i = 1$$. Hence, we have that:
+
+$$\prod_{i=1}^n(1+\exp(-\eta \sum_{\tau=1}^t l_\tau^i)) = \sum_{X \in \{0,1\}^n} \exp(-\eta \sum_{\tau=1}^t \langle l_\tau,X\rangle)$$
+
+Hence, we get:
+
+$$\Pr(X_t=X_S|\mathcal{F}_{t-1}) = \frac{\exp(-\eta \sum_{\tau=1}^t \langle l_\tau, X_S\rangle)}{\sum_{X \in \{0,1\}^n} \exp(-\eta \sum_{\tau=1}^t \langle l_\tau,X\rangle)} = \Pr(S_t=S|\mathcal{F}_{t-1})$$
+
 As our algorithm has the same probability as choosing a subset as Hedge, it suffers from the same expected regret $$\mathbb{E}[R_T] \leq n^{3/2} \sqrt{2T\log 2}$$. However, it only need to maintain and update $$n$$ parameters which makes it tractable.
 
 **Note:** The optimal regret is $$O(\sqrt{nT})$$, which can be obtained by running Online Mirror Descent(OMD) using the Entropic regularizer. In general, OMD using Entropic regularization on the convex hull of points and discrete Hedge on vertices are different algorithms. Maybe I'll write more on these in future blogs.
