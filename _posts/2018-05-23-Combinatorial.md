@@ -40,11 +40,12 @@ The algorithm we propose is as follows:
 	 3. Sample $$X_t^{i} \sim \text{Bernoulli}(x_t^i) \forall i \in [n]$$ and choose $$X_t = [X_t^{1},X_t^{2},...,X_t^{n}]$$
 	 4. See the loss vector $$l_t$$ and incur loss $$\langle l_t,X_t \rangle$$
 	 5. Update 
+
 $$x^{i}_{t+1} = \frac{1}{1+\exp(\eta \sum_{\tau=1}^t l_\tau^i)} \quad \text{or} \quad x^{i}_{t+1} = \frac{x^{i}_{t}}{x^{i}_{t} + (1-x^{i}_{t})\exp(\eta l_t^i)}$$
 
 **Claim:** If both hedge and our algorithm see the same losses and perform the same action from time $$\tau=1,2,..,t-1$$ (defined by the filtration $$\mathcal{F_{t-1}}$$), then the probability that hedge chooses $$S$$ at time $$t$$ is the same as the probability that our algorithm chooses $$X_S$$ at time $$t$$. 
 
-$$\Pr(S_t = S|\mathcal{F_{t-1}}) = \Pr(X_t = X_S|\mathcal{F_{t-1}})$$
+$$\Pr(S_t = S \mid \mathcal{F_{t-1}}) = \Pr(X_t = X_S \mid \mathcal{F_{t-1}})$$
 
 **Proof:** We have that:
 
@@ -62,12 +63,12 @@ Since this is true for all $$S \subseteq \mathcal{S}$$, consider any $$A, B \sub
 
 $$\begin{align}
 \frac{\exp(-\eta \sum_{\tau = 1}^{t-1}\langle l_t,X_A \rangle)}{\prod_{i=1}^n (x_t^i)^{X_A^i} (1-x_t^i)^{1-X_A^i}} &= \frac{\exp(-\eta \sum_{\tau = 1}^{t-1}\langle l_t,X_B \rangle)}{\prod_{i=1}^n (x_t^i)^{X_B^i} (1-x_t^i)^{1-X_B^i}}\\
-\frac{\exp(-\eta \sum_{\tau = 1}^{t-1}l_\tau^i)}{x_t^i} &= \frac{1}{1-x_t^i}\\
-\frac{1-x_t^i}{x_t^i} &= \frac{1}{x_t^i} -1 = \exp(\eta \sum_{\tau = 1}^{t-1}l_\tau^i)\\
-x^{i}_{t+1} &= \frac{1}{1+\exp(\eta \sum_{\tau=1}^{t-1} l_\tau^i)}
+\frac{\exp(-\eta \sum_{\tau = 1}^{t-1}l_\tau^k)}{x_t^k} &= \frac{1}{1-x_t^k}\\
+\frac{1-x_t^k}{x_t^k} &= \frac{1}{x_t^k} -1 = \exp(\eta \sum_{\tau = 1}^{t-1}l_\tau^k)\\
+x^{k}_{t+1} &= \frac{1}{1+\exp(\eta \sum_{\tau=1}^{t-1} l_\tau^k)}
 \end{align}$$
 
-Since this is the update we chose in our algorithm, it ensures that $$\Pr(S_t = S|\mathcal{F_{t-1}}) = \Pr(X_t = X_S|\mathcal{F_{t-1}})$$.
+Since this is the update we chose in our algorithm, it ensures that $$\Pr(S_t = S\mid \mathcal{F_{t-1}}) = \Pr(X_t = X_S\mid \mathcal{F_{t-1}})$$.
 
 As our algorithm has the same probability as choosing a subset as Hedge, it suffers from the same expected regret $$\mathbb{E}[R_T] \leq n^{3/2} \sqrt{2T\log 2}$$. However, it only need to maintain and update $$n$$ parameters which makes it tractable.
 
