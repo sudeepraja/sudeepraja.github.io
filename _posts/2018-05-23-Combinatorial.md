@@ -68,7 +68,7 @@ $$\begin{align}
 x^{k}_{t+1} &= \frac{1}{1+\exp(\eta \sum_{\tau=1}^{t-1} l_\tau^k)}
 \end{align}$$
 
-Since this is the update we chose in our algorithm, it ensures that $$\Pr(S_t = S\mid \mathcal{F_{t-1}}) = \Pr(X_t = X_S\mid \mathcal{F_{t-1}})$$.
+Since this is the update we chose in our algorithm, it ensures that that the probabilities are same.
 
 As our algorithm has the same probability as choosing a subset as Hedge, it suffers from the same expected regret $$\mathbb{E}[R_T] \leq n^{3/2} \sqrt{2T\log 2}$$. However, it only need to maintain and update $$n$$ parameters which makes it tractable.
 
