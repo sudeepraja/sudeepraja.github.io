@@ -55,7 +55,7 @@ Where $$Z_t = \sum_{S \in \mathcal{S}} \exp(-\eta \sum_{\tau = 1}^{t-1}\langle l
 
 $$\Pr(X_t = X_S|\mathcal{F_{t-1}}) = \prod_{i=1}^n (x_t^i)^{X_S^i} (1-x_t^i)^{1-X_S^i}$$
 
-We have to find an update for $$x_{t}$$ such that $$\Pr(S_t = S|\mathcal{F_{t-1}}) = \Pr(X_t = X_S|\mathcal{F_{t-1}})$$:
+We have to find an update for $$x_{t}$$ such that $$\Pr(S_t = S \mid \mathcal{F_{t-1}}) = \Pr(X_t = X_S \mid \mathcal{F_{t-1}})$$:
 
 $$Z_t = \frac{\exp(-\eta \sum_{\tau = 1}^{t-1}\langle l_\tau,X_S \rangle)}{\prod_{i=1}^n (x_t^i)^{X_S^i} (1-x_t^i)^{1-X_S^i}}$$
 
