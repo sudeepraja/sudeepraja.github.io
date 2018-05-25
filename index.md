@@ -2,11 +2,9 @@
 layout: page
 published: true
 ---
-I am a 1st year Ms/PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
+I am a 1st year PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
 
-I am interested in Machine Learning Theory, Multi-Armed Bandits, Online Learning, Reinforcement Learning Theory, Non Convex Optimization and Randomized algorithms.
-
-I write a blog about some of the things I encounter during my research.
+I am interested in Machine Learning Theory, Multi-Armed Bandits, Online Learning, Reinforcement Learning Theory and Convex/Non-Convex/Combinatorial Optimization.
 
 I was a Budding Scientist at Conduent Labs/Xerox Research Center India from June 2016 to June 2017. I graduted from the Indian Institute of Technology, Kharagpur with a Bachelor's degree in Computer Science and Engineering in 2016. 
 
