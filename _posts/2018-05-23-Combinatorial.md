@@ -23,13 +23,13 @@ Running Hedge this way requires sampling from a distribution defined by $$2^n$$ 
 
 $$\mathbb{E}[R_T] \leq \frac{\eta}{2} \sum_{t=1}^T\sum_{S \subseteq \mathcal{S}}  p^{S}_{t} L_t(S)^2 + \frac{\log 2^n}{\eta}$$
 
-Since $$l_t^{i} \in [0,1]$$, we have $$L_t(S)^2 \leq n^2$$. So, 
+Since $$l_t^{i} \in [-1,1]$$, we have $$L_t(S)^2 \leq n^2$$. So, 
 
 $$\mathbb{E}[R_T] \leq \frac{\eta n^2T}{2} +\frac{n \log 2}{\eta}$$
 
 Optimizing over $$\eta$$, we get $$\eta  = \sqrt{\frac{2 \log 2}{nT}}$$ and the expected regret $$\mathbb{E}[R_T] \leq n^{3/2} \sqrt{2T\log 2}$$. 
 
-We give an algorithm which does hedge, but uses only $$n$$ parameters. The decision set of this problem can be represented using the vertices of the hypercube $$\{0,1\}^n$$. The vertex corresponding to the set $$S$$ is its characteristic vector $$X(S)$$, which is defined as $$X(S)^{i}=1\{i \in S\}$$. We rephrase the problem according to this notation. At each step $$t=1,2,..,T$$, the player chooses a vertex $$X_t \in \{0,1\}^n$$ and the adversary simultaneously chooses a loss vector $$l_t \in [0,1]^n$$. The player incurs the loss $$L_t(X_t) = \langle l_t, X_t\rangle$$. The player also sees the loss vector $$l_t = [l_t^{1},l_t^{2},...,l_t^{n}]$$. The goal of the player is to choose $$X_1,X_2,..,X_T$$ such that regret  $$R_T$$ is minimized. Regret is defined as:
+We give an algorithm which does hedge, but uses only $$n$$ parameters. The decision set of this problem can be represented using the vertices of the hypercube $$\{0,1\}^n$$. The vertex corresponding to the set $$S$$ is its characteristic vector $$X(S)$$, which is defined as $$X(S)^{i}=1\{i \in S\}$$. We rephrase the problem according to this notation. At each step $$t=1,2,..,T$$, the player chooses a vertex $$X_t \in \{0,1\}^n$$ and the adversary simultaneously chooses a loss vector $$l_t \in [-1,1]^n$$. The player incurs the loss $$L_t(X_t) = \langle l_t, X_t\rangle$$. The player also sees the loss vector $$l_t = [l_t^{1},l_t^{2},...,l_t^{n}]$$. The goal of the player is to choose $$X_1,X_2,..,X_T$$ such that regret  $$R_T$$ is minimized. Regret is defined as:
 
 $$R_T = \sum_{t=1}^T L_t(X_t) - \min_{X^\star \in \{0,1\}^n} \sum_{t=1}^T L_t(X^\star)$$
 
