@@ -7,7 +7,7 @@ project: false
 
 In this post, we consider the Online Linear Optimization problem where the decision set is confined to the vertices of a Hypercube. Naively applying Hedge to this problem achieves optimal regret in $$T$$ but requires maintaining an exponential number of variables. We show that it is in fact possible to apply Hedge by using only linear number of variables.
 
-This problem can be viewed as a repeated game between a player and an adversary. Let $$\mathcal{S}$$ be a set of $$n$$ items. At each step $$t=1,2,..,T$$, the player chooses a subset  of items $$S_t \subseteq S$$ and the adversary simultaneously chooses a loss (cost) for each item $$l_t^{i} \in [0,1]$$ for $$i \in \mathcal{S}$$. The player incurs the loss (pays the cost) of the items he has chosen, $$L_t(S_t) = \sum_{i \in S_t} l_t^{i}$$. The player also gets to know the loss of each item. The goal of the player is to choose sets $$S_1,S_2,..,S_T$$ such that regret  $$R_T$$ is minimized. Regret is defined as:
+This problem can be viewed as a repeated game between a player and an adversary. Let $$\mathcal{S}$$ be a set of $$n$$ items. At each step $$t=1,2,..,T$$, the player chooses a subset  of items $$S_t \subseteq S$$ and the adversary simultaneously chooses a loss (cost) for each item $$l_t^{i} \in [-1,1]$$ for $$i \in \mathcal{S}$$. The player incurs the loss (pays the cost) of the items he has chosen, $$L_t(S_t) = \sum_{i \in S_t} l_t^{i}$$. The player also gets to know the loss of each item. The goal of the player is to choose sets $$S_1,S_2,..,S_T$$ such that regret  $$R_T$$ is minimized. Regret is defined as:
 
 $$R_T = \sum_{t=1}^T L_t(S_t) - \min_{S^\star \subseteq \mathcal{S}} \sum_{t=1}^T L_t(S^\star)$$
 
