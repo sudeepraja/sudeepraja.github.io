@@ -96,4 +96,4 @@ $$\Pr(X_t=X_S|\mathcal{F}_{t-1}) = \frac{\exp(-\eta \sum_{\tau=1}^t \langle l_\t
 
 As our algorithm has the same probability as choosing a subset as Hedge, it suffers from the same expected regret $$\mathbb{E}[R_T] \leq n^{3/2} \sqrt{2T\log 2}$$. However, it only needs to maintain and update $$n$$ parameters which makes it tractable.
 
-**Note:** The optimal regret is $$O(\sqrt{nT})$$, which can be obtained by running Online Mirror Descent(OMD) using the Entropic regularizer. In general, OMD using Entropic regularization on the convex hull of points and discrete Hedge on vertices are different algorithms. Maybe I'll write more on these in future blogs.
+**Note:** The optimal regret is $$O(n\sqrt{T})$$, which can be obtained by running Online Mirror Descent(OMD) using the Entropic regularizer. In general, OMD using Entropic regularization on the convex hull of points and discrete Hedge on vertices are different algorithms. Maybe I'll write more on these in future blogs.
