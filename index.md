@@ -16,7 +16,7 @@ Email: sputta at cs.umass.edu
 ---
 ## Publications
 [DBLP](https://dblp.uni-trier.de/pers/hd/p/Putta:Sudeep_Raja), [Google Scholar](https://scholar.google.com/citations?user=0MxBCEIAAAAJ&hl=en)
-<h3>2017</h3>
+<h3>2018</h3>
    - [Exponential Weights on the Hypercube in Polynomial Time](https://arxiv.org/abs/1806.04594) <br />**Sudeep Raja Putta**<br />RLDM 2017.
 <h3>2017</h3>
    - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](https://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](https://sudeepraja.github.io/papers/PEPSRL_short.pdf).
