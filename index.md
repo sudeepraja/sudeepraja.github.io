@@ -2,7 +2,7 @@
 layout: page
 published: true
 ---
-I am a 1st year PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
+I am a 1st year Ms/PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
 
 I am interested in Machine Learning Theory, Multi-Armed Bandits, Online Learning, Reinforcement Learning Theory and Convex/Non-Convex/Combinatorial Optimization.
 
