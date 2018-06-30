@@ -12,7 +12,11 @@ My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 
 Email: sputta at cs.umass.edu
 
-
+---
+## News
+   - I received the Sudha Mishra and Rajesh Jha Scholarship.
+   - In summer 2018 I will be interning with Navin Goyal at MSR Bangalore.
+   
 ---
 ## Publications
 [DBLP](https://dblp.uni-trier.de/pers/hd/p/Putta:Sudeep_Raja), [Google Scholar](https://scholar.google.com/citations?user=0MxBCEIAAAAJ&hl=en)
@@ -22,5 +26,3 @@ Email: sputta at cs.umass.edu
    - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](https://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](https://sudeepraja.github.io/papers/PEPSRL_short.pdf).
    - [Efficient Reinforcement Learning via Initial Pure Exploration](https://arxiv.org/abs/1706.02237) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
 
----
-Some old projects I did in my undergrad: [Projects]({{ site.baseurl }}/projects)
