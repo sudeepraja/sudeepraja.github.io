@@ -2,11 +2,11 @@
 layout: page
 published: true
 ---
-I am a 1st year Ms/PhD student at the College of Information and Computer Sciences, University of Massachusetts Amherst.
+I am a first year Ms/PhD student at the [College of Information and Computer Sciences](https://www.cics.umass.edu/) at the [University of Massachusetts Amherst](http://www.umass.edu/).
 
-I am interested in Machine Learning Theory, Multi-Armed Bandits, Online Learning, Reinforcement Learning Theory and Convex/Non-Convex/Combinatorial Optimization.
+I am broadly interested in the theoretical foundations of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Statistical Learning Theory, Reinforcement Learning Theory and Convex/Non-Convex/Combinatorial Optimization.
 
-I was a Budding Scientist at Conduent Labs/Xerox Research Center India from June 2016 to June 2017. I graduted from the Indian Institute of Technology, Kharagpur with a Bachelor's degree in Computer Science and Engineering in 2016. 
+Prior to joining UMass, I was a Budding Scientist at Conduent Labs/Xerox Research Center India from June 2016 to June 2017. I graduted from the Indian Institute of Technology, Kharagpur with a Bachelor's degree in Computer Science and Engineering in 2016. 
 
 My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 
