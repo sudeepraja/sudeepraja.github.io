@@ -53,4 +53,4 @@ If we consider $$(\lim_{k \to \infty} B^{-1}_{(k)})B$$, we also get the same exp
 
 The matrix $$UV$$ is said to be [Convergent](https://en.wikipedia.org/wiki/Convergent_matrix) if $$\lim_{k \to \infty}(UV)^{k} = 0$$. The necessary and sufficient condition for $$UV$$ to be convergent is that its [Spectral radius](https://en.wikipedia.org/wiki/Spectral_radius) (largest absolute value of its eigenvalues) is strictly less than 1.
 
-So, this fixed point iteration find $$(I_n+UV)^{-1}$$ if and only if the spectral radius of $$UV$$ is strictly less than 1.
+So, this fixed point iteration will find $$(I_n+UV)^{-1}$$ if and only if the spectral radius of $$UV$$ is strictly less than 1.
