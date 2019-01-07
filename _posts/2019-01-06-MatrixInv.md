@@ -11,7 +11,7 @@ $$B^{-1} = (I_n+UV)^{-1}= I_n - U(I_m+VU)^{-1}V$$
 
 Using the Woodbury matrix identity again:
 
-$$(I_m+VU)^{-1} = I_k - V(I_n+UV)^{-1}U$$
+$$(I_m+VU)^{-1} = I_m - V(I_n+UV)^{-1}U$$
 
 Substituting this in the above expression, we get:
 
