@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fixed point iteration for finding `(I_n+UV)^{-1}`
+title: 'Fixed point iteration for finding `(I_n+UV)^{-1}`'
 published: true
 project: false
 ---
@@ -45,8 +45,8 @@ B(\lim_{k \to \infty} B^{-1}_{(k)})&=\lim_{k \to \infty} BB^{-1}_{(k)}\\
 &= \lim_{k \to \infty} \sum_{i=0}^{2k} (-1)^i (UV)^i  + UV \sum_{i=0}^{2k} (-1)^i (UV)^i \\
 &=\lim_{k \to \infty} \sum_{i=0}^{2k} (-1)^i (UV)^i + \sum_{i=0}^{2k} (-1)^i (UV)^{i+1}\\
 &= \lim_{k \to \infty} \sum_{i=0}^{2k} (-1)^i (UV)^i + \sum_{i=0}^{2k} (-1)^i (UV)^{i+1}\\
-&= \lim_{k \to \infty} I_n + (UV)^{k+1}\\
-&= I_n + \lim_{k \to \infty}(UV)^{k+1}
+&= \lim_{k \to \infty} I_n + (UV)^{2k+1}\\
+&= I_n + \lim_{k \to \infty}(UV)^{2k+1}
 \end{align}$$
 
 If we consider $$(\lim_{k \to \infty} B^{-1}_{(k)})B$$, we also get the same expression. So, we must have that $$I_n = I_n + \lim_{k \to \infty}(UV)^{k+1}$$ i.e, $$\lim_{k \to \infty}(UV)^{k} = 0$$
