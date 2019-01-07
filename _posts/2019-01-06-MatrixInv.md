@@ -49,7 +49,7 @@ B(\lim_{k \to \infty} B^{-1}_{(k)})&=\lim_{k \to \infty} BB^{-1}_{(k)}\\
 &= I_n + \lim_{k \to \infty}(UV)^{2k+1}
 \end{align}$$
 
-If we consider $$(\lim_{k \to \infty} B^{-1}_{(k)})B$$, we also get the same expression. So, we must have that $$I_n = I_n + \lim_{k \to \infty}(UV)^{k+1}$$ i.e, $$\lim_{k \to \infty}(UV)^{k} = 0$$
+If we consider $$(\lim_{k \to \infty} B^{-1}_{(k)})B$$, we also get the same expression. So, we must have that $$I_n = I_n + \lim_{k \to \infty}(UV)^{2k+1}$$ i.e, $$\lim_{k \to \infty}(UV)^{k} = 0$$
 
 The matrix $$UV$$ is said to be [Convergent](https://en.wikipedia.org/wiki/Convergent_matrix) if $$\lim_{k \to \infty}(UV)^{k} = 0$$. The necessary and sufficient condition for $$UV$$ to be convergent is that its [Spectral radius](https://en.wikipedia.org/wiki/Spectral_radius) (largest absolute value of its eigenvalues) is strictly less than 1.
 
