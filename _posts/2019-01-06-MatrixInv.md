@@ -5,7 +5,7 @@ published: true
 project: false
 ---
 
-Let $$B=I_n+UV$$, where $$U \in \mathbb{R}^{n \times k}$$ and $$V \in \mathbb{R}^{k \times n}$$ such that $$k>>n$$. The goal is to find $B^{-1}$. Using the **[Sherman–Morrison–Woodbury formula](https://en.wikipedia.org/wiki/Woodbury_matrix_identity)**, we have:
+Let $$B=I_n+UV$$, where $$U \in \mathbb{R}^{n \times k}$$ and $$V \in \mathbb{R}^{k \times n}$$ such that $$k>>n$$. The goal is to find $$B^{-1}$$. Using the **[Sherman–Morrison–Woodbury formula](https://en.wikipedia.org/wiki/Woodbury_matrix_identity)**, we have:
 
 $$B^{-1} = (I_n+UV)^{-1}= I_n - U(I_k+VU)^{-1}V$$
 
