@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fixed point iteration for finding `$(I_n+UV)^{-1}$`
+title: Fixed point iteration for finding `(I_n+UV)^{-1}`
 published: true
 project: false
 ---
