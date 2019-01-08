@@ -2,7 +2,7 @@
 layout: page
 published: true
 ---
-I am a first year Ms/PhD student at the [College of Information and Computer Sciences](https://www.cics.umass.edu/) at the [University of Massachusetts Amherst](http://www.umass.edu/).
+I am a second year Ms/PhD student at the [College of Information and Computer Sciences](https://www.cics.umass.edu/) at the [University of Massachusetts Amherst](http://www.umass.edu/).
 
 I am broadly interested in the theoretical foundations of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Statistical Learning Theory, Reinforcement Learning Theory and Convex/Non-Convex/Combinatorial Optimization.
 
