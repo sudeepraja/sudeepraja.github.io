@@ -14,6 +14,8 @@ Email: sputta at cs.umass.edu
 
 ---
 ## News
+   - I will be attending the MIFODS workshop on Non-convex optimization and deep learning in January.
+   - My paper, Exponential Weights on the Hypercube in Polynomial Time, has been accepted at AISTATS 2019. This is joint work with Abhishek Shetty.
    - I received the Sudha Mishra and Rajesh Jha Scholarship.
    - In summer 2018 I will be interning with Navin Goyal at MSR Bangalore.
    
