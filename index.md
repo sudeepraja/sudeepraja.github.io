@@ -25,7 +25,7 @@ Email: sputta at cs.umass.edu
 <h3>2019</h3>
    - [Exponential Weights on the Hypercube in Polynomial Time](https://arxiv.org/abs/1806.04594) <br />**Sudeep Raja Putta**, Abhishek Shetty<br />AISTATS 2019.
 <h3>2018</h3>
-   - [Exponential Weights on the Hypercube in Polynomial Time](https://ewrl.files.wordpress.com/2018/09/ewrl_14_2018_paper_72.pdf) <br />**Sudeep Raja Putta**<br />EWRL 2018. (This paper is supercede by the AISTATS 2019 paper)
+   - [Exponential Weights on the Hypercube in Polynomial Time](https://ewrl.files.wordpress.com/2018/09/ewrl_14_2018_paper_72.pdf) <br />**Sudeep Raja Putta**<br />EWRL 2018. (This paper is superseded by the AISTATS 2019 paper)
 <h3>2017</h3>
    - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](https://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](https://sudeepraja.github.io/papers/PEPSRL_short.pdf).
    - [Efficient Reinforcement Learning via Initial Pure Exploration](https://arxiv.org/abs/1706.02237) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
