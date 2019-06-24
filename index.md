@@ -24,7 +24,7 @@ Email: sputta at cs.umass.edu
 ## Publications
 [DBLP](https://dblp.uni-trier.de/pers/hd/p/Putta:Sudeep_Raja), [Google Scholar](https://scholar.google.com/citations?user=0MxBCEIAAAAJ&hl=en)
 <h3>2019</h3>
-   - [Exponential Weights on the Hypercube in Polynomial Time](https://arxiv.org/abs/1806.04594) <br />**Sudeep Raja Putta**, Abhishek Shetty<br />AISTATS 2019.
+   - [Exponential Weights on the Hypercube in Polynomial Time](http://proceedings.mlr.press/v89/putta19a/putta19a.pdf) <br />**Sudeep Raja Putta**, Abhishek Shetty<br />AISTATS 2019.
 <h3>2018</h3>
    - [Exponential Weights on the Hypercube in Polynomial Time](https://ewrl.files.wordpress.com/2018/09/ewrl_14_2018_paper_72.pdf) <br />**Sudeep Raja Putta**<br />EWRL 2018. (This paper is superseded by the AISTATS 2019 paper)
 <h3>2017</h3>
