@@ -39,9 +39,7 @@ $$\log \frac{1}{\det(X)}$$
 
 $$\frac{1-\text{Tr}(X^q)}{1-q}$$
 
-9. Soft Exploration: Used in [7] for solving several open prblems. Introduced the idea of "soft" exploration as opposed to using "forced" exploration
-
-$$(1-\gamma)x_t + \frac{\gamma}{n}$$.
+9. Soft Exploration: Used in [7] for solving several open prblems. Introduced the idea of "soft" exploration as opposed to using "forced" exploration $$(1-\gamma)x_t + \frac{\gamma}{n}$$.
 
 $$\sum_{i=1}^n x_i \log x_i - \gamma \sum_{i=1}^n \log x_i$$
 
