@@ -4,7 +4,7 @@ published: true
 ---
 I will be joining the PhD program in the Industrial Engineering and Operations Research Department at Columbia University, starting Fall 2019.
 
-I am broadly interested in the theoretical acpects of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Statistical Learning Theory, Reinforcement Learning Theory and Optimization.
+I am broadly interested in the theoretical aspects of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Statistical Learning Theory, Reinforcement Learning Theory and Optimization.
 
 I hold an MS in CS from the University of Massachusetts, Amherst and a B.Tech in CSE from the Indian Institute of Technology, Kharagpur. I spent a year as a Budding Scientist at Conduent Labs/Xerox Research Center India.
 
