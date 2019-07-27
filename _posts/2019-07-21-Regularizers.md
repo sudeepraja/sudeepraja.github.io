@@ -43,6 +43,10 @@ $$\frac{1-\text{Tr}(X^q)}{1-q}$$
 
 $$\sum_{i=1}^n x_i \log x_i - \gamma \sum_{i=1}^n \log x_i$$
 
+- $\ell^n_p$ balls: Also used in [7] for $p \in [1,2]$:
+
+$$-\log(1-\|x\|_p^p)$$
+
 ## References
 1. Foster, Dylan J., et al. "Learning in games: Robustness of fast convergence." Advances in Neural Information Processing Systems. 2016.
 2. Zimmert, Julian, and Yevgeny Seldin. "An optimal algorithm for stochastic and adversarial bandits." arXiv preprint arXiv:1807.07623 (2018).
