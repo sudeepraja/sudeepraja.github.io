@@ -43,7 +43,7 @@ $$\frac{1-\text{Tr}(X^q)}{1-q}$$
 
 $$\sum_{i=1}^n x_i \log x_i - \gamma \sum_{i=1}^n \log x_i$$
 
-- $\ell^n_p$ balls: Also used in [7] for $p \in [1,2]$:
+- $$\ell^n_p$$ balls: Also used in [7] for $$p \in [1,2]$$:
 
 $$-\log(1-\|x\|_p^p)$$
 
