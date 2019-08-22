@@ -32,18 +32,18 @@ The Bandit algorithm can be constructed as below:
 
 ## Importance sampling estimator:
 
-The expected loss of playing $$y \sim S(x)$$ is $$\mathbb{E}[l^\top y] = l^\top x$$. So, $$l = \nabla l^\top x = \nabla \mathbb{E}[l^\top y]$$. Now we can use the importance sampling trick to obtain an unbiased estimator for $$l$$. Let $$p(y|x)$$ define the probability density $$S(x)$$. We have:
+The expected loss of playing $$y \sim S(x)$$ is $$\mathbb{E}[l^\top y] = l^\top x$$. So, $$l = \nabla l^\top x = \nabla \mathbb{E}[l^\top y]$$. Now we can use the importance sampling trick to obtain an unbiased estimator for $$l$$. Let $$p(y;x)$$ define the probability density $$S(x)$$. We have:
 
-$$\begin{align*}\nabla l^\top x &= \mathbb{E}[l^\top y] = \int_\mathcal{K} (l^\top y) p(y|x) dy\\
-\implies l &=  \int_\mathcal{K} (l^\top y) \nabla p(y|x) dy\\
-\implies l &= \int_\mathcal{K} (l^\top y) \frac{\nabla p(y|x)}{p(y|x)} p(y|x) dy\\
-l &= \int_\mathcal{K} (l^\top y) \nabla \log p(y|x) p(y|x) dy\\
-l&= \mathbb{E}\left[(l^\top y) \nabla \log p(y|x) \right]
+$$\begin{align*}\nabla l^\top x &= \mathbb{E}[l^\top y] = \int_\mathcal{K} (l^\top y) p(y;x) dy\\
+\implies l &=  \int_\mathcal{K} (l^\top y) \nabla p(y;x) dy\\
+\implies l &= \int_\mathcal{K} (l^\top y) \frac{\nabla p(y;x)}{p(y;x)} p(y;x) dy\\
+l &= \int_\mathcal{K} (l^\top y) \nabla \log p(y;x) p(y;x) dy\\
+l&= \mathbb{E}\left[(l^\top y) \nabla \log p(y;x) \right]
 \end{align*}$$
 
 So, we can use this as an unbiased linear estimator when we play $$y \sim S(x)$$:
 
-$$\tilde{l} = (l^\top y) \nabla \log p(y|x)$$
+$$\tilde{l} = (l^\top y) \nabla \log p(y;x)$$
 
 
 ## Flaxman Kalai McMahan Estimator
