@@ -3,8 +3,6 @@ layout: page
 published: true
 ---
 
-> Don't worry about the overall importance of the problem; work on it if it looks interesting. I think there's a sufficient correlation between interest and importance. — David Blackwell
-
 I am a first year doctoral student in the Industrial Engineering and Operations Research Department at Columbia University.
 
 I am broadly interested in the theoretical aspects of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Optimization, Reinforcement Learning Theory and Statistical learning theory.
@@ -33,3 +31,8 @@ Email: sputta at cs.umass.edu
 <h3>2017</h3>
    - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](https://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](https://sudeepraja.github.io/papers/PEPSRL_short.pdf).
    - [Efficient Reinforcement Learning via Initial Pure Exploration](https://arxiv.org/abs/1706.02237) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
+   
+   
+---
+## Quotes
+> Don't worry about the overall importance of the problem; work on it if it looks interesting. I think there's a sufficient correlation between interest and importance. — David Blackwell
