@@ -2,9 +2,12 @@
 layout: page
 published: true
 ---
-I will be joining the PhD program in the Industrial Engineering and Operations Research Department at Columbia University, starting Fall 2019.
 
-I am broadly interested in the theoretical aspects of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Statistical Learning Theory, Reinforcement Learning Theory and Optimization.
+> Don't worry about the overall importance of the problem; work on it if it looks interesting. I think there's a sufficient correlation between interest and importance. — David Blackwell
+
+I am a first year doctoral student in the Industrial Engineering and Operations Research Department at Columbia University.
+
+I am broadly interested in the theoretical aspects of Machine Learning. Some speicific areas of interest include Online Learning, Bandits, Optimization, Reinforcement Learning Theory and Statistical learning theory.
 
 I hold an MS in CS from the University of Massachusetts, Amherst and a B.Tech in CSE from the Indian Institute of Technology, Kharagpur. I spent a year as a Budding Scientist at Conduent Labs/Xerox Research Center India.
 
