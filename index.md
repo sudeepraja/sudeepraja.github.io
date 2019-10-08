@@ -11,7 +11,7 @@ I hold an MS in CS from the University of Massachusetts, Amherst and a B.Tech in
 
 My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 
-Email: sputta at cs.umass.edu
+Email: sudeepraja.putta at columbia.edu
 
 ---
 ## News
