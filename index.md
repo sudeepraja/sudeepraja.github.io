@@ -3,7 +3,7 @@ layout: page
 published: true
 ---
 
-Sudeep Raja is a Doctoral student in the IEOR Department at Columbia University. His research interests are in theoretical machine learning and optimization, with a specific focus on online learning, multi-armed bandits and reinforcement learning. His goal is to design efficient algorithms with provable guarantees for online decision making. Sudeep holds a Master of Science in Computer Science from the University of Massachusetts Amherst, where he was awarded the Sudha Mishra and Rajesh Jha Scholarship. He also holds a Bachelor of Technology in Computer Science and Engineering from the Indian Institute of Technology Kharagpur.
+Sudeep Raja is a Doctoral student in the IEOR Department at Columbia University. His research interests are in theoretical machine learning and optimization, with a specific focus on online learning, multi-armed bandits and reinforcement learning. His goal is to design efficient algorithms with provable guarantees for online decision making. Sudeep holds a Master of Science in Computer Science from the University of Massachusetts Amherst and a Bachelor of Technology in Computer Science and Engineering from the Indian Institute of Technology Kharagpur.
 
 My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 
