@@ -11,7 +11,7 @@ Email: sudeepraja.putta at columbia.edu
 
 ---
 ## News
-   - I will be a Visiting Graduate Student in the Theory of Reinforcement Learning program at Simons Institute at Berkeley in Fall 2020.
+   - I will be a Visiting Graduate Student in the Theory of Reinforcement Learning program at the Simons Institute in Fall 2020.
    - I will be attending COLT'19 and STOC'19 at Phoenix.
    - I will be attending the MIFODS workshop on Non-convex optimization and deep learning in January.
    - My paper, Exponential Weights on the Hypercube in Polynomial Time, has been accepted at AISTATS 2019. This is joint work with Abhishek Shetty.
