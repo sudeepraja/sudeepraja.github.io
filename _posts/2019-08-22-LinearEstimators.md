@@ -61,6 +61,17 @@ Pick vector $$u$$ uniformly from $$\mathbb{S}$$ and play $$y = x + \delta u$$. U
 
 $$\tilde{l} =  \frac{n}{\delta}(l^\top y) u $$
 
+Going one step further, we can use a positive definite matrix $$A$$ insted of $\delta$ as follows:
+
+$$l^\top x = \mathbf{E}_{v \in \mathbb{B}}[l^\top (x+Av)]$$
+
+Stoke's Theorem gives:
+
+$$l = \nabla \mathbb{E}_{v \in \mathbb{B}}[l^\top (x+A v)] = n\mathbb{E}_{u \in \mathbb{S}}[l^\top(x+A u) A^{-1} u]$$
+
+Pick vector $$u$$ uniformly from $$\mathbb{S}$$ and play $$y = x + A u$$. Using the above result, we have:
+
+$$\tilde{l} =  n(l^\top y) A^{-1}u $$
 
 ## Dani Hayes Kakade One Point Linear Estimator
 
