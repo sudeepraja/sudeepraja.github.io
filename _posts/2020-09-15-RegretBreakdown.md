@@ -72,7 +72,7 @@ $$
 ## Putting it all together
 Here is the sequence of steps, some of which might be optional:
 
-1. Apply change of comparator:
+- Apply change of comparator:
 
 $$
 \begin{align*}
@@ -80,7 +80,7 @@ $$
 \end{align*}
 $$
 
-2. Change sampling distribution to $$p_t$$:
+- Change sampling distribution to $$p_t$$:
 
 $$
 \begin{align*}
@@ -88,7 +88,7 @@ $$
 \end{align*}
 $$
 
-3. Use Estimator and account for bias:
+- Use Estimator and account for bias:
 
 $$
 \begin{align*}
