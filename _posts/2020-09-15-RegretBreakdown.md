@@ -8,19 +8,19 @@ project: false
 
 In this post, I document a few tricks that can be used to modify standard regret inequalities.
 
-Consider the $n$-experts problem. At each round, the adversary chooses a loss vector $l_t \in \mathcal{L}$ and the player picks $p_t \in \Delta(n)$ and chooses an expert according to the distribution $p_t$. The expected regret of the player with respect to a fixed distribution $p^\star$ is:
+Consider the $$n$$-experts problem. At each round, the adversary chooses a loss vector $$l_t \in \mathcal{L}$$ and the player picks $$p_t \in \Delta(n)$$ and chooses an expert according to the distribution $$p_t$$. The expected regret of the player with respect to a fixed distribution $$p^\star$$ is:
 
 $$R_T(p^\star) = \sum_{t=1}^T l_t^\top(p_t-p^\star)$$
 
-If the distribution $p_t$ is chosen according to FTRL or OMD using a Legendre regularizer $F$, one could write the regret inequality:
+If the distribution $$p_t$$ is chosen according to FTRL or OMD using a Legendre regularizer $$F$$, one could write the regret inequality:
 
 $$\sum_{t=1}^T l_t^\top(p_t-p^\star) \leq \frac{F(p^\star)-F(p_1)}{\eta} + \eta \sum_{t=1}^T {l_t^2} ^\top m_{F,\mathcal{L}}(p_t)$$
 
-Here $m$ is a vector valued function which depends on $F$ and the range of $l_{t}$, ie, $\mathcal{L}$.
+Here $$m$$ is a vector valued function which depends on $$F$$ and the range of $$l_{t}$$, ie, $$\mathcal{L}$$.
 
 ## Changing comparator
 
-Instead of computing regret with respect to some $p^\star \in \Delta(n)$, we compute regret with respect to $p_\delta^\star$ where:
+Instead of computing regret with respect to some $$p^\star \in \Delta(n)$$, we compute regret with respect to $$p_\delta^\star$$ where:
 
 $$p_\delta^\star = \frac{\delta}{n} + (1-\delta) p^\star$$
 
@@ -32,11 +32,11 @@ $$ \begin{align*}
 \end{align*}
 $$
 
-This trick is particularly useful when $F(p) \to \infty$ when $p$ goes to the boundary of $\Delta_n$.
+This trick is particularly useful when $$F(p) \to \infty$$ when $$p$$ goes to the boundary of $$\Delta_n$$.
 
 ## Using an estimator
 
-If we have Bandit or some other form of partial feedback, then we need an estimator $\tilde{l}_t$ that can be used in the place of $l_t$. This estimator may have some bias. So, we have to modify regret to take care of the bias:
+If we have Bandit or some other form of partial feedback, then we need an estimator $$\tilde{l}_t$$ that can be used in the place of $$l_t$$. This estimator may have some bias. So, we have to modify regret to take care of the bias:
 
 $$
 \begin{align*}
@@ -45,12 +45,12 @@ $$
 \end{align*}
 $$
 
-The estimator $\tilde{l}_t \in \mathcal{\tilde{L}}$, where $\mathcal{\tilde{L}}$ may not be the same as $\mathcal{L}$. So, $m_{F,\mathcal{L}}$ is replaced by $m_{F,\mathcal{\tilde{L}}}$.
+The estimator $$\tilde{l}_t \in \mathcal{\tilde{L}}$$, where $$\mathcal{\tilde{L}}$$ may not be the same as $$\mathcal{L}$$. So, $$m_{F,\mathcal{L}}$$ is replaced by $$m_{F,\mathcal{\tilde{L}}}$$.
 
 
 ## Changing sampling distribution
 
-Instead of sampling from $p_t$ as suggested by the FTRL/OMD, we sample from $q_t$. The regret is:
+Instead of sampling from $$p_t$$ as suggested by the FTRL/OMD, we sample from $$q_t$$. The regret is:
 
 $$ \begin{align*}
 \sum_{t=1}^T l_t^\top(q_t-p^\star) &= \sum_{t=1}^T l_t^\top(p_t-p^\star) + \sum_{t=1}^T l_t^\top(q_t-p_t)\\
@@ -58,7 +58,7 @@ $$ \begin{align*}
 \end{align*}
 $$
 
-This becomes useful in the context of estimators. It may be beneficial to sample from $q_t$ insted of $p_t$ to get bounded estimators.
+This becomes useful in the context of estimators. It may be beneficial to sample from $$q_t$$ insted of $$p_t$$ to get bounded estimators.
 
 Combining change of sampling distribution with unbiased estimators, we get the regret inequality:
 
@@ -80,7 +80,7 @@ $$
 \end{align*}
 $$
 
-2. Change sampling distribution to $p_t$:
+2. Change sampling distribution to $$p_t$$:
 
 $$
 \begin{align*}
