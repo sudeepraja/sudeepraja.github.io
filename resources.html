@@ -1,0 +1,37 @@
+---
+layout: default
+published: true
+---
+<center><h1>Resources</h1></center>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <script>
+  (function() {
+    var cx = '004715222390509844844:umgmpbiha6e';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+  </div>
+</div>
+<div class="posts">
+  {% for post in site.resources %}
+  	{% if post.project == false %}
+	    <article class="post">
+
+	      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+
+	      <div class="entry">
+	        {{ post.excerpt }}
+	      </div>
+
+	      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+	    </article>
+    {% endif %}
+  {% endfor %}
+</div>
