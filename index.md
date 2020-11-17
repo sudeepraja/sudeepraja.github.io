@@ -17,7 +17,7 @@ Email: sudeepraja.putta at columbia.edu
    - My paper, Exponential Weights on the Hypercube in Polynomial Time, has been accepted at AISTATS 2019. This is joint work with Abhishek Shetty.
    - I received the Sudha Mishra and Rajesh Jha Scholarship.
    - In summer 2018 I will be interning with Navin Goyal at MSR Bangalore.
-   
+
 ---
 ## Publications
 [DBLP](https://dblp.uni-trier.de/pers/hd/p/Putta:Sudeep_Raja), [Google Scholar](https://scholar.google.com/citations?user=0MxBCEIAAAAJ&hl=en)
@@ -28,8 +28,8 @@ Email: sudeepraja.putta at columbia.edu
 <h3>2017</h3>
    - [Pure Exploration in Episodic Fixed-Horizon Markov Decision Processes](https://sudeepraja.github.io/papers/PEPSRL.pdf) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />AAMAS 2017. [Short paper](https://sudeepraja.github.io/papers/PEPSRL_short.pdf).
    - [Efficient Reinforcement Learning via Initial Pure Exploration](https://arxiv.org/abs/1706.02237) <br />**Sudeep Raja Putta**, Theja Tulabandhula <br />RLDM 2017.
-   
-   
+
+
 ---
 ## Quotes
 > Don't worry about the overall importance of the problem; work on it if it looks interesting. I think there's a sufficient correlation between interest and importance. — David Blackwell
