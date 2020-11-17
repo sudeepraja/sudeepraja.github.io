@@ -20,8 +20,8 @@ published: true
   </div>
 </div>
 <div class="posts">
-  {% for post in site.resources %}
-  	{% if post.project == false %}
+  {% for post in site.posts %}
+  	{% if post.project == true %}
 	    <article class="post">
 
 	      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
