@@ -9,6 +9,8 @@ My CV: [CV](https://sudeepraja.github.io/CV.pdf)
 
 Email: sudeepraja.putta at columbia.edu
 
+[Simons Institute Profile](https://simons.berkeley.edu/people/sudeep-raja)
+
 ---
 ## News
    - I will be a Visiting Graduate Student in the Theory of Reinforcement Learning program at the Simons Institute in Fall 2020.
