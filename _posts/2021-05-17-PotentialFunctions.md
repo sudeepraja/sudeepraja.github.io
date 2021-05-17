@@ -82,7 +82,7 @@ $$
 f(z) = \int_{0}^z \psi^{-1}(s) ds
 $$
 
-Observe that $$f'(z) = \psi^{-1}(z)$$  and $$f'(z) = \left[ \psi'(\psi^{-1}(z))\right]^{-1}$$. So $$\lim_{z \to 0}|\psi^{-1}(z)| = +\infty$$ and $$f$$ is strictly convex, proving that $$f$$ is a Legendre function on $$(0,\infty)$$. The Legendre-Fenchel dual of $$f$$ is $$f^\star:(-\infty,a) \to  \mathbb{R}$$ defined as $$f^\star(u) = \sup_{z > 0} zu - f(z)$$, which by definition of $$f$$ is same as:
+Observe that $$f'(z) = \psi^{-1}(z)$$  and $$f'(z) = \left[ \psi'(\psi^{-1}(z))\right]^{-1}$$. So $$\lim_{z \to 0}\mid \psi^{-1}(z)\mid = +\infty$$ and $$f$$ is strictly convex, proving that $$f$$ is a Legendre function on $$(0,\infty)$$. The Legendre-Fenchel dual of $$f$$ is $$f^\star:(-\infty,a) \to  \mathbb{R}$$ defined as $$f^\star(u) = \sup_{z > 0} zu - f(z)$$, which by definition of $$f$$ is same as:
 
 $$
 f^\star(u) = u \psi(u) - f(\psi(u))
