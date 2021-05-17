@@ -28,6 +28,7 @@ g(y,\lambda) = \sum_{i=1}^n \psi(y_i + \lambda)
 $$
 
 **Lemma 1:** For every $$y \in \mathbb{R}^n$$, there exists a unique $$\lambda$$ such that $$y_i + \lambda < a$$ for all $$i$$ and $$g(y, \lambda)=1$$
+
 **Proof:**
 For every $$y \in \mathbb{R}^n$$, we have that $$\lim_{\lambda \to -\infty} g(y,\lambda) = 0$$ and $$\lim_{\lambda \to a-\min_i(y_i)} g(y,\lambda) = +\infty$$. As $$g$$ is monotonically increasing and continuous, by the intermediate value theorem, for every $$y \in \mathbb{R}^n$$ there exists a unique $$\lambda$$ such that $$g(y, \lambda)=1$$.
 
@@ -65,6 +66,7 @@ We will treat OMD and FTRL in future posts. In the remaining post, we present so
 
 #### Constant Translation
 **Lemma 2:** Let $$y, y' \in \mathbb{R}^n$$.  If $$y'_i = y_i + c$$ for all $$i$$, then $$\lambda(y') = \lambda(y)-c$$.
+
 **Proof:**
 Observe that
 
