@@ -13,8 +13,8 @@ $$\text{Breg}(x\|y) = F(x) - F(y) - \nabla F(y)^\top (x-y)$$
 Consider the Online Mirror Descent(OMD) algorithm on the simplex $$\Delta_n$$ with regularizer $$F(x)$$. Assume the losses are linear. The 1-step OMD update is written as:
 
 $$\begin{align*}
-x_1 &= \argmin_{x \in \Delta_n} F(x)\\
-x_{t+1} &= \argmin_{x \in \Delta_n} \left[\eta_t l_t^\top x + \text{Breg}(x\|x_t)\right]
+x_1 &= \arg\min_{x \in \Delta_n} F(x)\\
+x_{t+1} &= \arg\min_{x \in \Delta_n} \left[\eta_t l_t^\top x + \text{Breg}(x\|x_t)\right]
 \end{align*}$$
 
 Solving the minimization above and using facts about potential functions along with induction, we can show that:
@@ -35,9 +35,9 @@ So, OMD can be written as:
 Sometimes, one can write OMD using a two step update:
 
 $$\begin{align*}
-x_1 &= \argmin_{x \in \Delta_n} F(x)\\
-\tilde{x}_{t+1} &= \argmin_{x \in \mathbb{R}_n} \left[\eta_t l_t^\top x + \text{Breg}(x\|x_t)\right]\\
-x_{t+1} &= \argmin_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})
+x_1 &= \arg\min_{x \in \Delta_n} F(x)\\
+\tilde{x}_{t+1} &= \arg\min_{x \in \mathbb{R}_n} \left[\eta_t l_t^\top x + \text{Breg}(x\|x_t)\right]\\
+x_{t+1} &= \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})
 \end{align*}$$
 
 Solving the minimization above we can show that:
