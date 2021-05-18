@@ -48,7 +48,7 @@ These probability distributions defined through $$\psi$$ come up in online learn
 Given a potential $$\psi$$ and "Loss Aggregators" $$h_1,h_2,\dots,h_T$$
 1. Let $$\theta_0 = 0$$
 2. For $$t=1 \dots T:$$
-   1. Play the point $$x_t = P(\theta_{t-1})$$
+   1. Play the point $$x_t = P(\theta_{t-1}) = \psi(\theta_{t-1} + \lambda(\theta_{t-1}))$$
    2. Observe the loss function $$l_t(x)$$
    3. Compute $$\theta_t = h_t(l_1,\dots,l_t)$$
 
