@@ -25,7 +25,7 @@ x_{t+1} &= \psi(\theta_t + \lambda(\theta_t)) \quad \text{ where } \quad \theta_
 \end{align*}$$
 
 So, OMD can be written as:
-1. $$\theta_0=0$$
+1. Let $$\theta_0=0$$
 2. For $$t=1 \dots T$$
    1. Play $$x_t = \psi(\theta_{t-1} + \lambda(\theta_{t-1}))$$
    2. Observe $$l_t$$
