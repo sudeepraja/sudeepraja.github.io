@@ -115,6 +115,17 @@ l_t^\top(x_t-x) &= l_t^\top(\tilde{x}_{t+1}-x) + l_t^\top(x_t-\tilde{x}_{t+1})\\
 \end{align*}$$
 
 
+Note that $$\text{Breg}(x\|x_{t+1}) \leq \text{Breg}(x\|\tilde{x}_{t+1})$$ for all $$x \in \Delta_n$$.
+
+$$\begin{align*}
+ \text{Breg}(x\|\tilde{x}_{t+1}) - \text{Breg}(x\|x_{t+1})  &= F(x_{t+1}) - F(\tilde{x}_{t+1}) - \nabla F(\tilde{x}_{t+1})^\top (x-\tilde{x}_{t+1}) + \nabla F(x_{t+1})^\top (x-x_{t+1}) \\
+ &= \text{Breg}(x_{t+1}\| \tilde{x}_{t+1}) + ( \nabla F(x_{t+1}) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1}) \\
+ &\geq  ( \nabla F(x_{t+1}) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1})
+\end{align*}$$
+
+Since $x_{t+1}$ is the minimizer of $\text{Breg}(x\|| \tilde{p}_{t+1})$ on $x \in \Delta_n$, we have the optimality condition:
+$$(\nabla F(x_{t+1} ) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1}) \geq 0$$
+
 We can write the first term as:
 
 $$\begin{align*}
