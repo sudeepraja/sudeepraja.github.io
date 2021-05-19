@@ -21,7 +21,7 @@ Solving the minimization above and using facts about potential functions along w
 
 $$\begin{align*}
 x_1 &=  \psi(\lambda(0)) = (1/n,\dots,1/n)\\
-x_{t+1} &= \psi(\theta_t + \lambda(\theta_t)) \quad \text{ where } \quad \theta_t = \sum_{s=1}^t \eta_s l_s
+x_{t+1} &= \psi(\theta_t + \lambda(\theta_t)) \quad \text{ where } \quad \theta_t = - \sum_{s=1}^t \eta_s l_s
 \end{align*}$$
 
 So, OMD can be written as:
@@ -45,7 +45,7 @@ Solving the minimization above we can show that:
 $$\begin{align*}
 x_1 &=  \psi(\lambda(0)) = (1/n,\dots,1/n)\\
 \tilde{x}_{t+1} &= \psi(\theta_t + \lambda(\theta_{t-1}))\\
-x_{t+1} &= \psi(\theta_t + \lambda(\theta_t)) \quad \text{ where } \quad \theta_t = \sum_{s=1}^t \eta_s l_s
+x_{t+1} &= \psi(\theta_t + \lambda(\theta_t)) \quad \text{ where } \quad \theta_t = - \sum_{s=1}^t \eta_s l_s
 \end{align*}$$
 
 The 2 step OMD is valid if $$\tilde{x}_{t+1}$$ exists. Also, note that $$\tilde{x}_{t+1}$$ may not belong to the simplex.
@@ -81,7 +81,7 @@ $$
 
 **Specific Results**:
 
-- Constant learning rate $$\eta_t=\eta$$: We can see that the first term telescopes:
+- Constant learning rate $$\eta_t=\eta$$. We can see that the first term telescopes:
 
   $$\begin{align*}
   \sum_{t=1}^T l_t^\top(x_t-x) &= \frac{1}{\eta} \left[\text{Breg}(x\|x_1) - \text{Breg}(x\|x_{T+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) - \frac{1}{\eta}\text{Breg}(x_{t+1}\|x_{t}) \right]\\
