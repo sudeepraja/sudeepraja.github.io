@@ -123,7 +123,8 @@ $$\begin{align*}
  &\geq  ( \nabla F(x_{t+1}) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1})
 \end{align*}$$
 
-Since $x_{t+1}$ is the minimizer of $\text{Breg}(x\|| \tilde{p}_{t+1})$ on $x \in \Delta_n$, we have the optimality condition:
+Since $$x_{t+1}$$ is the minimizer of $$\text{Breg}(x\| \tilde{p}_{t+1})$$ on $$x \in \Delta_n$$, we have the optimality condition:
+
 $$(\nabla F(x_{t+1} ) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1}) \geq 0$$
 
 We can write the first term as:
