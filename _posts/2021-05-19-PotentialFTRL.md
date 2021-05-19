@@ -44,44 +44,44 @@ l_t^\top(x_t-x) &= l_t^\top(x_{t+1}-x) + l_t^\top(x_t-x_{t+1})\\
 &= \left(\frac{\nabla F(x_t)}{\eta_{t-1}} - \frac{\nabla F(x_{t+1})}{\eta_t}\right)^\top(x_{t+1}-x) + l_t^\top(x_t-x_{t+1})
 \end{align*}$$
 
-Define the "Mixed Bregman" $$\text{Breg}_{a,b}(x,y)$$:
+Define the "Mixed Bregman" $$\text{Breg}_{a,b}(x\|y)$$:
 
-$$\text{Breg}_{a,b}(x,y) = \frac{F(x)}{a} - \frac{F(y)}{b} - \frac{\nabla F(y)}{b}^\top(x-y)$$
+$$\text{Breg}_{a,b}(x\|y) = \frac{F(x)}{a} - \frac{F(y)}{b} - \frac{\nabla F(y)}{b}^\top(x-y)$$
 
 The first term can be written as:
 
-$$\left(\frac{\nabla F(x_t)}{\eta_{t-1}} - \frac{\nabla F(x_{t+1})}{\eta_t}\right)^\top(x_{t+1}-x)  = \text{Breg}_{\alpha,\eta_{t-1}}(x,x_t) - \text{Breg}_{\alpha,\eta_{t}}(x,x_{t+1})- \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t)$$
+$$\left(\frac{\nabla F(x_t)}{\eta_{t-1}} - \frac{\nabla F(x_{t+1})}{\eta_t}\right)^\top(x_{t+1}-x)  = \text{Breg}_{\alpha,\eta_{t-1}}(x\|x_t) - \text{Breg}_{\alpha,\eta_{t}}(x\|x_{t+1})- \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)$$
 
 $$\alpha$$ could be any non-zero number in the above expression.
 
 Taking summation over $$t$$, we have:
 
 $$\begin{align*}
-\sum_{t=1}^T l_t^\top(x_t-x) &= \sum_{t=1}^T \left[\text{Breg}_{\alpha,\eta_{t-1}}(x,x_t) - \text{Breg}_{\alpha,\eta_{t}}(x,x_{t+1})\right] + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t)\right]\\
-&=\text{Breg}_{\alpha,\eta_{0}}(x,x_1) - \text{Breg}_{\alpha,\eta_{T}}(x,x_{T+1}) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t)\right]
+\sum_{t=1}^T l_t^\top(x_t-x) &= \sum_{t=1}^T \left[\text{Breg}_{\alpha,\eta_{t-1}}(x\|x_t) - \text{Breg}_{\alpha,\eta_{t}}(x\|x_{t+1})\right] + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]\\
+&=\text{Breg}_{\alpha,\eta_{0}}(x\|x_1) - \text{Breg}_{\alpha,\eta_{T}}(x\|x_{T+1}) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]
 \end{align*}$$
 
 Let $$\alpha = \eta_0 = \eta_T$$. The Mixed Bregmans in the first term will become normal Bregmans.
 
 $$\begin{align*}
-\sum_{t=1}^T l_t^\top(x_t-x) &=\frac{1}{\eta_T}\text{Breg}(x,x_1) - \text{Breg}(x,x_{T+1}) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t)\right]\\
-&\leq \frac{1}{\eta_T}\text{Breg}(x,x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t)\right]\\
+\sum_{t=1}^T l_t^\top(x_t-x) &=\frac{1}{\eta_T}\text{Breg}(x\|x_1) - \text{Breg}(x\|x_{T+1}) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]\\
+&\leq \frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]\\
 \end{align*}$$
 
 **Specific Results:**
 
 - Constant Learning rate $$\eta_t = \eta$$. The Mixed Bregmans in the second term become normal Bregmans. We recover the same regret bound as OMD with constant learning rate.
 
-  $$\sum_{t=1}^T l_t^\top(x_t-x) \leq \frac{1}{\eta}\text{Breg}(x,x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \frac{1}{\eta}\text{Breg}(x_{t+1},x_t)\right]$$
+  $$\sum_{t=1}^T l_t^\top(x_t-x) \leq \frac{1}{\eta}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \frac{1}{\eta}\text{Breg}(x_{t+1}\|x_t)\right]$$
 
-- If we can ensure that $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t) \geq \frac{1}{\eta_{t-1}} \text{Breg}(x_{t+1},x_t)$$, then we have the inequality:
+- If we can ensure that $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t) \geq \frac{1}{\eta_{t-1}} \text{Breg}(x_{t+1}\|x_t)$$, then we have the inequality:
 
   $$\begin{align*}
   \sum_{t=1}^T l_t^\top(x_t-x)
-  &\leq \frac{1}{\eta_T}\text{Breg}(x,x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \frac{1}{\eta_{t-1}}\text{Breg}(x_{t+1},x_t)\right]\\
+  &\leq \frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \frac{1}{\eta_{t-1}}\text{Breg}(x_{t+1}\|x_t)\right]\\
   \end{align*}$$
 
-  $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t) \geq \frac{1}{\eta_{t-1}} \text{Breg}(x_{t+1},x_t)$$ is equivalent to:
+  $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t) \geq \frac{1}{\eta_{t-1}} \text{Breg}(x_{t+1}\|x_t)$$ is equivalent to:
 
   $$F(x_{t+1})\left( \frac{1}{\eta_t} - \frac{1}{\eta_{t-1}}\right)\geq 0$$
 
@@ -91,14 +91,14 @@ $$\begin{align*}
 
   $$ \quad $$
 
-- If we can ensure that $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t) \geq \frac{1}{\eta_{t}} \text{Breg}(x_{t+1},x_t)$$, then we have the inequality:
+- If we can ensure that $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t) \geq \frac{1}{\eta_{t}} \text{Breg}(x_{t+1}\|x_t)$$, then we have the inequality:
 
   $$\begin{align*}
   \sum_{t=1}^T l_t^\top(x_t-x)
-  &\leq \frac{1}{\eta_T}\text{Breg}(x,x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \frac{1}{\eta_{t}}\text{Breg}(x_{t+1},x_t)\right]\\
+  &\leq \frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \frac{1}{\eta_{t}}\text{Breg}(x_{t+1}\|x_t)\right]\\
   \end{align*}$$
 
-  $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1},x_t) \geq \frac{1}{\eta_{t}} \text{Breg}(x_{t+1},x_t)$$ is equivalent to:
+  $$\text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t) \geq \frac{1}{\eta_{t}} \text{Breg}(x_{t+1}\|x_t)$$ is equivalent to:
 
   $$(F(x_{t}) + \nabla F(x_{t})^\top(x_{t+1}-x_t))\left( \frac{1}{\eta_t} - \frac{1}{\eta_{t-1}}\right)\geq 0$$
 

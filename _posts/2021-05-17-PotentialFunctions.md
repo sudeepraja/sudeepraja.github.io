@@ -62,7 +62,7 @@ The aggregators for time varying FTRL are given by:
 
 $$h_t(l_1,\dots,l_t) = - \eta_t \sum_{s=1}^t  l_s$$
 
-We will treat OMD and FTRL in future posts. In the remaining post, we present some properties of potential functions.
+We will treat OMD and FTRL in future posts. In the remaining post, we present some properties of potential functions. 
 
 #### Constant Translation
 **Lemma 2:** Let $$y, y' \in \mathbb{R}^n$$.  If $$y'_i = y_i + c$$ for all $$i$$, then $$\lambda(y') = \lambda(y)-c$$.
