@@ -36,12 +36,74 @@ Here is a summary of the four algorithms:
 |OMD |$$x_{t+1} = \arg\min_{x \in \Delta_n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t}}(x\|x_t)\right]$$  |  $$\tilde{x}_{t+1} = \arg\min_{x \in \mathbb{R}^n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t}}(x\|x_t)\right]$$$$x_{t+1} = \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})$$|
 |FTRL| $$x_{t+1} = \arg\min_{x \in \Delta_n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t-1}}(x\|x_t)\right]$$  |  $$\tilde{x}_{t+1} = \arg\min_{x \in \mathbb{R}^n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t-1}}(x\|x_t)\right]$$$$x_{t+1} = \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})$$|
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Algorithm</th>
+    <th class="tg-0pky">1-step</th>
+    <th class="tg-0lax">2-step</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">OMD</td>
+    <td class="tg-0pky">$$x_{t+1} = \arg\min_{x \in \Delta_n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t}}(x\|x_t)\right]$$</td>
+    <td class="tg-0lax">$$\tilde{x}_{t+1} = \arg\min_{x \in \mathbb{R}^n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t}}(x\|x_t)\right]$$$$x_{t+1} = \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})$$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FTRL</td>
+    <td class="tg-0pky">$$x_{t+1} = \arg\min_{x \in \Delta_n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t-1}}(x\|x_t)\right]$$</td>
+    <td class="tg-0lax">$$\tilde{x}_{t+1} = \arg\min_{x \in \mathbb{R}^n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t-1}}(x\|x_t)\right]$$$$x_{t+1} = \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})$$</td>
+  </tr>
+</tbody>
+</table>
+
 In terms of potential functions, they can be written as:
 
 |Alg | 1-step  |2-step |
 |--|---|--|
 |OMD |$$\theta_t = \theta_{t-1} - \eta_t l_t$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_t))$$  |  $$\theta_t = \theta_{t-1} - \eta_t l_t$$$$\tilde{x}_{t+1} = \psi(\theta_t + \lambda(\theta_{t-1}))$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_{t}))$$|
 |FTRL| $$\theta_t = \frac{\eta_t}{\eta_{t-1}}\theta_{t-1} - \eta_t l_t$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_t))$$  |  $$\theta_t = \frac{\eta_t}{\eta_{t-1}}\theta_{t-1} - \eta_t l_t$$$$\tilde{x}_{t+1} = \psi\left(\theta_t + \frac{\eta_t}{\eta_{t-1}}\lambda(\theta_{t-1})\right)$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_{t}))$$|
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Algorithm</th>
+    <th class="tg-0pky">1-step</th>
+    <th class="tg-0lax">2-step</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">OMD</td>
+    <td class="tg-0pky">$$\theta_t = \theta_{t-1} - \eta_t l_t$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_t))$$</td>
+    <td class="tg-0lax">$$\theta_t = \theta_{t-1} - \eta_t l_t$$$$\tilde{x}_{t+1} = \psi(\theta_t + \lambda(\theta_{t-1}))$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_{t}))$$</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">FTRL</td>
+    <td class="tg-0pky">$$\theta_t = \frac{\eta_t}{\eta_{t-1}}\theta_{t-1} - \eta_t l_t$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_t))$$</td>
+    <td class="tg-0lax">$$\theta_t = \frac{\eta_t}{\eta_{t-1}}\theta_{t-1} - \eta_t l_t$$$$\tilde{x}_{t+1} = \psi\left(\theta_t + \frac{\eta_t}{\eta_{t-1}}\lambda(\theta_{t-1})\right)$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_{t}))$$</td>
+  </tr>
+</tbody>
+</table>
 
 ### Regret
 
@@ -116,8 +178,8 @@ Here is a summary of the regret inequalitis:
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
+    <th class="tg-0pky">Algorithm</th>
+    <th class="tg-0pky">Regret</th>
   </tr>
 </thead>
 <tbody>
