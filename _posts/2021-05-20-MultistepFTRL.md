@@ -104,30 +104,38 @@ Here is a summary of the regret inequalitis:
 |1-step  FTRL | $$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]$$|
 |2-step FTRL  |  $$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(\tilde{x}_{t+1}\|x_t)\right]$$|
 
-
-<table>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
 <thead>
   <tr>
-    <th>Algorithm</th>
-    <th>Regret</th>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky"></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>1-step OMD</td>
-    <td>$$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) - \frac{1}{\eta_t}\text{Breg}(x_{t+1}\|x_{t}) \right]$$</td>
+    <td class="tg-0pky">1-step OMD</td>
+    <td class="tg-0pky">$$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) - \frac{1}{\eta_t}\text{Breg}(x_{t+1}\|x_{t}) \right]$$</td>
   </tr>
   <tr>
-    <td>2-step OMD</td>
-    <td>$$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) - \frac{1}{\eta_t}\text{Breg}(\tilde{x}_{t+1}\|x_{t}) \right]$$</td>
+    <td class="tg-0pky">2-step OMD</td>
+    <td class="tg-0pky">$$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) - \frac{1}{\eta_t}\text{Breg}(\tilde{x}_{t+1}\|x_{t}) \right]$$</td>
   </tr>
   <tr>
-    <td>1-step  FTRL</td>
-    <td>$$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]$$</td>
+    <td class="tg-0pky">1-step  FTRL</td>
+    <td class="tg-0pky">$$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]$$</td>
   </tr>
   <tr>
-    <td>2-step FTRL</td>
-    <td>$$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(\tilde{x}_{t+1}\|x_t)\right]$$</td>
+    <td class="tg-0lax">2-step FTRL</td>
+    <td class="tg-0lax">$$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(\tilde{x}_{t+1}\|x_t)\right]$$</td>
   </tr>
 </tbody>
 </table>
