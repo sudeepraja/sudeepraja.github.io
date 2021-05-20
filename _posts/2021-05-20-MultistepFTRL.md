@@ -31,13 +31,9 @@ x_{t+1} &= \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})
 
 Here is a summary of the four algorithms:
 
-|Alg | 1-step  |2-step  |
-|--|---|--|
-|OMD |$$x_{t+1} = \arg\min_{x \in \Delta_n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t}}(x\|x_t)\right]$$  |  $$\tilde{x}_{t+1} = \arg\min_{x \in \mathbb{R}^n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t}}(x\|x_t)\right]$$$$x_{t+1} = \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})$$|
-|FTRL| $$x_{t+1} = \arg\min_{x \in \Delta_n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t-1}}(x\|x_t)\right]$$  |  $$\tilde{x}_{t+1} = \arg\min_{x \in \mathbb{R}^n} \left[ l_t^\top x + \text{Breg}_{\eta_t,\eta_{t-1}}(x\|x_t)\right]$$$$x_{t+1} = \arg\min_{x \in \Delta_n} \text{Breg}(x\|\tilde{x}_{t+1})$$|
-
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:0; margin-left: auto;
+  margin-right: auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -69,13 +65,9 @@ Here is a summary of the four algorithms:
 
 In terms of potential functions, they can be written as:
 
-|Alg | 1-step  |2-step |
-|--|---|--|
-|OMD |$$\theta_t = \theta_{t-1} - \eta_t l_t$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_t))$$  |  $$\theta_t = \theta_{t-1} - \eta_t l_t$$$$\tilde{x}_{t+1} = \psi(\theta_t + \lambda(\theta_{t-1}))$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_{t}))$$|
-|FTRL| $$\theta_t = \frac{\eta_t}{\eta_{t-1}}\theta_{t-1} - \eta_t l_t$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_t))$$  |  $$\theta_t = \frac{\eta_t}{\eta_{t-1}}\theta_{t-1} - \eta_t l_t$$$$\tilde{x}_{t+1} = \psi\left(\theta_t + \frac{\eta_t}{\eta_{t-1}}\lambda(\theta_{t-1})\right)$$$$x_{t+1} = \psi(\theta_t + \lambda(\theta_{t}))$$|
-
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:0;margin-left: auto;
+  margin-right: auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -159,15 +151,9 @@ Inorder to get specific results, we proceed in the same fashion as 1-step FTRL. 
 
 Here is a summary of the regret inequalitis:
 
-|Algorithm | Regret |
-|---|---|
-|1-step OMD | $$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) - \frac{1}{\eta_t}\text{Breg}(x_{t+1}\|x_{t}) \right]$$  |
-|2-step OMD|    $$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) - \frac{1}{\eta_t}\text{Breg}(\tilde{x}_{t+1}\|x_{t}) \right]$$|
-|1-step  FTRL | $$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]$$|
-|2-step FTRL  |  $$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(\tilde{x}_{t+1}\|x_t)\right]$$|
-
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
+.tg  {border-collapse:collapse;border-spacing:0;margin-left: auto;
+  margin-right: auto;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
