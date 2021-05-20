@@ -103,3 +103,9 @@ Here is a summary of the regret inequalitis:
 |2-step OMD|    $$\sum_{t=1}^T \frac{1}{\eta_t}\left[ \text{Breg}(x\|x_{t}) - \text{Breg}(x\|x_{t+1}) \right] + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) - \frac{1}{\eta_t}\text{Breg}(\tilde{x}_{t+1}\|x_{t}) \right]$$|
 |1-step  FTRL | $$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-x_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(x_{t+1}\|x_t)\right]$$|
 |2-step FTRL  |  $$\frac{1}{\eta_T}\text{Breg}(x\|x_1) + \sum_{t=1}^T \left[ l_t^\top(x_t-\tilde{x}_{t+1}) -  \text{Breg}_{\eta_t,\eta_{t-1}}(\tilde{x}_{t+1}\|x_t)\right]$$|
+
+|  	|  	|  	|  	|  	|
+|-	|-	|-	|-	|-	|
+|  	|  	|  	|  	|  	|
+|  	|  	|  	|  	|  	|
+|  	|  	|  	|  	|  	|
