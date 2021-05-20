@@ -126,12 +126,9 @@ Note that $$\text{Breg}_{\alpha,\eta_{t}}(x\|x_{t+1}) \leq \text{Breg}_{\alpha,\
 $$\begin{align*}
  \eta_t(\text{Breg}_{\alpha,\eta_{t}}(x\|\tilde{x}_{t+1}) - \text{Breg}_{\alpha,\eta_{t}}(x\|x_{t+1}))  &= F(x_{t+1}) - F(\tilde{x}_{t+1}) - \nabla F(\tilde{x}_{t+1})^\top (x-\tilde{x}_{t+1}) + \nabla F(x_{t+1})^\top (x-x_{t+1}) \\
  &= \text{Breg}(x_{t+1}\| \tilde{x}_{t+1}) + ( \nabla F(x_{t+1}) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1}) \\
- &\geq  ( \nabla F(x_{t+1}) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1})
+ &\geq  ( \nabla F(x_{t+1}) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1})\\
+ &= (\theta_t + \lambda(\theta_t) - \theta_t - \frac{\eta_t}{\eta_{t-1}}\lambda(\theta_{t-1}))^\top (x-x_{t+1})=0
 \end{align*}$$
-
-Since $$x_{t+1}$$ is the minimizer of $$\text{Breg}(x\| \tilde{x}_{t+1})$$ on $$x \in \Delta_n$$, we have the optimality condition:
-
-$$(\nabla F(x_{t+1} ) - \nabla F(\tilde{x}_{t+1}))^\top (x-x_{t+1}) \geq 0$$
 
 Taking summation over $$t$$, we have:
 
