@@ -137,4 +137,4 @@ $$l^\top(x-y)-\frac{1}{\eta} \text{Breg}(y\|x)\leq  \frac{\eta}{2} \sum_{i=1}^n 
 
 **Proof**
 
-Since $$y\leq x$$, we only have to invoke Case 1 from the lemma above. Applying the limit on  functions $$\phi(u) \to 0$$. We can see that $$m(u)\to \psi'(u)$$
+Since $$y\leq x$$, we only have to invoke Case 1 from the lemma above. Applying the limit on  functions $$\phi(u) \to 0$$, we can see that $$m(u)\to \psi'(u)$$
